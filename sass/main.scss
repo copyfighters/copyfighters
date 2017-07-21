@@ -1,3 +1,6 @@
+$main-font: 'Source Sans Pro', 'Open Sans', 'Arial', sans-serif;
+$headline-font: 'Zilla Slab', slab, serif;
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -5,18 +8,53 @@ html, body {
 
 body {
 	text-rendering: optimizeLegibility;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $main-font;
+	font-size: 17px;
 	padding-bottom: 5em;
 	line-height: 1.7;
 	color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Zilla Slab', serif;
+	font-family: $headline-font;
+	line-height: 1.2;
 }
 
-.area {
-	.area-first {
-		background: #d52595;
+div.area {
+	padding: 2em 0;
+	min-height: 20em;
+}
+
+div.area-1 {
+	#main-title {
+		font-size: 3.5em;
 	}
+
+	.subtitle {
+		font: {
+			family: $main-font;
+			style: italic;
+			size: 1.8em;
+			weight: 200;
+		}
+
+		margin-bottom: 5em;
+	}
+}
+
+div.area-2 {
+	background-color: #4ECDC4;
+	color: #ffffff;
+}
+
+div.area-3 {
+	background-color: #C7F464;
+}
+
+div.area-4 {
+	background-color: #FF6B6B;
+}
+div.area-5 {
+	background-color: #556270;
+	color: #ffffff;
 }

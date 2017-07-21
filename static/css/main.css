@@ -25,7 +25,7 @@ h2::before {
   content: "// "; }
 
 .btn, .btn-default {
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   text-shadow: none; }
   .btn, .btn:hover, .btn-default, .btn-default:hover {
     border-width: 1px;
@@ -98,17 +98,17 @@ div.area-4 {
   background-color: #FF6B6B; }
 
 .quote {
-  position: relative;
+  display: flex;
   margin-bottom: 4.5em; }
   .quote::after {
     content: "";
     display: block;
     clear: both; }
   .quote .photo {
+    flex: none;
     width: 7em;
     height: 7em;
     border-radius: 3.5em;
-    float: left;
     margin-top: -.3em;
     margin-right: 1em;
     margin-top: -.7em;
@@ -127,20 +127,31 @@ div.area-4 {
       left: -1.2em;
       border: .7em solid transparent;
       border-right-color: #fff; }
+  .quote.quote-mirror .photo {
+    left: auto;
+    right: 0;
+    order: 2;
+    margin-right: 0;
+    margin-left: 1em; }
+  .quote.quote-mirror blockquote {
+    order: 1; }
+  .quote.quote-mirror blockquote > div:before {
+    left: auto;
+    right: -1.2em;
+    border-right-color: transparent;
+    border-left-color: #fff; }
 
 blockquote {
-  padding: 0 0 0 130px;
-  float: left;
   margin: 0;
   width: 100%;
   border-left: none;
-  position: absolute; }
+  top: 0; }
   blockquote > div {
+    position: relative;
     background: #fff;
     line-height: 1.4em;
     padding: 1em 1.3em;
-    color: #000;
-    position: relative; }
+    color: #000; }
 
 div.footer {
   background-color: #556270;

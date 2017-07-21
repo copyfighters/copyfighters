@@ -106,7 +106,7 @@ div.area-4 {
 }
 
 .quote {
-	position: relative;
+	display: flex;
 	margin-bottom: 4.5em;
 
 	&::after {
@@ -116,10 +116,10 @@ div.area-4 {
 	}
 
 	.photo {
+		flex: none;
 		width: 7em;
 		height: 7em;
 		border-radius: 3.5em;
-		float: left;
 
 		margin: {
 			top: -.3em;
@@ -149,22 +149,46 @@ div.area-4 {
 			border-right-color: #fff;
 		}
 	}
+
+	&.quote-mirror {
+
+		.photo {
+			left: auto;
+			right: 0;
+			order: 2;
+
+			margin: {
+				right: 0;
+				left: 1em;
+			}
+		}
+
+		blockquote {
+			order: 1;
+		}
+
+		blockquote > div:before {
+			left: auto;
+			right: -1.2em;
+			border-right-color: transparent;
+			border-left-color: #fff;
+		}
+
+	}
 }
 
 blockquote {
-	padding: 0 0 0 130px;
-	float: left;
 	margin: 0;
 	width: 100%;
 	border-left: none;
-	position: absolute;
+	top: 0;
 
 	> div {
+		position: relative;
 		background: #fff;
 		line-height: 1.4em;
 		padding: 1em 1.3em;
 		color: #000;
-		position: relative;
 	}
 }
 

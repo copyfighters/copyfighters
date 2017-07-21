@@ -18,6 +18,14 @@ div.area {
   padding: 2em 0;
   min-height: 20em; }
 
+#logo {
+  color: #ffffff;
+  background-color: #000000;
+  padding: 2px 6px;
+  font-size: 19px;
+  font-family: "Zilla Slab", slab, serif;
+  font-weight: 800; }
+
 div.area-1 #main-title {
   font-size: 3.5em; }
 div.area-1 .subtitle {

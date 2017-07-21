@@ -1,0 +1,86 @@
+.quote {
+	display: flex;
+	margin-bottom: 4.5em;
+
+	&::after {
+		content:"";
+		display:block;
+		clear:both;
+	}
+
+	.photo {
+		flex: none;
+		width: 7em;
+		height: 7em;
+		border-radius: 3.5em;
+
+		margin: {
+			top: -.3em;
+			right: 1em;
+			top: -.7em;
+		}
+
+		background: {
+			size: cover;
+			repeat: no-repeat;
+			position: center;
+			color: #fff;
+		}
+	}
+
+	blockquote > div {
+		font-size: 1.1em;
+		line-height: 1.4em;
+
+		&:before {
+			content: "";
+			width: 0;
+			height: 0;
+			position: absolute;
+			left: -1.2em;
+			border: .7em solid transparent;
+			border-right-color: #fff;
+		}
+	}
+
+	&.quote-mirror {
+
+		.photo {
+			left: auto;
+			right: 0;
+			order: 2;
+
+			margin: {
+				right: 0;
+				left: 1em;
+			}
+		}
+
+		blockquote {
+			order: 1;
+		}
+
+		blockquote > div:before {
+			left: auto;
+			right: -1.2em;
+			border-right-color: transparent;
+			border-left-color: #fff;
+		}
+
+	}
+}
+
+blockquote {
+	margin: 0;
+	width: 100%;
+	border-left: none;
+	top: 0;
+
+	> div {
+		position: relative;
+		background: #fff;
+		line-height: 1.4em;
+		padding: 1em 1.3em;
+		color: #000;
+	}
+}

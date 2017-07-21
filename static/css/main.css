@@ -1,14 +1,15 @@
 body {
   text-rendering: optimizeLegibility;
-  font-family: "Source Sans Pro", "Open Sans", "Arial", sans-serif;
+  font-family: "Titillium Web", "Source Sans Pro", "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   padding-bottom: 5em;
   line-height: 1.7;
-  color: #000000; }
+  color: #383838; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Zilla Slab", slab, serif;
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-weight: 700; }
 
 div.area {
   padding: 2em 4em;
@@ -25,7 +26,7 @@ div.area {
 div.area-1 #main-title {
   font-size: 3.5em; }
 div.area-1 #subtitle, div.area-1 .typed-cursor {
-  font-family: "Source Sans Pro", "Open Sans", "Arial", sans-serif;
+  font-family: "Titillium Web", "Source Sans Pro", "Open Sans", "Arial", sans-serif;
   font-style: italic;
   font-size: 1.8em;
   font-weight: 200; }
@@ -37,8 +38,7 @@ div.area-1 .get-involved-btn {
     margin-left: 15px; }
 
 div.area-2 {
-  background-color: #4ECDC4;
-  color: #ffffff; }
+  background-color: #4ECDC4; }
 
 div.area-3 {
   background-color: #C7F464; }

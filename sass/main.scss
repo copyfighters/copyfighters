@@ -1,5 +1,7 @@
-$main-font: 'Source Sans Pro', 'Open Sans', 'Arial', sans-serif;
+$main-font: 'Titillium Web', 'Source Sans Pro', 'Open Sans', 'Arial', sans-serif;
 $headline-font: 'Zilla Slab', slab, serif;
+
+$main-text-color: #383838;
 
 body {
 	text-rendering: optimizeLegibility;
@@ -7,12 +9,13 @@ body {
 	font-size: 17px;
 	padding-bottom: 5em;
 	line-height: 1.7;
-	color: #000000;
+	color: $main-text-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $headline-font;
 	line-height: 1.2;
+	font-weight: 700;
 }
 
 div.area {
@@ -61,7 +64,6 @@ div.area-1 {
 
 div.area-2 {
 	background-color: #4ECDC4;
-	color: #ffffff;
 }
 
 div.area-3 {

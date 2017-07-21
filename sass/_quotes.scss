@@ -1,0 +1,62 @@
+.quote {
+	position: relative;
+	margin-bottom: 4.5em;
+
+	&::after {
+		content:"";
+		display:block;
+		clear:both;
+	}
+
+	.photo {
+		width: 7em;
+		height: 7em;
+		border-radius: 3.5em;
+		float: left;
+
+		margin: {
+			top: -.3em;
+			right: 1em;
+			top: -.7em;
+		}
+
+		background: {
+			size: cover;
+			repeat: no-repeat;
+			position: center;
+			color: #fff;
+		}
+	}
+
+	blockquote > div {
+		font-size: 1.1em;
+		line-height: 1.4em;
+
+		&:before {
+			content: "";
+			width: 0;
+			height: 0;
+			position: absolute;
+			left: -1.2em;
+			border: .7em solid transparent;
+			border-right-color: #fff;
+		}
+	}
+}
+
+blockquote {
+	padding: 0 0 0 130px;
+	float: left;
+	margin: 0;
+	width: 100%;
+	border-left: none;
+	position: absolute;
+
+	> div {
+		background: #fff;
+		line-height: 1.4em;
+		padding: 1em 1.3em;
+		color: #000;
+		position: relative;
+	}
+}

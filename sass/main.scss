@@ -23,72 +23,7 @@ div.area {
 	min-height: 20em;
 }
 
-#logo {
-	color: #ffffff;
-	background-color: #000000;
-	padding: 5px 8px;
-
-	font: {
-		size: 19px;
-		family: $headline-font;
-		weight: 800;
-	}
-}
-
-div.area-1 {
-	#main-title {
-		font-size: 3.5em;
-	}
-
-	#subtitle-strings {
-		display: none;
-
-
-	}
-
-	#subtitle, .typed-cursor {
-		font: {
-			family: $main-font;
-			style: italic;
-			size: 1.8em;
-			weight: 200;
-		}
-
-		span {
-			padding: {
-				left: 5px;
-				right: 10px;
-			}
-			margin: 0 -3px;
-			-webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-			clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-			overflow: visible;
-		}
-
-		span.hl-1 {
-			background: #4ECDC4;
-		}
-
-		span.hl-2 {
-			background: #C7F464;
-		}
-		span.hl-3 {
-			background: #FF6B6B;
-		}
-	}
-
-	.get-involved-btn {
-		margin: 1em 0;
-		font: {
-			weight: 800;
-			size: 1.5em;
-		}
-
-		> span {
-			margin-left: 15px;
-		}
-	}
-}
+@import 'head';
 
 div.area-2 {
 	background-color: #4ECDC4;
@@ -105,68 +40,7 @@ div.area-4 {
 	background-color: #FF6B6B;
 }
 
-.quote {
-	position: relative;
-	margin-bottom: 4.5em;
-
-	&::after {
-		content:"";
-		display:block;
-		clear:both;
-	}
-
-	.photo {
-		width: 7em;
-		height: 7em;
-		border-radius: 3.5em;
-		float: left;
-
-		margin: {
-			top: -.3em;
-			right: 1em;
-			top: -.7em;
-		}
-
-		background: {
-			size: cover;
-			repeat: no-repeat;
-			position: center;
-			color: #fff;
-		}
-	}
-
-	blockquote > div {
-		font-size: 1.1em;
-		line-height: 1.4em;
-
-		&:before {
-			content: "";
-			width: 0;
-			height: 0;
-			position: absolute;
-			left: -1.2em;
-			border: .7em solid transparent;
-			border-right-color: #fff;
-		}
-	}
-}
-
-blockquote {
-	padding: 0 0 0 130px;
-	float: left;
-	margin: 0;
-	width: 100%;
-	border-left: none;
-	position: absolute;
-
-	> div {
-		background: #fff;
-		line-height: 1.4em;
-		padding: 1em 1.3em;
-		color: #000;
-		position: relative;
-	}
-}
+@import 'quotes';
 
 div.footer {
 	background-color: #556270;

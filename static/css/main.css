@@ -25,7 +25,7 @@ h2::before {
   content: "// "; }
 
 .btn, .btn-default {
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   text-shadow: none; }
   .btn, .btn:hover, .btn-default, .btn-default:hover {
     border-width: 1px;
@@ -152,5 +152,8 @@ div.footer {
   color: #ffffff;
   min-height: 0;
   font-size: 13.6px; }
+
+div.footer a {
+  color: #dddddd; }
 
 /*# sourceMappingURL=main.css.map */

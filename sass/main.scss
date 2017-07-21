@@ -12,10 +12,23 @@ body {
 	color: $main-text-color;
 }
 
+@for $i from 1 through 6 {
+	h#{7 - $i} {
+		font-size: $i * 0.4em;
+	}
+}
+
 h1, h2, h3, h4, h5, h6 {
-	font-family: $headline-font;
+	font: {
+		family: $headline-font;
+		weight: 700;
+	}
+
 	line-height: 1.2;
-	font-weight: 700;
+}
+
+h2::before {
+	content: "// ";
 }
 
 div.area {

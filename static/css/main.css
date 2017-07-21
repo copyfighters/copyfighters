@@ -2,7 +2,6 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "Titillium Web", "Source Sans Pro", "Open Sans", "Arial", sans-serif;
   font-size: 17px;
-  padding-bottom: 5em;
   line-height: 1.7;
   color: #383838; }
 
@@ -67,10 +66,6 @@ div.area-3 {
 div.area-4 {
   background-color: #FF6B6B; }
 
-div.area-5 {
-  background-color: #556270;
-  color: #ffffff; }
-
 .quote {
   position: relative;
   margin-bottom: 4.5em; }
@@ -115,5 +110,11 @@ blockquote {
     padding: 1em 1.3em;
     color: #000;
     position: relative; }
+
+div.footer {
+  background-color: #556270;
+  color: #ffffff;
+  min-height: 0;
+  font-size: 13.6px; }
 
 /*# sourceMappingURL=main.css.map */

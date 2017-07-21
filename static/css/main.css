@@ -36,7 +36,7 @@ h2::before {
     background: rgba(0, 0, 0, 0.1); }
 
 body {
-  font-family: "Titillium Web", "Source Sans Pro", "Open Sans", "Arial", sans-serif;
+  font-family: "Fira Sans", "Source Sans Pro", "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1.7;
   color: #383838;
@@ -52,7 +52,7 @@ div.area {
 #logo {
   color: #ffffff;
   background-color: #000000;
-  padding: 4px 6px;
+  padding: 5px 8px;
   font-size: 19px;
   font-family: "Zilla Slab", slab, serif;
   font-weight: 800; }
@@ -62,7 +62,7 @@ div.area-1 #main-title {
 div.area-1 #subtitle-strings {
   display: none; }
 div.area-1 #subtitle, div.area-1 .typed-cursor {
-  font-family: "Titillium Web", "Source Sans Pro", "Open Sans", "Arial", sans-serif;
+  font-family: "Fira Sans", "Source Sans Pro", "Open Sans", "Arial", sans-serif;
   font-style: italic;
   font-size: 1.8em;
   font-weight: 200; }
@@ -88,7 +88,8 @@ div.area-1 .get-involved-btn {
 
 div.area-2 {
   background-color: #4ECDC4;
-  clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%); }
+  clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
+  padding-top: 1em; }
 
 div.area-3 {
   background-color: #C7F464; }

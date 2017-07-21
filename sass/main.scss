@@ -1,4 +1,4 @@
-$main-font: 'Titillium Web', 'Source Sans Pro', 'Open Sans', 'Arial', sans-serif;
+$main-font: 'Fira Sans', 'Source Sans Pro', 'Open Sans', 'Arial', sans-serif;
 $headline-font: 'Zilla Slab', slab, serif;
 
 $main-text-color: #383838;
@@ -26,7 +26,7 @@ div.area {
 #logo {
 	color: #ffffff;
 	background-color: #000000;
-	padding: 4px 6px;
+	padding: 5px 8px;
 
 	font: {
 		size: 19px;
@@ -92,7 +92,9 @@ div.area-1 {
 
 div.area-2 {
 	background-color: #4ECDC4;
+
 	clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
+	padding-top: 1em;
 }
 
 div.area-3 {

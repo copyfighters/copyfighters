@@ -102,16 +102,23 @@ div.area-5 {
 	}
 
 	.photo {
-		width: 7em; height: 7em;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
+		width: 7em;
+		height: 7em;
 		border-radius: 3.5em;
 		float: left;
-		margin-top: -.3em;
-		margin-right: 1em;
-		background-color: #fff;
-		margin-top: -.7em;
+
+		margin: {
+			top: -.3em;
+			right: 1em;
+			top: -.7em;
+		}
+
+		background: {
+			size: cover;
+			repeat: no-repeat;
+			position: center;
+			color: #fff;
+		}
 	}
 
 	blockquote > div {
@@ -140,9 +147,6 @@ blockquote {
 
 	> div {
 		background: #fff;
-		font-family: Georgia, serif;
-		font-style: italic;
-		font-size: 1em;
 		line-height: 1.4em;
 		padding: 1em 1.3em;
 		color: #000;

@@ -9,48 +9,10 @@ body {
   line-height: 1.7;
   color: #000000; }
 
-.container {
-  padding: 2em 10em; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Zilla Slab', serif; }
 
-#logo {
-  font-weight: 800;
-  font-size: 1.2em;
-  color: #ffffff;
-  background: #000000;
-  color: #ffffff;
-  padding: 2px 10px; }
-
-#header-lower {
-  background-color: #073E76;
-  color: #ffffff; }
-
-#intro {
-  font-style: italic;
-  font-size: 1.4em;
-  color: #ffffff;
-  color: #383838; }
-
-h1 {
-  color: #383838;
-  font-family: 'Zilla Slab';
-  font-size: 4em;
-  line-height: 1.1; }
-
-#jumbotron {
-  width: 50%; }
-
-#cta {
-  float: right;
-  width: 50%;
-  padding-left: 1em; }
-  #cta button {
-    font-size: 3em;
-    background: #ffffff;
-    border: 0;
-    font-family: 'Zilla Slab';
-    font-weight: 800;
-    padding: 2px 10px;
-    margin-top: 1em;
-    margin-left: 130px; }
+.area .area-first {
+  background: #d52595; }
 
 /*# sourceMappingURL=main.css.map */

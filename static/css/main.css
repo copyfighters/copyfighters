@@ -59,11 +59,26 @@ div.area {
 
 div.area-1 #main-title {
   font-size: 3.5em; }
+div.area-1 #subtitle-strings {
+  display: none; }
 div.area-1 #subtitle, div.area-1 .typed-cursor {
   font-family: "Titillium Web", "Source Sans Pro", "Open Sans", "Arial", sans-serif;
   font-style: italic;
   font-size: 1.8em;
   font-weight: 200; }
+  div.area-1 #subtitle span, div.area-1 .typed-cursor span {
+    padding-left: 5px;
+    padding-right: 10px;
+    margin: 0 -3px;
+    -webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+    clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+    overflow: visible; }
+  div.area-1 #subtitle span.hl-1, div.area-1 .typed-cursor span.hl-1 {
+    background: #4ECDC4; }
+  div.area-1 #subtitle span.hl-2, div.area-1 .typed-cursor span.hl-2 {
+    background: #C7F464; }
+  div.area-1 #subtitle span.hl-3, div.area-1 .typed-cursor span.hl-3 {
+    background: #FF6B6B; }
 div.area-1 .get-involved-btn {
   margin: 1em 0;
   font-weight: 800;
@@ -72,7 +87,8 @@ div.area-1 .get-involved-btn {
     margin-left: 15px; }
 
 div.area-2 {
-  background-color: #4ECDC4; }
+  background-color: #4ECDC4;
+  clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%); }
 
 div.area-3 {
   background-color: #C7F464; }

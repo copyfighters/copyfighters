@@ -40,12 +40,40 @@ div.area-1 {
 		font-size: 3.5em;
 	}
 
+	#subtitle-strings {
+		display: none;
+
+
+	}
+
 	#subtitle, .typed-cursor {
 		font: {
 			family: $main-font;
 			style: italic;
 			size: 1.8em;
 			weight: 200;
+		}
+
+		span {
+			padding: {
+				left: 5px;
+				right: 10px;
+			}
+			margin: 0 -3px;
+			-webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+			clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+			overflow: visible;
+		}
+
+		span.hl-1 {
+			background: #4ECDC4;
+		}
+
+		span.hl-2 {
+			background: #C7F464;
+		}
+		span.hl-3 {
+			background: #FF6B6B;
 		}
 	}
 
@@ -64,6 +92,7 @@ div.area-1 {
 
 div.area-2 {
 	background-color: #4ECDC4;
+	clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
 }
 
 div.area-3 {

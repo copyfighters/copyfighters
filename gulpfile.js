@@ -29,4 +29,4 @@ gulp.task('sass:watch', function () {
   gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
-gulp.task('build', ['copy-bootstrap', 'sass']);
+gulp.task('build', ['sass']);

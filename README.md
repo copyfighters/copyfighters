@@ -5,4 +5,7 @@ When you have Python installed you can run a development server using `python3 -
 
 ## Development tools
 * npm
-* gulp: Use `gulp build` to copy vendors' files to the `static` folder and to create the CSS from the SASS files.
+* gulp
+  * Use `gulp build` or `gulp sass` to convert SASS to CSS.
+  * Use `gulp sass:watch` to do it automatically on every change.
+  * Use `gulp copy-bootstrap` to copy Bootstrap files to the `static` folder.

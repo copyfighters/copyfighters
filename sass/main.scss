@@ -1,11 +1,6 @@
 $main-font: 'Source Sans Pro', 'Open Sans', 'Arial', sans-serif;
 $headline-font: 'Zilla Slab', slab, serif;
 
-html, body {
-	margin: 0;
-	padding: 0;
-}
-
 body {
 	text-rendering: optimizeLegibility;
 	font-family: $main-font;
@@ -28,7 +23,7 @@ div.area {
 #logo {
 	color: #ffffff;
 	background-color: #000000;
-	padding: 2px 6px;
+	padding: 4px 6px;
 
 	font: {
 		size: 19px;
@@ -42,15 +37,25 @@ div.area-1 {
 		font-size: 3.5em;
 	}
 
-	.subtitle {
+	#subtitle, .typed-cursor {
 		font: {
 			family: $main-font;
 			style: italic;
 			size: 1.8em;
 			weight: 200;
 		}
+	}
 
-		margin-bottom: 5em;
+	.get-involved-btn {
+		margin: 1em 0;
+		font: {
+			weight: 800;
+			size: 1.5em;
+		}
+
+		> span {
+			margin-left: 15px;
+		}
 	}
 }
 

@@ -1,0 +1,36 @@
+@for $i from 1 through 6 {
+	h#{7 - $i} {
+		font-size: $i * 0.4em;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font: {
+		family: $headline-font;
+		weight: 700;
+	}
+
+	line-height: 1.2;
+}
+
+h2::before {
+	content: "// ";
+}
+
+.btn, .btn-default {
+	background: rgba(0,0,0,0);
+	text-shadow: none;
+
+	&, &:hover {
+		border: {
+			width: 1px;
+			style: solid;
+			color: #000000;
+			radius: 0;
+		}
+	}
+
+	&:hover {
+		background: rgba(0, 0, 0, 0.1);
+	}
+}

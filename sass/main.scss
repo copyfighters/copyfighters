@@ -4,31 +4,18 @@ $headline-font: 'Zilla Slab', slab, serif;
 $main-text-color: #383838;
 $main-text-size: 17px;
 
+@import 'elements';
+
 body {
-	text-rendering: optimizeLegibility;
 	font-family: $main-font;
 	font-size: $main-text-size;
 	line-height: 1.7;
 	color: $main-text-color;
-}
 
-@for $i from 1 through 6 {
-	h#{7 - $i} {
-		font-size: $i * 0.4em;
-	}
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font: {
-		family: $headline-font;
-		weight: 700;
-	}
-
-	line-height: 1.2;
-}
-
-h2::before {
-	content: "// ";
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-webkit-font-kerning: normal;
+	-webkit-text-size-adjust: 100%;
 }
 
 div.area {

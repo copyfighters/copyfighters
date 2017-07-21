@@ -5,4 +5,4 @@ When you have Python installed you can run a development server using `python3 -
 
 ## Development tools
 * npm
-* gulp: Use `gulp build` to copy vendors' files to the `static` folder.
+* gulp: Use `gulp build` to copy vendors' files to the `static` folder and to create the CSS from the SASS files.

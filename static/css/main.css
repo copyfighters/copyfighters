@@ -25,7 +25,7 @@ h2::before {
   content: "// "; }
 
 .btn, .btn-default {
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   text-shadow: none; }
   .btn, .btn:hover, .btn-default, .btn-default:hover {
     border-width: 1px;
@@ -58,19 +58,21 @@ nav.header-nav {
     font-size: 19px;
     font-family: "Zilla Slab", slab, serif;
     font-weight: 800; }
-.nav-link {
-  white-space: nowrap;
-}
+  nav.header-nav .navbar-link {
+    white-space: nowrap; }
 
 div.area-header #main-title {
   font-size: 3.5em; }
+
 div.area-header #subtitle-strings {
   display: none; }
+
 div.area-header #subtitle, div.area-header .typed-cursor {
   font-family: "Fira Sans", "Source Sans Pro", "Open Sans", "Arial", sans-serif;
   font-style: italic;
   font-size: 1.8em;
   font-weight: 200; }
+
 div.area-header #subtitle {
   margin-bottom: 30px; }
   div.area-header #subtitle span {
@@ -86,6 +88,7 @@ div.area-header #subtitle {
     background: #C7F464; }
   div.area-header #subtitle span.hl-3 {
     background: #FF6B6B; }
+
 div.area-header .get-involved-btn {
   margin: 1em 0;
   font-weight: 800;
@@ -154,5 +157,3 @@ div.footer {
   color: #ffffff;
   min-height: 0;
   font-size: 13.6px; }
-
-/*# sourceMappingURL=main.css.map */

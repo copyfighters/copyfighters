@@ -1,5 +1,4 @@
 nav.header-nav {
-	margin-top: 1em;
 	font-size: 0.8em;
 
 	.navbar-brand {
@@ -12,6 +11,10 @@ nav.header-nav {
 			family: $headline-font;
 			weight: 800;
 		}
+	}
+
+	.navbar-link {
+		white-space: nowrap;
 	}
 }
 
@@ -72,4 +75,3 @@ div.area-header {
 		}
 	}
 }
-

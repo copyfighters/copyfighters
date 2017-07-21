@@ -1,5 +1,8 @@
 var gulp = require('gulp');
 
+var sass = require('gulp-sass');
+
+// Copy Bootstrap files to static folders.
 gulp.task('copy-bootstrap', function() {
   // CSS
   css = [
@@ -14,4 +17,16 @@ gulp.task('copy-bootstrap', function() {
     .pipe(gulp.dest('./static/js/vendor'));
 });
 
-gulp.task('build', ['copy-bootstrap']);
+// Convert SASS to CSS files.
+gulp.task('sass', function () {
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./static/css'));
+});
+
+// Watch task for SASS files.
+gulp.task('sass:watch', function () {
+  gulp.watch('./sass/**/*.scss', ['sass']);
+});
+
+gulp.task('build', ['copy-bootstrap', 'sass']);

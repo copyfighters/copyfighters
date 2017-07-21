@@ -49,47 +49,47 @@ div.area {
   padding: 2em 4em;
   min-height: 20em; }
 
-#logo {
-  color: #ffffff;
-  background-color: #000000;
-  padding: 5px 8px;
-  font-size: 19px;
-  font-family: "Zilla Slab", slab, serif;
-  font-weight: 800; }
+nav.header-nav {
+  margin-top: 1em;
+  font-size: 0.8em; }
+  nav.header-nav .navbar-brand {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 5px 8px;
+    font-size: 19px;
+    font-family: "Zilla Slab", slab, serif;
+    font-weight: 800; }
 
-div.area-headline #main-title {
+div.area-header #main-title {
   font-size: 3.5em; }
-div.area-headline #subtitle-strings {
+div.area-header #subtitle-strings {
   display: none; }
-div.area-headline #subtitle, div.area-headline .typed-cursor {
+div.area-header #subtitle, div.area-header .typed-cursor {
   font-family: "Fira Sans", "Source Sans Pro", "Open Sans", "Arial", sans-serif;
   font-style: italic;
   font-size: 1.8em;
   font-weight: 200; }
-div.area-headline #subtitle {
+div.area-header #subtitle {
   margin-bottom: 30px; }
-  div.area-headline #subtitle span {
+  div.area-header #subtitle span {
     padding-left: 5px;
     padding-right: 10px;
     margin: 0 -3px;
     -webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
     clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
     overflow: visible; }
-  div.area-headline #subtitle span.hl-1 {
+  div.area-header #subtitle span.hl-1 {
     background: #4ECDC4; }
-  div.area-headline #subtitle span.hl-2 {
+  div.area-header #subtitle span.hl-2 {
     background: #C7F464; }
-  div.area-headline #subtitle span.hl-3 {
+  div.area-header #subtitle span.hl-3 {
     background: #FF6B6B; }
-
-div.area-1 {
-  padding-top: 0; }
-  div.area-1 .get-involved-btn {
-    margin: 1em 0;
-    font-weight: 800;
-    font-size: 1.5em; }
-    div.area-1 .get-involved-btn > span {
-      margin-left: 15px; }
+div.area-header .get-involved-btn {
+  margin: 1em 0;
+  font-weight: 800;
+  font-size: 1.5em; }
+  div.area-header .get-involved-btn > span {
+    margin-left: 15px; }
 
 div.area-2 {
   background-color: #4ECDC4;

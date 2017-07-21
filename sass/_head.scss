@@ -1,16 +1,21 @@
-#logo {
-	color: #ffffff;
-	background-color: #000000;
-	padding: 5px 8px;
+nav.header-nav {
+	margin-top: 1em;
+	font-size: 0.8em;
 
-	font: {
-		size: 19px;
-		family: $headline-font;
-		weight: 800;
+	.navbar-brand {
+		color: #ffffff;
+		background-color: #000000;
+		padding: 5px 8px;
+
+		font: {
+			size: 19px;
+			family: $headline-font;
+			weight: 800;
+		}
 	}
 }
 
-div.area-headline {
+div.area-header {
 	#main-title {
 		font-size: 3.5em;
 	}
@@ -55,11 +60,6 @@ div.area-headline {
 		}
 	}
 
-}
-
-div.area-1 {
-	padding-top: 0;
-
 	.get-involved-btn {
 		margin: 1em 0;
 		font: {
@@ -72,3 +72,4 @@ div.area-1 {
 		}
 	}
 }
+

@@ -11,6 +11,6 @@
 * npm
   * Use `npm install` to install dependencies.
 * gulp
-  * Use `gulp build` or `gulp sass` to convert SASS to CSS.
-  * Use `gulp sass:watch` to do it automatically on every change.
-  * Use `gulp copy-bootstrap` to copy Bootstrap files to the `static` folder.
+  * Use `gulp build` to convert SASS to CSS including autoprefixing and
+  minimising.
+  * Use `gulp build:watch` to do it automatically on every change.

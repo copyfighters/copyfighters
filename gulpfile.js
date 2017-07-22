@@ -1,6 +1,10 @@
 var gulp = require('gulp');
 
-var sass = require('gulp-sass');
+var sass          = require('gulp-sass');
+var postcss       = require('gulp-postcss');
+var autoprefixer  = require('autoprefixer');  // postcss plugin
+var cssnano       = require('cssnano');       // postcss plugin
+var sourcemaps    = require('gulp-sourcemaps');
 
 // Copy Bootstrap files to static folders.
 gulp.task('copy-bootstrap', function() {
@@ -17,16 +21,29 @@ gulp.task('copy-bootstrap', function() {
     .pipe(gulp.dest('./static/js/vendor'));
 });
 
-// Convert SASS to CSS files.
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
+// Build SASS files.
+gulp.task('build', function () {
+  // Specify the processors postcss uses.
+  var processors = [
+    autoprefixer({browsers: ['> 5%']}),
+    cssnano()
+  ];
+  /*
+  While creating source maps:
+  1. Convert SASS to CSS.
+  2. Apply the postcss processors.
+  */
+  gulp.src('./sass/**/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
+    .pipe(postcss(processors))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./static/css'));
 });
 
 // Watch task for SASS files.
-gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+gulp.task('build:watch', function () {
+  gulp.watch('./sass/**/*.scss', ['build']);
 });
 
 gulp.task('build', ['sass']);

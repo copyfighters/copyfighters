@@ -5,7 +5,6 @@ var postcss       = require('gulp-postcss');
 var autoprefixer  = require('autoprefixer');  // postcss plugin
 var cssnano       = require('cssnano');       // postcss plugin
 var sourcemaps    = require('gulp-sourcemaps');
-var autoprefixerr = require('gulp-autoprefixer');
 
 // Build SASS files.
 gulp.task('build', function () {

@@ -4,3 +4,4 @@ static/css/main.css
 static/css/main.css.map
 development.db
 .venv
+*.pyc

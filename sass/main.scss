@@ -6,6 +6,9 @@ $main-text-size: 17px;
 
 @import 'elements';
 
+// Only a temporary hack, this import and _gradients.scss can be removed as soon as the Bootstrap sass is included.
+@import 'gradients';
+
 body {
 	font-family: $main-font;
 	font-size: $main-text-size;
@@ -24,7 +27,7 @@ div.area {
 }
 
 .highlight {
-	background: #C7F464;
+	background: #8ee3fc;
 	font-weight: 700;
 	padding: 0 5px;
 }
@@ -32,18 +35,17 @@ div.area {
 @import 'head';
 
 div.area-2 {
-	background-color: #4ECDC4;
-
+	@include gradient-vertical($start-color: #8df472, $end-color: #6df2c7, $start-percent: 0%, $end-percent: 100%);
 	clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
 	padding-top: 1em;
 }
 
 div.area-3 {
-	background-color: #C7F464;
+	@include gradient-vertical($start-color: #8ee3fc, $end-color: #ab9ffc, $start-percent: 0%, $end-percent: 100%);
 }
 
 div.area-4 {
-	background-color: #FF6B6B;
+	@include gradient-vertical($start-color: #ba95fe, $end-color: #b87bfd, $start-percent: 0%, $end-percent: 100%);
 }
 
 @import 'quotes';

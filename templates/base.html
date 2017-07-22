@@ -1,6 +1,4 @@
-{% load staticfiles %}
-
-<!doctype html>
+{% load staticfiles %}<!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -15,7 +13,7 @@
 
 		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 		<link rel="stylesheet" href="{% static 'css/main.css' %}">
-		<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:700,800|Fira+Sans:200,400,600&amp;subset=latin-ext" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,700|Fira+Sans:200,400,600&amp;subset=latin-ext" rel="stylesheet">
 
 		<!--[if lt IE 9]>
 			<script src="{% static 'js/vendor/html5-3.6-respond-1.4.2.min.js' %}"></script>
@@ -23,7 +21,7 @@
 	</head>
 	<body>
 		<!--[if lt IE 8]>
-			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
 		<nav class="navbar navbar-toggleable-sm navbar-light header-nav">
@@ -48,6 +46,24 @@
 
 		<div class="container-fluid">
 			{% block content %}{% endblock %}
+		</div>
+
+		<div class="container-fluid">
+			<div class="row area footer">
+				<div class="col col-lg-8">
+					<p>Crafted with ❤ by young people from all over Europe with the support of <a href='https://beyonddivision.eu'>europe beyond division</a>, <a href='https://young-pirates.eu'>YPE</a> and the European Youth Foundation of the Council of Europe. Hosting and technical infrastructure provided by <a href='https://fnordserver.eu'>fnordserver</a>. This page is open source, <a href='https://github.com/copyfighters/copyfighters' rel='nofollow'>fork it on github</a>!</p>
+
+					<p>
+						<a href="#">Imprint</a> |
+						<a href="#">Privacy</a>
+					</p>
+				</div>
+
+				<div class="col col-lg-4 logos">
+					<a href='https://eyf.coe.int' rel='nofollow'><img src="{% static 'img/logo-eyf-nb-01.png' %}" /></a>
+					<a href='https://www.coe.int' rel='nofollow'><img src="{% static 'img/COE-Logo-Fil-negatif.png' %}" /></a>
+				</div>
+			</div>
 		</div>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

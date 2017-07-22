@@ -8,3 +8,4 @@ development.db
 Lib
 Scripts
 pyvenv.cfg
+copyfight/local_settings.py

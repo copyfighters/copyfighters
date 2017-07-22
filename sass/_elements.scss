@@ -19,6 +19,11 @@ h2::before {
 	content: "// ";
 }
 
+h3 {
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
 .btn, .btn-default {
 	background: rgba(0,0,0,0);
 	text-shadow: none;

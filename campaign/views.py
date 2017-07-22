@@ -23,7 +23,7 @@ def get_name_email(request):
                                    getattr(settings, 'TWILIO_AUTH_TOKEN'))
 
             twilio_client.calls.create(from_=getattr(settings, 'TWILIO_CALLER_ID'),
-                                       to=getattr(settings, 'TO_BE_CALLED'),
+                                       to=activist.phone,
                                        url=request.build_absolute_uri('/outbound/'))
 
             return HttpResponseRedirect('/')

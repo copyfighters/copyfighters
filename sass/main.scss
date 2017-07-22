@@ -23,6 +23,12 @@ body {
 	-webkit-font-variant-ligatures: discretionary-ligatures;
 }
 
+p.browserupgrade {
+	margin: 10px auto;
+	border-bottom: 2px solid #000000;
+	padding: 10px 30px;
+}
+
 div.area {
 	padding: 2em 4em;
 	min-height: 20em;

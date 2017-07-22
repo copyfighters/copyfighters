@@ -22,7 +22,7 @@ gulp.task('copy-bootstrap', function() {
 });
 
 // Build SASS files.
-gulp.task('build', function () {
+gulp.task('css', function () {
   // Specify the processors postcss uses.
   var processors = [
     autoprefixer({browsers: ['> 5%']}),
@@ -42,22 +42,14 @@ gulp.task('build', function () {
 });
 
 // Watch task for SASS files.
-gulp.task('build:watch', function () {
+gulp.task('css:watch', function () {
   gulp.watch('./sass/**/*.scss', ['build']);
 });
 
 // Copy fonts static folders.
 gulp.task('copy-fonts', function() {
-  // CSS
-  css = [
-    './node_modules/typeface-zilla-slab/files/',
-  ];
-  gulp.src(css)
-    .pipe(gulp.dest('./static/css'));
-
-  // JavaScript
-  gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
-    .pipe(gulp.dest('./static/js/vendor'));
+  gulp.src('./node_modules/typeface-zilla-slab/files/**/*.{eot,svg,woff,woff2}')
+    .pipe(gulp.dest('./static/fonts/'));
 });
 
-gulp.task('build', ['sass']);
+gulp.task('build', ['css', 'copy-fonts']);

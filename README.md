@@ -11,6 +11,7 @@
 * npm
   * Use `npm install` to install dependencies.
 * gulp
-  * Use `gulp build` to convert SASS to CSS including autoprefixing and
-  minimising.
-  * Use `gulp build:watch` to do it automatically on every change.
+  * `gulp build` includes `copy-fonts` and `css` tasks.
+  * Use `gulp copy-fonts` to copy the fonts to the static directory.
+  * Use `gulp css` to convert SASS to CSS including minifaction.
+  Use `gulp css:watch` to do it automatically on every change.

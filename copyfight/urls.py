@@ -9,4 +9,5 @@ urlpatterns = [
 	url(r'^formtest/', views.get_name_email),
 	url(r'^imprint/', TemplateView.as_view(template_name = 'imprint.html'), name = 'imprint'),
 	url(r'^privacy/', TemplateView.as_view(template_name = 'privacy.html'), name = 'privacy'),
+	url(r'^outbound/', views.outbound, name='outbound'),
 ]

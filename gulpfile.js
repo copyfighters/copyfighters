@@ -46,4 +46,18 @@ gulp.task('build:watch', function () {
   gulp.watch('./sass/**/*.scss', ['build']);
 });
 
+// Copy fonts static folders.
+gulp.task('copy-fonts', function() {
+  // CSS
+  css = [
+    './node_modules/typeface-zilla-slab/files/',
+  ];
+  gulp.src(css)
+    .pipe(gulp.dest('./static/css'));
+
+  // JavaScript
+  gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
+    .pipe(gulp.dest('./static/js/vendor'));
+});
+
 gulp.task('build', ['sass']);

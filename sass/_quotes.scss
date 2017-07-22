@@ -68,6 +68,31 @@
 		}
 
 	}
+
+	
+	@include media-breakpoint-down(xs) { 
+		display: block;
+		margin: 3em 0;
+
+		blockquote {
+			margin-top: 1em;
+		}
+
+		blockquote > div:before {
+			left: 2.5em;
+			top: -1.2em;
+			border-bottom-color: #ffffff;
+			border-right-color: transparent;
+		}
+		&.quote-mirror blockquote > div:before {
+			right: auto;
+			left: 2.5em;
+			border-left-color: transparent;
+		}
+		&.quote-mirror .photo {
+			margin-left: 0;
+		}
+	}
 }
 
 blockquote {

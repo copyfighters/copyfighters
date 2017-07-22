@@ -9,9 +9,6 @@ $main-text-size: 17px;
 
 @import 'elements';
 
-// Only a temporary hack, this import and _gradients.scss can be removed as soon as the Bootstrap sass is included.
-@import 'gradients';
-
 body {
 	font-family: $main-font;
 	font-size: $main-text-size;

@@ -15,3 +15,5 @@
   * Use `gulp build` to convert SASS to CSS including autoprefixing and
   minimising.
   * Use `gulp build:watch` to do it automatically on every change.
+
+Note: Under Windows use elevated command prompt (Right click on CMD -> Run as Administrator)

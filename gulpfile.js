@@ -6,26 +6,11 @@ var autoprefixer  = require('autoprefixer');  // postcss plugin
 var cssnano       = require('cssnano');       // postcss plugin
 var sourcemaps    = require('gulp-sourcemaps');
 
-// Copy Bootstrap files to static folders.
-gulp.task('copy-bootstrap', function() {
-  // CSS
-  css = [
-    './node_modules/bootstrap/dist/css/bootstrap.min.css',
-    './node_modules/bootstrap/dist/css/bootstrap.min.css.map',
-  ];
-  gulp.src(css)
-    .pipe(gulp.dest('./static/css'));
-
-  // JavaScript
-  gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
-    .pipe(gulp.dest('./static/js/vendor'));
-});
-
 // Build SASS files.
 gulp.task('css', function () {
   // Specify the processors postcss uses.
   var processors = [
-    autoprefixer({browsers: ['> 5%']}),
+    //autoprefixer({ browsers: '[> 5%]', cascade: false }),
     cssnano()
   ];
   /*
@@ -38,7 +23,7 @@ gulp.task('css', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(processors))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./static/css'));
+    .pipe(gulp.dest('./static/css/'));
 });
 
 // Watch task for SASS files.

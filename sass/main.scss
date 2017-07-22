@@ -35,17 +35,17 @@ div.area {
 @import 'head';
 
 div.area-2 {
-	@include gradient-vertical($start-color: #8df472, $end-color: #6df2c7, $start-percent: 0%, $end-percent: 100%);
+	@include gradient-directional($start-color: #8df472, $end-color: #6df2c7);
 	clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
 	padding-top: 1em;
 }
 
 div.area-3 {
-	@include gradient-vertical($start-color: #8ee3fc, $end-color: #ab9ffc, $start-percent: 0%, $end-percent: 100%);
+	@include gradient-directional($start-color: #8ee3fc, $end-color: #ab9ffc);
 }
 
 div.area-4 {
-	@include gradient-vertical($start-color: #ba95fe, $end-color: #b87bfd, $start-percent: 0%, $end-percent: 100%);
+	@include gradient-directional($start-color: #ba95fe, $end-color: #b87bfd);
 }
 
 @import 'quotes';

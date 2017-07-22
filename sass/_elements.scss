@@ -24,10 +24,21 @@ h3 {
 	font-weight: 300;
 }
 
-.btn, .btn-default {
+button, input[type=button], input[type=submit] {
+	@extend .btn;
+	@extend .btn-default;
+}
+
+input:not([type=submit], [type=button]) {
+	@extend .form-control;
+
+	padding: 2px 5px;
+}
+
+.btn, .btn-default, input, textarea, select {
 	background: rgba(0,0,0,0);
 	text-shadow: none;
-	cursor: pointer;
+	min-height: 30px;
 
 	&, &:hover {
 		color: $main-text-color;
@@ -39,6 +50,10 @@ h3 {
 			radius: 0;
 		}
 	}
+}
+
+.btn, .btn-default {
+	cursor: pointer;
 
 	&:hover {
 		background: rgba(0, 0, 0, 0.1);

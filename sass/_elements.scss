@@ -23,7 +23,10 @@ h2::before {
 	background: rgba(0,0,0,0);
 	text-shadow: none;
 
+
 	&, &:hover {
+		color: $main-text-color;
+
 		border: {
 			width: 1px;
 			style: solid;

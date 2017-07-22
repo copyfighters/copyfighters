@@ -79,3 +79,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
 	os.path.join(BASE_DIR, "static"),
 ]
+
+# Use the file local_settings.py to overwrite the defaults with your own settings
+try:
+	from copyfight.settings_local import *
+except ImportError:
+	pass

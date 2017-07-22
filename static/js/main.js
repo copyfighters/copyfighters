@@ -4,3 +4,8 @@ $(document).ready(function(){
 		typeSpeed: 30
 	});
 })
+
+$('#learnmore-link').click(function() {
+	$(window).scrollTo('#facts', 250);
+	return false;
+})

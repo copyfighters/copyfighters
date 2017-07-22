@@ -1,7 +1,10 @@
 # Campaign website
 
-## Development server
-When you have Python installed you can run a development server using `python3 -m http.server`. If you have no Python 2 or just Python 2 installed, `python` instead of `python3` might work. Open `http://localhost:8000/` in your browser.
+## Development Django setup
+* Set up a virtualenv using i.e. `virtualenv -p $(which python3) .venv --prompt "(venv) "`
+* Enter your virtualenv using `source .venv/bin/activate` or use something like virtualenvwrapper
+* `pip install -r requirements.txt`
+* `./manage.py runserver`
 
 ## Development tools
 * npm

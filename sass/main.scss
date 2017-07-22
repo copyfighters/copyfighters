@@ -48,6 +48,10 @@ div.area-4 {
 	@include gradient-directional($start-color: #ba95fe, $end-color: #b87bfd);
 }
 
+div.area-5 {
+	@include gradient-directional($start-color: #c375fe, $end-color: #d66afe);
+}
+
 @import 'quotes';
 
 div.footer {

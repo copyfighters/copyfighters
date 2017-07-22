@@ -7,7 +7,7 @@ var cssnano       = require('cssnano');       // postcss plugin
 var sourcemaps    = require('gulp-sourcemaps');
 
 // Build SASS files.
-gulp.task('build', function () {
+gulp.task('css', function () {
   // Specify the processors postcss uses.
   var processors = [
     //autoprefixer({ browsers: '[> 5%]', cascade: false }),
@@ -27,6 +27,14 @@ gulp.task('build', function () {
 });
 
 // Watch task for SASS files.
-gulp.task('build:watch', function () {
+gulp.task('css:watch', function () {
   gulp.watch('./sass/**/*.scss', ['build']);
 });
+
+// Copy fonts static folders.
+gulp.task('copy-fonts', function() {
+  gulp.src('./node_modules/typeface-zilla-slab/files/**/*.{eot,svg,woff,woff2}')
+    .pipe(gulp.dest('./static/fonts/'));
+});
+
+gulp.task('build', ['css', 'copy-fonts']);

@@ -16,6 +16,44 @@
 		</div>
 		<div class="col-md-6">
 			Some yet to be defined stuff goes here
+
+			<form action="/formtest/" method="post">
+				{% csrf_token %}
+				{{ form }}
+				<!--<input type="text" size="8" placeholder="First name">
+				<select class="custom-select">
+					<option value="AT">AT - Austria</option>
+					<option value="BE">BE</option>
+					<option value="BG">BG</option>
+					<option value="HR">HR</option>
+					<option value="CY">CY</option>
+					<option value="CZ">CZ</option>
+					<option value="DK">DK<option>
+					<option value="EE">EE</option>
+					<option value="FI">FI</option>
+					<option value="FR">FR</option>
+					<option value="DE">DE</option>
+					<option value="GR">GR</option>
+					<option value="HU">HU</option>
+					<option value="IE">IE</option>
+					<option value="IT">IT</option>
+					<option value="LV">LV</option>
+					<option value="LT">LT</option>
+					<option value="LU">LU</option>
+					<option value="MT">MT</option>
+					<option value="NL">NL</option>
+					<option value="PL">PL</option>
+					<option value="PT">PT</option>
+					<option value="RO">RO</option>
+					<option value="SK">SK</option>
+					<option value="SI">SI</option>
+					<option value="ES">ES</option>
+					<option value="SE">SE</option>
+					<option value="GB">GB</option>
+				</select><br />
+				<input type="email" placeholder="Email"><br />-->
+				<button type="submit">Submit</button>
+			</form>
 		</div>
 	</div>
 

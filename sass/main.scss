@@ -24,6 +24,8 @@ body {
 	-webkit-text-size-adjust: 100%;
 	font-variant-ligatures: discretionary-ligatures;
 	-webkit-font-variant-ligatures: discretionary-ligatures;
+
+	box-sizing: border-box !important;
 }
 
 p.browserupgrade {

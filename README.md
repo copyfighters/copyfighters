@@ -1,8 +1,8 @@
 # Campaign website
 
 ## Development Django setup
-* Set up a virtualenv using i.e. `virtualenv -p $(which python3) .venv --prompt "(venv) "`
-* Enter your virtualenv using `source .venv/bin/activate` or use something like virtualenvwrapper
+* Set up a virtualenv using i.e. `virtualenv -p $(which python3) .venv --prompt "(venv) "` or `python3 -m venv ./` under Windows
+* Enter your virtualenv using `source .venv/bin/activate` or `./Scripts/activate.bat` under Windows or use something like virtualenvwrapper
 * `pip install -r requirements.txt`
 * `./manage.py runserver`
 

@@ -1,7 +1,10 @@
 .sass-cache
-/node_modules/
+node_modules
 static/css/main.css
 static/css/main.css.map
 development.db
 .venv
 *.pyc
+Lib
+Scripts
+pyvenv.cfg

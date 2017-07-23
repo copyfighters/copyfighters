@@ -4,10 +4,17 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
+    lutoma
+    dwaxweiler
+    Peter Grassberger -- @PeterTheOne
+    burnoutberni
+    madzgo
+    ...
 
 # THANKS
 
     <name>
+    content team, etc.
 
 # TECHNOLOGY COLOPHON
 

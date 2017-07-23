@@ -24,16 +24,19 @@ $('.area-4 .btn').click(function() {
 
 $('.email_form').submit(function(event) {
 	event.preventDefault();
-	console.log('w00t!');
 	$.ajax({
 		type: 'POST',
 		url: $(this).attr('action'),
 		data: $(this).serialize(),
 		dataType: 'json'
 	}).done(function(jqXHR, textStatus) {
-		alert('win: ' + textStatus);
+		//console.log('win: ' + textStatus);
+
+		// todo: show success
 	})
 	.fail(function(jqXHR, textStatus, errorThrown) {
-		alert('error: ' + textStatus + ' ' + errorThrown);
+		//console.log('error: ' + textStatus + ' ' + errorThrown);
+		
+		// todo: show error
 	});
 });

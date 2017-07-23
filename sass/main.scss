@@ -41,7 +41,6 @@ p.browserupgrade {
 
 div.area {
 	padding: 2em 4em;
-	min-height: 20em;
 }
 
 .highlight {
@@ -58,6 +57,7 @@ div.area-6,
 div.area-8 {
 	clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 95%);
 	padding-top: 1em;
+	padding-bottom: 4em;
 }
 
 div.area-2 {

@@ -30,19 +30,18 @@ $('.area-4 .btn.show-details').click(function() {
 
 $('.email_form').submit(function(event) {
 	event.preventDefault();
+	$form = $(this);
 	$.ajax({
 		type: 'POST',
 		url: $(this).attr('action'),
 		data: $(this).serialize(),
 		dataType: 'json'
-	}).done(function(jqXHR, textStatus) {
+	}).done(function(data, textStatus) {
 		//console.log('win: ' + textStatus);
-
-		// todo: show success
+		$('.form_status', $form).text(data.status);
 	})
-	.fail(function(jqXHR, textStatus, errorThrown) {
+	.fail(function(data, textStatus, errorThrown) {
 		//console.log('error: ' + textStatus + ' ' + errorThrown);
-		
-		// todo: show error
+		$('.form_status', $form).text(data.status);
 	});
 });

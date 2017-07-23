@@ -5,7 +5,7 @@
 
     <name> -- <role> -- <twitter>
     lutoma
-    dwaxweiler
+    Daniel Waxweiler
     Peter Grassberger -- @PeterTheOne
     burnoutberni
     madzgo

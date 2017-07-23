@@ -6,6 +6,7 @@ from campaign import forms
 from twilio.twiml.voice_response import Dial, Number, VoiceResponse
 from twilio.rest import Client
 from django.views.decorators.csrf import csrf_exempt
+import csv
 
 
 def index(request):
@@ -18,6 +19,12 @@ def get_name_email(request):
         form = forms.ActivistForm(request.POST)
         if form.is_valid():
             activist = form.save()
+            print(activist.country)
+            with open('country_data.csv') as csvfile:
+                countries = csv.DictReader(csvfile)
+                for row in countries:
+                    if row['code'] == activist.country:
+                        print(row['Phone number'])
 
             twilio_client = Client(getattr(settings, 'TWILIO_ACCOUNT_SID'),
                                    getattr(settings, 'TWILIO_AUTH_TOKEN'))

@@ -21,3 +21,19 @@ $('.area-3 .btn').click(function() {
 $('.area-4 .btn').click(function() {
 	$('.area-4 div:nth-child(2)').toggle();
 });
+
+$('.email_form').submit(function(event) {
+	event.preventDefault();
+	console.log('w00t!');
+	$.ajax({
+		type: 'POST',
+		url: $(this).attr('action'),
+		data: $(this).serialize(),
+		dataType: 'json'
+	}).done(function(jqXHR, textStatus) {
+		alert('win: ' + textStatus);
+	})
+	.fail(function(jqXHR, textStatus, errorThrown) {
+		alert('error: ' + textStatus + ' ' + errorThrown);
+	});
+});

@@ -56,7 +56,7 @@
 					<button type="submit">Submit</button>
 				</form>
 				Give us all your Data!
-				<form action="/email_form/" method="post">
+				<form class="email_form" action="/email_form/" method="post">
 					{% csrf_token %}
 					{{ email_form }}
 					<button type="submit">Submit</button>

@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.urls import reverse
 from campaign import forms
 from twilio.twiml.voice_response import Dial, Number, VoiceResponse
@@ -36,8 +36,8 @@ def get_email(request):
         form = forms.ActivistForm(request.POST)
         if form.is_valid():
             activist = form.save()
-            return HttpResponseRedirect('/')
-    return HttpResponseRedirect('/')
+            return JsonResponse({}, status=200)
+    return JsonResponse({}, status=400)
 
 
 @csrf_exempt

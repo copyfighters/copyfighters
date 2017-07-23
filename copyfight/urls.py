@@ -11,4 +11,5 @@ urlpatterns = [
 	url(r'^imprint/', TemplateView.as_view(template_name = 'imprint.html'), name = 'imprint'),
 	url(r'^privacy/', TemplateView.as_view(template_name = 'privacy.html'), name = 'privacy'),
 	url(r'^outbound/', views.outbound, name='outbound'),
+	url(r'^resources/', TemplateView.as_view(template_name = 'resources.html'), name = 'resources'),
 ]

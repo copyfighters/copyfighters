@@ -80,6 +80,10 @@ STATICFILES_DIRS = [
 	os.path.join(BASE_DIR, "static"),
 ]
 
+COUNTRIES_ONLY = ['BE', 'BG', 'CZ', 'DK', 'DE', 'EE', 'IE', 'GR', 'ES', 'FR',
+	'HR', 'IT', 'CY', 'LV', 'LT', 'LU', 'HU', 'MT', 'NL', 'AT', 'PL', 'PT',
+	'RO', 'SI', 'SK', 'FI', 'SE', 'GB']
+
 # Use the file local_settings.py to overwrite the defaults with your own settings
 try:
 	from copyfight.settings_local import *

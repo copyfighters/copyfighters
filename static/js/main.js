@@ -27,3 +27,22 @@ $('.area-4 .btn.show-details').click(function() {
 	var label = $(this).text();
 	$(this).text(label == 'View details ↓' ? 'Hide details ↓' : 'View details ↓');
 });
+
+$('.email_form').submit(function(event) {
+	event.preventDefault();
+	$.ajax({
+		type: 'POST',
+		url: $(this).attr('action'),
+		data: $(this).serialize(),
+		dataType: 'json'
+	}).done(function(jqXHR, textStatus) {
+		//console.log('win: ' + textStatus);
+
+		// todo: show success
+	})
+	.fail(function(jqXHR, textStatus, errorThrown) {
+		//console.log('error: ' + textStatus + ' ' + errorThrown);
+		
+		// todo: show error
+	});
+});

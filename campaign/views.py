@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.urls import reverse
 from campaign import forms
 from twilio.twiml.voice_response import Dial, Number, VoiceResponse
@@ -10,7 +10,8 @@ from django.views.decorators.csrf import csrf_exempt
 
 def index(request):
     form = forms.ActivistForm()
-    return render(request, 'index.html', {'form': form})
+    email_form = forms.ActivistEmailForm()
+    return render(request, 'index.html', {'form': form, 'email_form': email_form})
 
 
 def get_name_email(request):
@@ -28,6 +29,16 @@ def get_name_email(request):
 
             return HttpResponseRedirect('/')
     return HttpResponseRedirect('/')
+
+
+def get_email(request):
+    if request.method == "POST":
+        form = forms.ActivistForm(request.POST)
+        if form.is_valid():
+            activist = form.save()
+            return JsonResponse({}, status=200)
+    return JsonResponse({}, status=400)
+
 
 @csrf_exempt
 def outbound(request):

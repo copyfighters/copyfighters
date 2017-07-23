@@ -33,7 +33,8 @@ gulp.task('css:watch', function () {
 
 // Copy fonts static folders.
 gulp.task('copy-fonts', function() {
-  gulp.src('./node_modules/typeface-zilla-slab/files/**/*.{eot,svg,woff,woff2}')
+  gulp.src(['./node_modules/typeface-zilla-slab/files/**/*.{eot,svg,woff,woff2}',
+            './node_modules/font-awesome/fonts/**/*.{eot,svg,woff,woff2,ttf,otf}'])
     .pipe(gulp.dest('./static/fonts/'));
 });
 

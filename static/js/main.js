@@ -9,3 +9,15 @@ $('#learnmore-link').click(function() {
 	$(window).scrollTo('#facts', 250);
 	return false;
 })
+
+$('.area-2 .btn').click(function() {
+	$('.area-2 div:nth-child(2)').toggle();
+});
+
+$('.area-3 .btn').click(function() {
+	$('.area-3 div:nth-child(2)').toggle();
+});
+
+$('.area-4 .btn').click(function() {
+	$('.area-4 div:nth-child(2)').toggle();
+});

@@ -44,22 +44,36 @@ div.area {
 
 @import 'head';
 
-div.area-2 {
-	@include gradient-directional($start-color: #8df472, $end-color: #6df2c7);
-	clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
+div.area-2,
+div.area-4,
+div.area-6,
+div.area-8 {
+	clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 95%);
 	padding-top: 1em;
 }
 
-div.area-3 {
-	@include gradient-directional($start-color: #8ee3fc, $end-color: #ab9ffc);
+div.area-2 {
+	@include gradient-directional($start-color: #8df472, $end-color: #6df2c7);
 }
 
 div.area-4 {
+	@include gradient-directional($start-color: #8ee3fc, $end-color: #ab9ffc);
+}
+
+div.area-6 {
 	@include gradient-directional($start-color: #ba95fe, $end-color: #b87bfd);
 }
 
-div.area-5 {
+div.area-8 {
 	@include gradient-directional($start-color: #c375fe, $end-color: #d66afe);
+}
+
+div.area-2,
+div.area-3,
+div.area-4 {
+	div:nth-child(2) {
+		display: none;
+	}
 }
 
 @import 'quotes';

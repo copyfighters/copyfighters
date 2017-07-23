@@ -9,7 +9,15 @@ $main-text-size: 17px;
 
 @import 'elements';
 
+html {
+	height: 100%;
+}
+
 body {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 16em; /* must equal max footer height */
+
 	font-family: $main-font;
 	font-size: $main-text-size;
 	line-height: 1.7;
@@ -83,6 +91,8 @@ div.footer {
 	color: #ffffff;
 	min-height: 0;
 	font-size: $main-text-size * 0.8;
+	position: absolute;
+	bottom: 0;
 
 	// Disable subpixel rendering for white-on-dark text
 	-webkit-font-smoothing: antialiased;

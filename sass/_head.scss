@@ -83,17 +83,19 @@ div.area-index-header {
 	}
 
 	.time-left {
+		background: black;
+		color: white;
 		text-align: center;
 
 		td {
-			border: 1px solid;
-			display: block;
+			border: 2px solid white;
 			width: 70px;
 		}
 
 		.time-left-numbers td {
 			font-family: 'Courier New', monospace;
 			font-size: 200%;
+			font-weight: bold;
 		}
 	}
 }

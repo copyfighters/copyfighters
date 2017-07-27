@@ -81,4 +81,21 @@ div.area-index-header {
 			margin-left: 15px;
 		}
 	}
+
+	.time-left {
+		background: black;
+		color: white;
+		text-align: center;
+
+		td {
+			border: 2px solid white;
+			width: 70px;
+		}
+
+		.time-left-numbers td {
+			font-family: 'Courier New', monospace;
+			font-size: 200%;
+			font-weight: bold;
+		}
+	}
 }

@@ -1,8 +1,15 @@
 $(document).ready(function(){
+	// Initialise typed text.
 	var typed = new Typed('#subtitle', {
 		stringsElement: '#subtitle-strings',
 		typeSpeed: 30
 	});
+
+	// Initialise countdown.
+	$('.time-left-numbers').countdown('2017/10/10', function(event) {
+    $(this).html(event.strftime(
+			'<td>%D</td><td>%H</td><td>%M</td><td>%S</td>'));
+  });
 })
 
 $('#learnmore-link').click(function() {

@@ -31,7 +31,7 @@ gulp.task('css:watch', function () {
   gulp.watch('./sass/**/*.scss', ['css']);
 });
 
-// Copy fonts static folders.
+// Copy fonts to static folders.
 gulp.task('copy-fonts', function() {
   var fonts = [
     './node_modules/typeface-fira-sans/files/**/*.{eot,svg,woff,woff2}',

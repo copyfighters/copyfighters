@@ -28,12 +28,16 @@ gulp.task('css', function () {
 
 // Watch task for SASS files.
 gulp.task('css:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['build']);
+  gulp.watch('./sass/**/*.scss', ['css']);
 });
 
 // Copy fonts static folders.
 gulp.task('copy-fonts', function() {
-  gulp.src('./node_modules/typeface-zilla-slab/files/**/*.{eot,svg,woff,woff2}')
+  var fonts = [
+    './node_modules/typeface-fira-sans/files/**/*.{eot,svg,woff,woff2}',
+    './node_modules/typeface-zilla-slab/files/**/*.{eot,svg,woff,woff2}'
+  ];
+  gulp.src(fonts)
     .pipe(gulp.dest('./static/fonts/'));
 });
 

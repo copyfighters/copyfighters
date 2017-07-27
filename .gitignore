@@ -9,3 +9,4 @@ Lib
 Scripts
 pyvenv.cfg
 copyfight/settings_local.py
+pip-selfcheck.json

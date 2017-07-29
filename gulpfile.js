@@ -1,9 +1,11 @@
 var gulp = require('gulp');
 
+var jshint        = require('gulp-jshint');
 var sass          = require('gulp-sass');
 var postcss       = require('gulp-postcss');
 var autoprefixer  = require('autoprefixer');  // postcss plugin
 var cssnano       = require('cssnano');       // postcss plugin
+var sassLint      = require('gulp-sass-lint');
 var sourcemaps    = require('gulp-sourcemaps');
 
 // Build SASS files.
@@ -42,3 +44,18 @@ gulp.task('copy-fonts', function() {
 });
 
 gulp.task('build', ['css', 'copy-fonts']);
+
+// SASS lint
+gulp.task('sass-lint', function () {
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
+});
+
+// JavaScript lint
+gulp.task('js-lint', function() {
+  return gulp.src('./static/js/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});

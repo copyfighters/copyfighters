@@ -18,3 +18,5 @@ After an update, you might need to redo step 3 and run `./manage.py migrate`.
   * Use `gulp copy-fonts` to copy the fonts to the static directory.
   * Use `gulp css` to convert SASS to CSS including minifaction.
   Use `gulp css:watch` to do it automatically on every change.
+  * `gulp sass-lint` checks all sass files for errors.
+  * `gulp js-lint` checks all JS files for errors.

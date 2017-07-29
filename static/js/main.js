@@ -10,12 +10,12 @@ $(document).ready(function(){
     $(this).html(event.strftime(
 			'<td>%D</td><td>%H</td><td>%M</td><td>%S</td>'));
   });
-})
+});
 
 $('#learnmore-link').click(function() {
 	$(window).scrollTo('#facts', 250);
 	return false;
-})
+});
 
 $('.area-2 .btn.show-details').click(function() {
 	$('.area-2 div:nth-child(2)').toggle();

@@ -11,10 +11,13 @@
 After an update, you might need to redo step 3 and run `./manage.py migrate`.
 
 ### Front-end tools
-* [npm](https://www.npmjs.com/)
-  * Use `npm install` to install front-end dependencies.
-* [gulp](http://gulpjs.com/)
-  * `gulp build` includes both `copy-fonts` and `css` tasks.
-  * Use `gulp copy-fonts` to copy the fonts to the static directory.
-  * Use `gulp css` to convert SASS to CSS including minifaction.
-  Use `gulp css:watch` to do it automatically on every change.
+#### [npm](https://www.npmjs.com/)
+* Use `npm install` to install front-end dependencies.
+
+#### [gulp](http://gulpjs.com/)
+* `gulp build` runs the `copy-fonts`, `css`, `js` tasks.
+* `gulp copy-fonts` copies fonts to the static directory.
+* `gulp css` converts SASS to CSS including concatenation and minifaction. `gulp css:watch` does it automatically on every change.
+* `gulp js` runs the `js-all` and `js-ie` tasks.
+* `gulp js-all` concatenates and minifies all JS files. `gulp js:watch` does it automatically on every change.
+* `gulp js-ie` concatenates and minifies all polyfill JS files for Internet Explorer.

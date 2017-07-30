@@ -46,6 +46,8 @@ $('.email_form').submit(function(event) {
 	}).done(function(data, textStatus) {
 		//console.log('win: ' + textStatus);
 		$('.form_status', $form).text(data.status);
+		$('#id_email').hide();
+		$('.email_form > button').hide();
 	})
 	.fail(function(data, textStatus, errorThrown) {
 		//console.log('error: ' + textStatus + ' ' + errorThrown);

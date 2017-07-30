@@ -9,6 +9,36 @@ $main-text-size: 17px;
 
 @import 'elements';
 
+
+// placeholder stuff
+// move somewhere else
+
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+
+
+
 html {
 	height: 100%;
 }
@@ -96,6 +126,67 @@ div.footer {
 	div.logos {
 		img {
 			max-height: 80px;
+		}
+	}
+}
+
+
+// E-Mail form
+// move somewhere else
+
+div.area-email {
+	background-color: black;
+	color: white;
+	padding-bottom: 0 !important;
+
+	div.col-xs-12 {
+		width: 100%;
+
+		form.email_form {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			font: {
+				family: $main-font;
+				style: italic;
+				size: 1.8em;
+				weight: 200;
+			}
+
+			label {
+				display: none;
+			}
+			input {
+				flex: 1 1 100%;
+				background-color: black;
+				border: 0;
+				border-radius: 0;
+				color: white;
+				height: 2em;
+
+				@include placeholder {
+			    color: white;
+			  }
+			}
+			button {
+				flex-shrink: 0;
+				min-width: 0;
+				border: 0;
+				height: 2em;
+
+				padding: {
+					left: 10px;
+					right: 12px;
+				}
+
+				margin: 0 -3px;
+				-webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+				clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+				overflow: visible;
+				background: #8df472;
+			}
 		}
 	}
 }

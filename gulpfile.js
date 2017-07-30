@@ -102,7 +102,7 @@ gulp.task('build', ['css', 'copy-fonts', 'js']);
 
 // SASS lint
 gulp.task('sass-lint', function () {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src('./static-dev/sass/**/*.scss')
     .pipe(sassLint())
     .pipe(sassLint.format())
     .pipe(sassLint.failOnError())
@@ -110,7 +110,7 @@ gulp.task('sass-lint', function () {
 
 // JavaScript lint
 gulp.task('js-lint', function() {
-  return gulp.src('./static/js/*.js')
+  return gulp.src('./static-dev/js/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });

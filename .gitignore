@@ -2,6 +2,8 @@
 node_modules
 static/css/main.css
 static/css/main.css.map
+static/js/bundle.js
+static/js/bundle.js.map
 development.db
 .venv
 *.pyc

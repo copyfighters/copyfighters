@@ -1,5 +1,5 @@
 from campaign import models
-from django.forms import ModelForm
+from django.forms import ModelForm, TextInput
 
 
 class ActivistForm(ModelForm):
@@ -16,5 +16,8 @@ class ActivistEmailForm(ModelForm):
 
     class Meta:
         model = models.Activist
-        fields = ['first_name', 'country', 'email']
-        required_fields = ['first_name', 'country', 'email']
+        widgets = {
+            'email'    : TextInput(attrs = {'placeholder': 'Enter your E-Mail here… and join the Copyfight!'}),
+        }
+        fields = ['email']
+        required_fields = ['email']

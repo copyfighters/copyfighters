@@ -10,14 +10,10 @@
 				<span id='subtitle-strings'><p>{% blocktrans %}We want a Europe where <span class='hl-1'>sharing</span>, <span class='hl-2'>innovation</span> and <span class='hl-3'>copyright</span> go hand in hand.{% endblocktrans %}</p></span>
 				<span id='subtitle'></span>
 			</div>
-			<div class="col-md-8">
+		</div>
+		<div class="row justify-content-center area area-index-header">
+			<div class="col-md-6">
 				<p>{% blocktrans %}The European Union is moving forward with proposals to <b>reform copyright law</b> to make it apply more uniformly across the Single Market. The current <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52016PC0593">proposal for a Directive on Copyright in the Digital Single Market</a> will harm innovation and threatens our fundamental rights of access to information, freedom of communication, and privacy. <b>We urgently need the Proposal to be amended to protect our Internet freedoms.</b>{% endblocktrans %}</p>
-				<p>We need to get our voice out NOW. Speak up now if you believe the Internet should empower you to access culture and safeguard human rights!</h4>
-				<p><button class='get-involved-btn'>{% trans 'Join the Copyfight now!' %} <span>→</span></button></p>
-				<a href='#facts' id='learnmore-link'>Learn more ↓</a>
-			</div>
-			<div class="col-md-4">
-				<p>Time is running! The European Parliament’s <b>pivotal vote</b> on this Proposal is in:</li>
 				<table class="time-left">
 					<tr class="time-left-numbers">
 						<td>00</td>
@@ -32,14 +28,19 @@
 						<td>Seconds</td>
 					</tr>
 				</table>
-				<!-- 10 October 2017 -->
-				<!--Call your local government now!
-				<form action="/formtest/" method="post">
-					{% csrf_token %}
-					{{ form }}
-					<button type="submit">Submit</button>
-				</form>-->
-				Give us all your Data!
+				<p>Leave your e-mail address here and we will get in touch again, when our campaign starts, so we can together make sure that European copyright reform becomes a success!</p>
+
+				<!--p><button class='get-involved-btn'>{% trans 'Join the Copyfight now!' %} <span>→</span></button></p-->
+				<a href='#facts' id='learnmore-link'>Learn more ↓</a>
+			</div>
+			<div class="col-md-6">
+				<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center area area-index-header area-email">
+			<div class="col-xs-12">
 				<form class="email_form" action="/email_form/" method="post">
 					<p class="form_status"></p>
 					{% csrf_token %}
@@ -50,6 +51,24 @@
 		</div>
 	</div>
 {% endblock %}
+
+<!--div class="col-md-4">
+	<p>Time is running! The European Parliament’s <b>pivotal vote</b> on this Proposal is in:</li>
+	<!-- 10 October 2017 -->
+	<!--Call your local government now!
+	<form action="/formtest/" method="post">
+		{% csrf_token %}
+		{{ form }}
+		<button type="submit">Submit</button>
+	</form>
+	Give us all your Data!
+	<form class="email_form" action="/email_form/" method="post">
+		<p class="form_status"></p>
+		{% csrf_token %}
+		{{ email_form }}
+		<button type="submit">Submit</button>
+	</form>
+</div-->
 
 {% block content %}
 	<div class="container-fluid area area-2">
@@ -126,15 +145,10 @@
 			<div class="col col-lg-12">
 				<h2>Get involved</h2>
 			</div>
-			<div class="col col-lg-6">
+			<div class="col col-lg-12">
 				<p>Topping chocolate toffee powder topping sesame snaps. Donut sugar plum biscuit muffin croissant powder tootsie roll icing. Marshmallow croissant powder croissant apple pie. Pie muffin caramels marshmallow apple pie. Cookie cheesecake cotton candy lemon drops. Bear claw pastry candy canes pie bonbon marzipan lemon drops candy gingerbread.</p>
 
 				<p>Apple pie sweet roll marzipan tart lemon drops. Carrot cake cookie gummies cotton candy powder carrot cake pie. Chocolate bar marzipan fruitcake biscuit sweet roll biscuit dragée dragée. Macaroon toffee liquorice cake carrot cake. Donut cake gummies chocolate pudding. Chocolate bar jelly-o jelly sugar plum. Bonbon caramels sweet roll icing. Dessert cotton candy gummies. Tootsie roll biscuit toffee chocolate cake brownie gummies ice cream oat cake. Soufflé tart chocolate bar sweet roll tootsie roll.</p>
-			</div>
-			<div class="col-md-6">
-				<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
-				</div>
 			</div>
 		</div>
 		<div class="row justify-content-center area area-6">

@@ -83,6 +83,8 @@ div.area-index-header {
 	}
 
 	.time-left {
+		margin: 0 auto;
+
 		background: black;
 		color: white;
 		text-align: center;
@@ -98,4 +100,9 @@ div.area-index-header {
 			font-weight: bold;
 		}
 	}
+}
+
+// E-Mail form
+div.area-email {
+	background-color: black;
 }

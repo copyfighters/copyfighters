@@ -1,8 +1,10 @@
 var gulp          = require('gulp');
 
 var concat        = require('gulp-concat');
+var jshint        = require('gulp-jshint');
 var pump          = require('pump');
 var sass          = require('gulp-sass');
+var sassLint      = require('gulp-sass-lint');
 var sourcemaps    = require('gulp-sourcemaps');
 var uglify        = require('gulp-uglify');
 
@@ -97,3 +99,18 @@ gulp.task('copy-fonts', function() {
 });
 
 gulp.task('build', ['css', 'copy-fonts', 'js']);
+
+// SASS lint
+gulp.task('sass-lint', function () {
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
+});
+
+// JavaScript lint
+gulp.task('js-lint', function() {
+  return gulp.src('./static/js/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});

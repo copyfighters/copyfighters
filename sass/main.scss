@@ -80,46 +80,51 @@ div.area-8 {
 div.area-2,
 div.area-3,
 div.area-4 {
-	div:nth-child(2) {
+	> div:nth-child(2),
+	> div:nth-child(3) {
 		display: none;
 	}
 }
 
-.share-btn {
-    display: inline-block;
-    color: #ffffff;
-    border: none;
-    padding: 0.2em;
-    width: 2em;
-    outline: none;
-    text-align: center;
-    border-radius: 2em;
-}
+.share {
 
-.share-btn:hover {
-    position: relative;
-    top: 2px;
-    color: #eeeeee;
-}
+	.share-btn {
+	  display: inline-block;
+	  color: #ffffff;
+	  border: none;
+	  padding: 0.2em;
+	  width: 2em;
+	  outline: none;
+	  text-align: center;
+	  border-radius: 2em;
 
-.share-btn.facebook {
-    background: #3B5998;
-}
+		&:active,
+		&:focus,
+		&:hover {
+			color: #eeeeee;
+		}
 
-.share-btn.twitter {
-    background: #55acee;
-}
+		&:hover {
+	    position: relative;
+	    top: 2px;
+		}
 
-.share-btn.google-plus {
-    background: #c63d2d;
-}
+		&.facebook {
+	    background: #3B5998;
+		}
 
-.share-btn.whatsapp {
-    background: #0dc143;
-}
+		&.twitter {
+	    background: #55acee;
+		}
 
-.share-btn.reddit {
-    background: #EE2509;
+		&.reddit {
+	    background: #EE2509;
+		}
+	}
+
+	.message {
+		margin-left: 10px;
+	}
 }
 
 

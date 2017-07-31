@@ -31,7 +31,7 @@
 				<p>Leave your e-mail address here and we will get in touch again, when our campaign starts, so we can together make sure that European copyright reform becomes a success!</p>
 
 				<!--p><button class='get-involved-btn'>{% trans 'Join the Copyfight now!' %} <span>→</span></button></p-->
-				<a href='#facts' id='learnmore-link'>Learn more ↓</a>
+				<!--a href='#facts' id='learnmore-link'>Learn more ↓</a-->
 			</div>
 			<div class="col-md-6">
 				<div class="embed-responsive embed-responsive-16by9">
@@ -45,7 +45,9 @@
 					<p class="form_status"></p>
 					{% csrf_token %}
 					{{ email_form }}
-					<button type="submit">Submit</button>
+					<button type="submit">Join now!</button>
+					<span id="email_reload">&#8635;</span>
+					<p id="email_share">Share on <span id="share_fb">Facebook</span> or <span id="share_twitter">Twitter</span></p>
 				</form>
 			</div>
 		</div>

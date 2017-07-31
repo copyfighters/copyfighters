@@ -38,6 +38,23 @@ $('.area-4 .btn.show-details').click(function() {
 	$(this).text(label == 'View details ↓' ? 'Hide details ↓' : 'View details ↓');
 });
 
+$('#email_reload').click(function() {
+	$('.email_form').children().hide();
+	$('.email_form').css('flex-wrap', 'nowrap');
+	$('#id_email').val('').show();
+	$('.email_form > button').show();
+})
+
+$('#share_fb').click(function() {
+	var fbpopup = window.open('https://www.facebook.com/sharer/sharer.php?u=https://copyfighters.eu', 'pop', 'width=600, height=400, scrollbars=no');
+	return false;
+});
+
+$('#share_twitter').click(function() {
+	var twitterpopup = window.open('https://twitter.com/share?url=https://copyfighters.eu', 'pop', 'width=600, height=400, scrollbars=no');
+	return false;
+})
+
 $('.email_form').submit(function(event) {
 	event.preventDefault();
 	$form = $(this);
@@ -48,12 +65,18 @@ $('.email_form').submit(function(event) {
 		dataType: 'json'
 	}).done(function(data, textStatus) {
 		//console.log('win: ' + textStatus);
-		$('.form_status', $form).text(data.status);
-		$('#id_email').hide();
-		$('.email_form > button').hide();
+		$('.email_form').children().hide();
+		$('.email_form').css('flex-wrap', 'wrap');
+		$('.form_status', $form).text(data.status).show();
+		$('#email_reload').show();
+		$('#email_share').show();
 	})
 	.fail(function(data, textStatus, errorThrown) {
 		//console.log('error: ' + textStatus + ' ' + errorThrown);
-		$('.form_status', $form).text(data.status);
+		$('.email_form').children().hide();
+		$('.email_form').css('flex-wrap', 'wrap');
+		$('.form_status', $form).text(data.status).show();
+		$('#email_reload').show();
+		$('#email_share').show();
 	});
 });

@@ -192,6 +192,7 @@ div.area-email {
 			flex-direction: row;
 			align-items: center;
 			justify-content: center;
+			text-align: center;
 			font: {
 				family: $main-font;
 				style: italic;
@@ -246,6 +247,50 @@ div.area-email {
 				clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
 				overflow: visible;
 				background: #8df472;
+			}
+
+			#email_reload {
+				display: none;
+				font-style: normal;
+				margin: 0 15px;
+				cursor: pointer;
+			}
+
+			#email_share {
+				display: none;
+				font-size: 0.8em;
+
+				#share_fb {
+					font-weight: bolder;
+					cursor: pointer;
+
+					padding: {
+						left: 10px;
+						right: 12px;
+					}
+
+					margin: 0 -3px;
+					-webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+					clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+					overflow: visible;
+					background: #3b5998;
+				}
+
+				#share_twitter {
+					font-weight: bolder;
+					cursor: pointer;
+
+					padding: {
+						left: 10px;
+						right: 12px;
+					}
+
+					margin: 0 -3px;
+					-webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+					clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+					overflow: visible;
+					background: #4099FF;
+				}
 			}
 		}
 	}

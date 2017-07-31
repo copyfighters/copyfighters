@@ -91,6 +91,7 @@ gulp.task('js:watch', function () {
 // Copy fonts to static folders.
 gulp.task('copy-fonts', function() {
   var fonts = [
+    './node_modules/font-awesome/fonts/**/*.{eot,svg,woff,woff2,ttf,otf}',
     './node_modules/typeface-fira-sans/files/**/*.{eot,svg,woff,woff2}',
     './node_modules/typeface-zilla-slab/files/**/*.{eot,svg,woff,woff2}'
   ];

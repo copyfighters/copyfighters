@@ -36,7 +36,7 @@ def get_email(request):
         form = forms.ActivistForm(request.POST)
         if form.is_valid():
             activist = form.save()
-            return JsonResponse({'status': 'yay!'}, status=200)
+            return JsonResponse({'status': 'Thanks for signing up!'}, status=200)
     return JsonResponse({'status': 'failed.. :\'('}, status=400)
 
 

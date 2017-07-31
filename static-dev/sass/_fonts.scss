@@ -1,0 +1,279 @@
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 100;
+  font-style: normal;
+  src: url('/static/fonts/fira-sans-latin-100.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-100.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-100.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-100.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 100;
+  font-style: italic;
+  src: url('/static/fonts/fira-sans-latin-100italic.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-100italic.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-100italic.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-100italic.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-style: normal;
+  src: url('/static/fonts/fira-sans-latin-200.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-200.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-200.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-200.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-style: italic;
+  src: url('/static/fonts/fira-sans-latin-200italic.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-200italic.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-200italic.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-200italic.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 300;
+  font-style: normal;
+  src: url('/static/fonts/fira-sans-latin-300.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-300.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-300.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-300.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 300;
+  font-style: italic;
+  src: url('/static/fonts/fira-sans-latin-300italic.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-300italic.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-300italic.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-300italic.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 100;
+  font-style: normal;
+  src: url('/static/fonts/fira-sans-latin-100.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-100.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-100.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-100.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 400;
+  font-style: italic;
+  src: url('/static/fonts/fira-sans-latin-400italic.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-400italic.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-400italic.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-400italic.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/static/fonts/fira-sans-latin-400.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-400.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-400.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-400.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 500;
+  font-style: italic;
+  src: url('/static/fonts/fira-sans-latin-500italic.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-500italic.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-500italic.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-500italic.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 600;
+  font-style: normal;
+  src: url('/static/fonts/fira-sans-latin-600.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-600.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-600.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-600.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 600;
+  font-style: italic;
+  src: url('/static/fonts/fira-sans-latin-600italic.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-600italic.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-600italic.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-600italic.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/static/fonts/fira-sans-latin-700.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-700.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-700.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-700.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 700;
+  font-style: italic;
+  src: url('/static/fonts/fira-sans-latin-800italic.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-800italic.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-800italic.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-800italic.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 800;
+  font-style: normal;
+  src: url('/static/fonts/fira-sans-latin-800.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-800.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-800.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-800.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 800;
+  font-style: italic;
+  src: url('/static/fonts/fira-sans-latin-800italic.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-800italic.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-800italic.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-800italic.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 900;
+  font-style: normal;
+  src: url('/static/fonts/fira-sans-latin-900.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-900.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-900.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-900.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 900;
+  font-style: italic;
+  src: url('/static/fonts/fira-sans-latin-900italic.eot') format('eot'),
+       url('/static/fonts/fira-sans-latin-900italic.svg') format('svg'),
+       url('/static/fonts/fira-sans-latin-900italic.woff') format('woff'),
+       url('/static/fonts/fira-sans-latin-900italic.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-weight: 300;
+  font-style: normal;
+  src: url('/static/fonts/zilla-slab-latin-300.eot') format('eot'),
+       url('/static/fonts/zilla-slab-latin-300.svg') format('svg'),
+       url('/static/fonts/zilla-slab-latin-300.woff') format('woff'),
+       url('/static/fonts/zilla-slab-latin-300.woff2') format('woff2')
+}
+
+@font-face {
+ font-family: 'Zilla Slab';
+ font-weight: 300;
+ font-style: italic;
+ src: url('/static/fonts/zilla-slab-latin-300italic.eot') format('eot'),
+      url('/static/fonts/zilla-slab-latin-300italic.svg') format('svg'),
+      url('/static/fonts/zilla-slab-latin-300italic.woff') format('woff'),
+      url('/static/fonts/zilla-slab-latin-300italic.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/static/fonts/zilla-slab-latin-400.eot') format('eot'),
+       url('/static/fonts/zilla-slab-latin-400.svg') format('svg'),
+       url('/static/fonts/zilla-slab-latin-400.woff') format('woff'),
+       url('/static/fonts/zilla-slab-latin-400.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-weight: 400;
+  font-style: italic;
+  src: url('/static/fonts/zilla-slab-latin-400italic.eot') format('eot'),
+       url('/static/fonts/zilla-slab-latin-400italic.svg') format('svg'),
+       url('/static/fonts/zilla-slab-latin-400italic.woff') format('woff'),
+       url('/static/fonts/zilla-slab-latin-400italic.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/static/fonts/zilla-slab-latin-500.eot') format('eot'),
+       url('/static/fonts/zilla-slab-latin-500.svg') format('svg'),
+       url('/static/fonts/zilla-slab-latin-500.woff') format('woff'),
+       url('/static/fonts/zilla-slab-latin-500.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-weight: 500;
+  font-style: italic;
+  src: url('/static/fonts/zilla-slab-latin-500italic.eot') format('eot'),
+       url('/static/fonts/zilla-slab-latin-500italic.svg') format('svg'),
+       url('/static/fonts/zilla-slab-latin-500italic.woff') format('woff'),
+       url('/static/fonts/zilla-slab-latin-500italic.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-weight: 600;
+  font-style: normal;
+  src: url('/static/fonts/zilla-slab-latin-600.eot') format('eot'),
+       url('/static/fonts/zilla-slab-latin-600.svg') format('svg'),
+       url('/static/fonts/zilla-slab-latin-600.woff') format('woff'),
+       url('/static/fonts/zilla-slab-latin-600.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-weight: 600;
+  font-style: italic;
+  src: url('/static/fonts/zilla-slab-latin-600italic.eot') format('eot'),
+       url('/static/fonts/zilla-slab-latin-600italic.svg') format('svg'),
+       url('/static/fonts/zilla-slab-latin-600italic.woff') format('woff'),
+       url('/static/fonts/zilla-slab-latin-600italic.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/static/fonts/zilla-slab-latin-700.eot') format('eot'),
+       url('/static/fonts/zilla-slab-latin-700.svg') format('svg'),
+       url('/static/fonts/zilla-slab-latin-700.woff') format('woff'),
+       url('/static/fonts/zilla-slab-latin-700.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-weight: 700;
+  font-style: italic;
+  src: url('/static/fonts/zilla-slab-latin-700italic.eot') format('eot'),
+       url('/static/fonts/zilla-slab-latin-700italic.svg') format('svg'),
+       url('/static/fonts/zilla-slab-latin-700italic.woff') format('woff'),
+       url('/static/fonts/zilla-slab-latin-700italic.woff2') format('woff2')
+}

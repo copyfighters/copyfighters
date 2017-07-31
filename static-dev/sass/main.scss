@@ -1,0 +1,252 @@
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/font-awesome/scss/font-awesome.scss';
+@import 'fonts';
+
+$main-font: 'Fira Sans', 'Source Sans Pro', 'Open Sans', 'Arial', sans-serif;
+$headline-font: 'Zilla Slab', slab, serif;
+
+$main-text-color: #383838;
+$main-text-size: 17px;
+
+@import 'elements';
+
+
+// placeholder stuff
+// move somewhere else
+
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+
+
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 16em; /* must equal max footer height */
+
+	font-family: $main-font;
+	font-size: $main-text-size;
+	line-height: 1.7;
+	color: $main-text-color;
+
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: auto;
+	-webkit-font-kerning: normal;
+	-webkit-text-size-adjust: 100%;
+	font-variant-ligatures: discretionary-ligatures;
+	-webkit-font-variant-ligatures: discretionary-ligatures;
+
+	box-sizing: border-box !important;
+}
+
+p.browserupgrade {
+	margin: 10px auto;
+	border-bottom: 2px solid #000000;
+	padding: 10px 30px;
+}
+
+div.area {
+	padding: 2em 4em;
+}
+
+.highlight {
+	background: #8ee3fc;
+	font-weight: 700;
+	padding: 0 5px;
+}
+
+@import 'head';
+
+div.area-2 {
+	@include gradient-directional($start-color: #8df472, $end-color: #6df2c7);
+}
+
+div.area-4 {
+	@include gradient-directional($start-color: #8ee3fc, $end-color: #ab9ffc);
+}
+
+div.area-6 {
+	@include gradient-directional($start-color: #ba95fe, $end-color: #b87bfd);
+}
+
+div.area-8 {
+	@include gradient-directional($start-color: #c375fe, $end-color: #d66afe);
+}
+
+div.area-2,
+div.area-3,
+div.area-4 {
+	> div:nth-child(2),
+	> div:nth-child(3) {
+		display: none;
+	}
+}
+
+.share {
+
+	.share-btn {
+	  display: inline-block;
+	  color: #ffffff;
+	  border: none;
+	  padding: 0.2em;
+	  width: 2em;
+	  outline: none;
+	  text-align: center;
+	  border-radius: 2em;
+
+		&:active,
+		&:focus,
+		&:hover {
+			color: #eeeeee;
+		}
+
+		&:hover {
+	    position: relative;
+	    top: 2px;
+		}
+
+		&.facebook {
+	    background: #3B5998;
+		}
+
+		&.twitter {
+	    background: #55acee;
+		}
+
+		&.reddit {
+	    background: #EE2509;
+		}
+	}
+
+	.message {
+		margin-left: 10px;
+	}
+}
+
+
+@import 'quotes';
+
+div.footer {
+	background-color: #556270;
+	color: #ffffff;
+	min-height: 0;
+	font-size: $main-text-size * 0.8;
+	position: absolute;
+	bottom: 0;
+
+	// Disable subpixel rendering for white-on-dark text
+	-webkit-font-smoothing: antialiased;
+
+
+	a {
+		color: #dddddd;
+	}
+
+	div.logos {
+		img {
+			max-height: 80px;
+		}
+	}
+}
+
+
+// E-Mail form
+// move somewhere else
+
+div.area-email {
+	background-color: black;
+	color: white;
+	padding-bottom: 0 !important;
+
+	div.col-xs-12 {
+		width: 100%;
+
+		form.email_form {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			font: {
+				family: $main-font;
+				style: italic;
+				size: 1.8em;
+				weight: 200;
+			}
+
+			p {
+				margin: 0 !important;
+			}
+			label {
+				display: none;
+			}
+			input {
+				flex: 1 1 100%;
+				background-color: black;
+				border: 0;
+				border-radius: 0;
+				color: white;
+
+				font: {
+					family: $main-font;
+					style: italic;
+					size: 1.2em;
+					weight: 200;
+				}
+
+				@include placeholder {
+			    color: white;
+			  }
+			}
+			button {
+				flex-shrink: 0;
+				min-width: 0;
+				border: 0;
+
+				font: {
+					family: $main-font;
+					style: italic;
+					size: 1em;
+					weight: bolder;
+				}
+				line-height: 0.8;
+
+				padding: {
+					left: 10px;
+					right: 12px;
+				}
+
+				margin: 0 -3px;
+				-webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+				clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+				overflow: visible;
+				background: #8df472;
+			}
+		}
+	}
+}

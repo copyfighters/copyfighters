@@ -35,7 +35,7 @@ input:not([type=submit], [type=button]) {
 	text-shadow: none;
 	min-height: 30px;
 
-	&, &:hover {
+	&, &:hover, &:focus {
 		color: $main-text-color;
 
 		border: {
@@ -52,5 +52,9 @@ input:not([type=submit], [type=button]) {
 
 	&:hover {
 		background: rgba(0, 0, 0, 0.1);
+	}
+
+	&:focus {
+		box-shadow: none;
 	}
 }

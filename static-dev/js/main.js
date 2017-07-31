@@ -38,11 +38,11 @@ function updateLinks(selectElement, id)
 		.text();
 	$('.' + id + ' .share > .facebook').prop('href',
 		'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote='
-		+ encodeURIComponent(text)
+		+ encodeURIComponent(text + ' #copyfighters')
 	);
 	$('.' + id + ' .share > .twitter').prop('href',
 		'https://twitter.com/home?status='
-		+ encodeURIComponent(text + ' https://copyfighters.eu')
+		+ encodeURIComponent(text + ' #copyfighters https://copyfighters.eu')
 	);
 }
 

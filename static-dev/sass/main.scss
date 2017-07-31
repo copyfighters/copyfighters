@@ -109,6 +109,20 @@ div.area-4 {
 
 .share {
 
+  > label {
+    font-size: 1.2em;
+    font-weight: bold;
+
+    i {
+      padding-right: 0.2em;
+    }
+  }
+
+	> select {
+		margin-left: 0.2em;
+		margin-right: 0.2em;
+	}
+
 	.share-btn {
 	  display: inline-block;
 	  color: #ffffff;
@@ -141,10 +155,6 @@ div.area-4 {
 		&.reddit {
 	    background: #EE2509;
 		}
-	}
-
-	.message {
-		margin-left: 10px;
 	}
 }
 

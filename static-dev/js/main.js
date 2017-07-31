@@ -10,6 +10,54 @@ $(document).ready(function(){
     $(this).html(event.strftime(
 			'<td>%D</td><td>%H</td><td>%M</td><td>%S</td>'));
   });
+
+	// Initialise sharers.
+	setSelectOptionRandomly('issue-1');
+	setSelectOptionRandomly('issue-2');
+	setSelectOptionRandomly('issue-3');
+});
+
+function randomNumberFromInterval(min, max)
+{
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+// Set the selected option of a dropdown field randomly.
+function setSelectOptionRandomly(id)
+{
+	var selectElement = $('#' + id + '-message-select');
+	var numberOptions = selectElement.children('option').length;
+	var optionNumber = randomNumberFromInterval(1, numberOptions);
+	selectElement.prop('selectedIndex', optionNumber - 1);
+	updateLinks(selectElement, id);
+}
+
+// Adapt the Facebook and Twitter share links to the newly chosen message.
+function updateLinks(selectElement, id)
+{
+	var selectedIndex = selectElement.prop('selectedIndex');
+	var text = selectElement.find('option[value="' + (selectedIndex + 1) + '"]')
+		.text();
+	$('.' + id + ' .share > .facebook').prop('href',
+		'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote='
+		+ encodeURIComponent(text + ' #copyfighters')
+	);
+	$('.' + id + ' .share > .twitter').prop('href',
+		'https://twitter.com/home?status='
+		+ encodeURIComponent(text + ' #copyfighters https://copyfighters.eu')
+	);
+}
+
+$('#issue-1-message-select').change(function() {
+	updateLinks($(this), 'issue-1');
+});
+
+$('#issue-2-message-select').change(function() {
+	updateLinks($(this), 'issue-2');
+});
+
+$('#issue-3-message-select').change(function() {
+	updateLinks($(this), 'issue-3');
 });
 
 $('#learnmore-link').click(function() {

@@ -37,7 +37,7 @@ def get_email(request):
         if form.is_valid():
             activist = form.save()
             return JsonResponse({'status': 'Thanks for signing up!'}, status=200)
-    return JsonResponse({'status': 'failed.. :\'('}, status=400)
+    return JsonResponse({'status': 'Something went wrong, please try again.'}, status=400)
 
 
 @csrf_exempt

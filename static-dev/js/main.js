@@ -22,6 +22,7 @@ function randomNumberFromInterval(min, max)
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+// Set the selected option of a dropdown field randomly.
 function setSelectOptionRandomly(id)
 {
 	var selectElement = $('#' + id + '-message-select');
@@ -31,6 +32,7 @@ function setSelectOptionRandomly(id)
 	updateLinks(selectElement, id);
 }
 
+// Adapt the Facebook and Twitter share links to the newly chosen message.
 function updateLinks(selectElement, id)
 {
 	var selectedIndex = selectElement.prop('selectedIndex');

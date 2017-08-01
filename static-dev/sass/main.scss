@@ -210,6 +210,10 @@ div.area-email {
 				weight: 200;
 			}
 
+			@media (max-width: 480px) {
+				font-size: 1.2em !important;
+			}
+
 			p {
 				margin: 0 !important;
 			}
@@ -235,6 +239,10 @@ div.area-email {
 			  }
 			}
 			button {
+				@media (max-width: 480px) {
+					display: none;
+				}
+
 				flex-shrink: 0;
 				min-width: 0;
 				border: 0;
@@ -259,6 +267,10 @@ div.area-email {
 				background: #8df472;
 			}
 
+			.form_status {
+				white-space: nowrap;
+			}
+
 			#email_reload {
 				display: none;
 				font-style: normal;
@@ -267,6 +279,7 @@ div.area-email {
 			}
 
 			#email_share {
+				white-space: nowrap;
 				display: none;
 				font-size: 0.8em;
 
@@ -275,7 +288,7 @@ div.area-email {
 					cursor: pointer;
 
 					padding: {
-						left: 10px;
+						left: 12px;
 						right: 12px;
 					}
 

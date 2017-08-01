@@ -86,6 +86,10 @@ $('.area-4 .btn.show-details').click(function() {
 	$(this).text(label == 'View details ↓' ? 'Hide details ↓' : 'View details ↓');
 });
 
+$('.email_form > input').focusin(function() {
+	$('.email_form > button').show();
+})
+
 $('#email_reload').click(function() {
 	$('.email_form').children().hide();
 	$('.email_form').css('flex-wrap', 'nowrap');

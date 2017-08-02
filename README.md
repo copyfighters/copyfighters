@@ -1,4 +1,6 @@
-# Campaign website
+# Copyfighters campaign website
+
+[ ![Codeship Status for copyfighters/copyfighters](https://app.codeship.com/projects/c0672f80-59e8-0135-01d0-6e9c47ac365b/status?branch=master)](https://app.codeship.com/projects/237039)
 
 ## Development
 

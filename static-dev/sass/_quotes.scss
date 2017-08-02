@@ -1,111 +1,111 @@
 .quote {
-	display: flex;
-	margin: 1.5em 0;
+  display: flex;
+  margin: 1.5em 0;
 
-	&::after {
-		content:"";
-		display:block;
-		clear:both;
-	}
+  &::after {
+  content:"";
+  display:block;
+  clear:both;
+  }
 
-	.photo {
-		flex: none;
-		width: 7em;
-		height: 7em;
-		border-radius: 3.5em;
+  .photo {
+  flex: none;
+  width: 7em;
+  height: 7em;
+  border-radius: 3.5em;
 
-		margin: {
-			top: -.3em;
-			right: 1em;
-			top: -.7em;
-		}
+  margin: {
+  top: -.3em;
+  right: 1em;
+  top: -.7em;
+  }
 
-		background: {
-			size: cover;
-			repeat: no-repeat;
-			position: center;
-			color: #fff;
-		}
-	}
+  background: {
+  size: cover;
+  repeat: no-repeat;
+  position: center;
+  color: #fff;
+  }
+  }
 
-	blockquote > div {
-		font-size: 1.1em;
-		line-height: 1.4em;
+  blockquote > div {
+  font-size: 1.1em;
+  line-height: 1.4em;
 
-		&:before {
-			content: "";
-			width: 0;
-			height: 0;
-			position: absolute;
-			left: -1.2em;
-			border: .7em solid transparent;
-			border-right-color: #fff;
-		}
-	}
+  &:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -1.2em;
+  border: .7em solid transparent;
+  border-right-color: #fff;
+  }
+  }
 
-	&.quote-mirror {
+  &.quote-mirror {
 
-		.photo {
-			left: auto;
-			right: 0;
-			order: 2;
+  .photo {
+  left: auto;
+  right: 0;
+  order: 2;
 
-			margin: {
-				right: 0;
-				left: 1em;
-			}
-		}
+  margin: {
+  right: 0;
+  left: 1em;
+  }
+  }
 
-		blockquote {
-			order: 1;
-		}
+  blockquote {
+  order: 1;
+  }
 
-		blockquote > div:before {
-			left: auto;
-			right: -1.2em;
-			border-right-color: transparent;
-			border-left-color: #fff;
-		}
+  blockquote > div:before {
+  left: auto;
+  right: -1.2em;
+  border-right-color: transparent;
+  border-left-color: #fff;
+  }
 
-	}
+  }
 
-	
-	@include media-breakpoint-down(xs) { 
-		display: block;
-		margin: 3em 0;
 
-		blockquote {
-			margin-top: 1em;
-		}
+  @include media-breakpoint-down(xs) {
+  display: block;
+  margin: 3em 0;
 
-		blockquote > div:before {
-			left: 2.5em;
-			top: -1.2em;
-			border-bottom-color: #ffffff;
-			border-right-color: transparent;
-		}
-		&.quote-mirror blockquote > div:before {
-			right: auto;
-			left: 2.5em;
-			border-left-color: transparent;
-		}
-		&.quote-mirror .photo {
-			margin-left: 0;
-		}
-	}
+  blockquote {
+  margin-top: 1em;
+  }
+
+  blockquote > div:before {
+  left: 2.5em;
+  top: -1.2em;
+  border-bottom-color: #ffffff;
+  border-right-color: transparent;
+  }
+  &.quote-mirror blockquote > div:before {
+  right: auto;
+  left: 2.5em;
+  border-left-color: transparent;
+  }
+  &.quote-mirror .photo {
+  margin-left: 0;
+  }
+  }
 }
 
 blockquote {
-	margin: 0;
-	width: 100%;
-	border-left: none;
-	top: 0;
+  margin: 0;
+  width: 100%;
+  border-left: none;
+  top: 0;
 
-	> div {
-		position: relative;
-		background: #fff;
-		line-height: 1.4em;
-		padding: 1em 1.3em;
-		color: #000;
-	}
+  > div {
+  position: relative;
+  background: #fff;
+  line-height: 1.4em;
+  padding: 1em 1.3em;
+  color: #000;
+  }
 }

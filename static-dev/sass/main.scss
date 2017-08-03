@@ -48,7 +48,6 @@ html {
 body {
   position: relative;
   min-height: 100%;
-  padding-bottom: 16em; /* must equal max footer height */
 
   font-family: $main-font;
   font-size: $main-text-size;
@@ -207,10 +206,7 @@ div.area-8 {
 div.footer {
   background-color: #556270;
   color: #ffffff;
-  min-height: 0;
   font-size: $main-text-size * 0.8;
-  position: absolute;
-  bottom: 0;
 
   // Disable subpixel rendering for white-on-dark text
   -webkit-font-smoothing: antialiased;

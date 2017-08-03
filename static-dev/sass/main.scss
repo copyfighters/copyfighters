@@ -220,9 +220,12 @@ div.footer {
   }
 
   div.logos {
-  img {
-  max-height: 80px;
-  }
+    a:first-child img {
+      max-height: 80px;
+    }
+    a:nth-child(2) img {
+      max-height: 95px;
+    }
   }
 }
 

@@ -1,10 +1,10 @@
 $(document).ready(function(){
 	// Initialise typed text.
-	var typed = new Typed('#subtitle', {
+	var typed = new Typed('#main-title-container', {
 		onComplete: function(self) {
 			$('.typed-cursor').fadeOut();
 		},
-		stringsElement: '#subtitle-strings',
+		stringsElement: '#main-title-strings',
 		typeSpeed: 30
 	});
 

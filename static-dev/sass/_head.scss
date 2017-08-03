@@ -12,13 +12,19 @@
 
     .navbar-brand {
       background-color: black;
-      color: white;
       font: {
         family: $headline-font;
         size: 19px;
         weight: 600;
       }
       padding: 0 .4em;
+
+      &,
+      &:active,
+      &:focus,
+      &:hover {
+        color: white;
+      }
     }
 
     .navbar-text {

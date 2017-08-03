@@ -1,6 +1,9 @@
 $(document).ready(function(){
 	// Initialise typed text.
 	var typed = new Typed('#subtitle', {
+		onComplete: function(self) {
+			$('.typed-cursor').fadeOut();
+		},
 		stringsElement: '#subtitle-strings',
 		typeSpeed: 30
 	});

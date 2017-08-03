@@ -16,6 +16,9 @@
     "url": "https://github.com/copyfighters/copyfighters/issues"
   },
   "homepage": "https://github.com/copyfighters/copyfighters#readme",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "bootstrap": "^4.0.0-alpha.6",

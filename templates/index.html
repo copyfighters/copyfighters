@@ -2,6 +2,14 @@
 {% load staticfiles %}
 {% load i18n %}
 
+
+{% block navigation %}
+	{# This block is closed again in the content block. It is used to place the background spanning the navigation and first content block. #}
+	<div id="index-background-container">
+		<div id="index-header-background">&nbsp;</div>
+		{{ block.super }}
+{% endblock %}
+
 {% block navlinks %}{% endblock %}
 
 {% block content %}
@@ -9,7 +17,7 @@
 		<div class="row justify-content-center area area-index-header">
 			<div class="col">
 				<h1 id="main-title">
-					<span id="main-title-strings"><p>{% blocktrans %}We want a Europe where <span class="hl-1">sharing</span>, <span class="hl-2">innovation</span> and <span class="hl-3">copyright</span> go hand in hand.{% endblocktrans %}</p></span>
+					<span id="main-title-strings"><p>{% blocktrans %}We want a Europe where <span>sharing</span>, <span>innovation</span> and <span>copyright</span> go hand in hand.{% endblocktrans %}</p></span>
 					<span id="main-title-container"></span>
 				</h1>
 			</div>
@@ -53,6 +61,9 @@
 				</form>
 			</div>
 		</div>
+	</div>
+
+	{# This closes the div opened in the navigation block #}
 	</div>
 
 	{% comment %}

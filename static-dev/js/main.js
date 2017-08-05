@@ -2,7 +2,9 @@ $(document).ready(function(){
 	// Initialise typed text.
 	var typed = new Typed('#main-title-container', {
 		onComplete: function(self) {
+			// Fade in navigation and fade out cursor
 			$('.typed-cursor').fadeOut();
+			$('.header-nav').css('visibility','visible').hide().fadeIn(500);
 		},
 		stringsElement: '#main-title-strings',
 		typeSpeed: 30

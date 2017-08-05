@@ -57,6 +57,10 @@
     @include gradient-directional($start-color: #8df472, $end-color: #6df2c7);
     clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
   }
+
+  .header-nav {
+    visibility: hidden;
+  }
 }
 
 // First block on homepage

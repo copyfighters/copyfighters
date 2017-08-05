@@ -9,10 +9,9 @@ $(document).ready(function(){
 	});
 
 	// Initialise countdown.
-	$('.time-left-numbers').countdown('2017/10/10', function(event) {
-    $(this).html(event.strftime(
-			'<td>%D</td><td>%H</td><td>%M</td><td>%S</td>'));
-  });
+	$('.countdown').countdown('2017/10/10', function(event) {
+		$(this).html(event.strftime('<span>%D</span> Days <span>%H</span> Hours <span>%M</span> Minutes <span>%S</span> Seconds'));
+	});
 
 	// Initialise sharers.
 	setSelectOptionRandomly('issue-1');

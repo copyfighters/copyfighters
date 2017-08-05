@@ -101,20 +101,14 @@ div.area-index-header {
     }
   }
 
-  .time-left {
-    background: black;
-    color: white;
-    margin: 0 auto;
-    text-align: center;
+  .countdown {
+    font-weight: 200;
+    font-size: 1em;
+    text-transform: uppercase;
 
-    td {
-      border: 2px solid rgba(255, 255, 255, 0.8);
-      width: 70px;
-    }
-
-    .time-left-numbers td {
-      font-size: 200%;
-      font-weight: 700;
+    span {
+      font-size: 2rem;
+      margin-left: 20px;
     }
   }
 }

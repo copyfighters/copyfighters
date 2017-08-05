@@ -43,41 +43,47 @@
 div.area-index-header {
   padding-top: 0;
 
-  #subtitle-strings {
-    display: none;
-  }
-
-  #subtitle,
-  .typed-cursor {
-    font: {
-      family: $main-font;
-      size: 3em;
-      style: italic;
-      weight: 200;
+  #main-title {
+    #main-title-strings {
+      display: none;
     }
-  }
 
-  #subtitle {
-    margin: 0 -3px 30px -3px;
-    overflow: visible;
-
-    span {
-      padding: {
-        left: 5px;
-        right: 10px;
+    #main-title-container,
+    .typed-cursor {
+      font: {
+        family: $main-font;
+        size: ($main-text-size * 2.8);
+        weight: 700;
       }
     }
 
-    span.hl-1 {
-      background: #8df472;
-    }
+    #main-title-container {
+      margin: 0 -3px 30px -3px;
+      overflow: visible;
+      line-height: 1.5;
 
-    span.hl-2 {
-      background: #8ee3fc;
-    }
+      span {
+        padding: {
+          left: 7px;
+          right: 7px;
+          top: 3px;
+          bottom: 3px;
+        }
 
-    span.hl-3 {
-      background: #ba95fe;
+        margin-left: -4px;
+      }
+
+      span.hl-1 {
+        background: #8df472;
+      }
+
+      span.hl-2 {
+        background: #8ee3fc;
+      }
+
+      span.hl-3 {
+        background: #b6adf9;
+      }
     }
   }
 

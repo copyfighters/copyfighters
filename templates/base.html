@@ -23,33 +23,35 @@
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<div class="container-fluid header-nav">
-			<nav class="navbar navbar-toggleable-md navbar-light">
-				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#header-nav-sub" aria-controls="header-nav-sub" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<a class="navbar-brand" href="/">#copyfighters</a>
-				<span class="navbar-text">Fighting for our Digital Rights in Europe</span>
-				{% block navlinks %}
-				<div class="collapse navbar-collapse" id="header-nav-sub">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="{% url 'resources' %}">Resources</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="{% url 'imprint' %}">Imprint</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="{% url 'privacy' %}">Privacy</a>
-						</li>
-					</ul>
-				</div>
-				{% endblock %}
-			</nav>
-		</div>
+		{% block navigation %}
+			<div class="container-fluid header-nav">
+				<nav class="navbar navbar-toggleable-md navbar-light">
+					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#header-nav-sub" aria-controls="header-nav-sub" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a class="navbar-brand" href="/">#copyfighters</a>
+					<span class="navbar-text">Fighting for our Digital Rights in Europe</span>
+					{% block navlinks %}
+					<div class="collapse navbar-collapse" id="header-nav-sub">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{% url 'resources' %}">Resources</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{% url 'imprint' %}">Imprint</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{% url 'privacy' %}">Privacy</a>
+							</li>
+						</ul>
+					</div>
+					{% endblock %}
+				</nav>
+			</div>
+		{% endblock navigation %}
 
 		{% block content %}{% endblock %}
 

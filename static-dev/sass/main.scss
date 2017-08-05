@@ -82,11 +82,7 @@ div.area {
 
 @import 'head';
 
-div.area-2 {
-  @include gradient-directional($start-color: #8df472, $end-color: #6df2c7);
-}
-
-div.area-4 {
+div.area-2, div.area-4 {
   @include gradient-directional($start-color: #8ee3fc, $end-color: #ab9ffc);
 }
 

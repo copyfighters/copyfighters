@@ -231,127 +231,125 @@ div.area-email {
   padding-bottom: 0 !important;
 
   div.col-xs-12 {
-  width: 100%;
+    width: 100%;
 
-  form.email_form {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font: {
-  family: $main-font;
-  style: italic;
-  size: 1.8em;
-  weight: 200;
-  }
+    form.email_form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
 
-  @media (max-width: 480px) {
-  font-size: 1.2em !important;
-  }
+      padding: 4px 0;
 
-  p {
-  margin: 0 !important;
-  }
-  label {
-  display: none;
-  }
-  input {
-  flex: 1 1 100%;
-  background-color: black;
-  border: 0;
-  border-radius: 0;
-  color: white;
+      @media (max-width: 480px) {
+        font-size: 1.2em !important;
+      }
 
-  font: {
-  family: $main-font;
-  style: italic;
-  size: 1.2em;
-  weight: 200;
-  }
+      p {
+        margin: 0 !important;
+      }
 
-  @include placeholder {
-      color: white;
+      label {
+        display: none;
+      }
+
+      input {
+        flex: 1 1 100%;
+        background-color: black;
+        border: 0;
+        border-radius: 0;
+        color: white;
+
+        font: {
+          family: $main-font;
+          size: 1.6rem;
+          weight: 200;
+        }
+
+        text-decoration: underline rgba(255, 255, 255, 0.3);
+
+        @include placeholder {
+            color: white;
+            text-decoration: underline rgba(255, 255, 255, 0.3);
+        }
+      }
+
+      button {
+        line-height: 0.8;
+
+        padding: {
+          left: 10px;
+          right: 12px;
+        }
+
+        background: transparent;
+        color: #ffffff;
+
+        @media (max-width: 480px) {
+          display: none;
+        }
+
+        flex-shrink: 0;
+        min-width: 0;
+        border: 1px solid #ffffff;
+
+        font: {
+          family: $main-font;
+          size: 1.3rem;
+          weight: 700;
+        }
+      }
+
+      .form_status {
+        white-space: nowrap;
+      }
+
+      #email_reload {
+        display: none;
+        font-style: normal;
+        margin: 0 15px;
+        cursor: pointer;
+      }
+
+      #email_share {
+      white-space: nowrap;
+      display: none;
+      font-size: 0.8em;
+
+        #share_fb {
+          font-weight: bolder;
+          cursor: pointer;
+
+          padding: {
+            left: 12px;
+            right: 12px;
+          }
+
+          margin: 0 -3px;
+          -webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+          clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+          overflow: visible;
+          background: $color-facebook;
+        }
+
+        #share_twitter {
+          font-weight: bolder;
+          cursor: pointer;
+
+          padding: {
+            left: 10px;
+            right: 12px;
+          }
+
+          margin: 0 -3px;
+          -webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+          clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+          overflow: visible;
+          background: $color-twitter;
+        }
+      }
     }
-  }
-  button {
-  @media (max-width: 480px) {
-  display: none;
-  }
-
-  flex-shrink: 0;
-  min-width: 0;
-  border: 0;
-
-  font: {
-  family: $main-font;
-  style: italic;
-  size: 1em;
-  weight: bolder;
-  }
-  line-height: 0.8;
-
-  padding: {
-  left: 10px;
-  right: 12px;
-  }
-
-  margin: 0 -3px;
-  -webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-  clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-  overflow: visible;
-  background: #8df472;
-  }
-
-  .form_status {
-  white-space: nowrap;
-  }
-
-  #email_reload {
-  display: none;
-  font-style: normal;
-  margin: 0 15px;
-  cursor: pointer;
-  }
-
-  #email_share {
-  white-space: nowrap;
-  display: none;
-  font-size: 0.8em;
-
-  #share_fb {
-  font-weight: bolder;
-  cursor: pointer;
-
-  padding: {
-  left: 12px;
-  right: 12px;
-  }
-
-  margin: 0 -3px;
-  -webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-  clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-  overflow: visible;
-  background: $color-facebook;
-  }
-
-  #share_twitter {
-  font-weight: bolder;
-  cursor: pointer;
-
-  padding: {
-  left: 10px;
-  right: 12px;
-  }
-
-  margin: 0 -3px;
-  -webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-  clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-  overflow: visible;
-  background: $color-twitter;
-  }
-  }
-  }
   }
 }

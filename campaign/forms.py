@@ -17,7 +17,7 @@ class ActivistEmailForm(ModelForm):
     class Meta:
         model = models.Activist
         widgets = {
-            'email'    : TextInput(attrs = {'placeholder': 'Enter your E-Mail here… and join the Copyfight!'}),
+            'email'    : TextInput(attrs = {'placeholder': 'Enter your email here and join the Copyfight!'}),
         }
         fields = ['email']
         required_fields = ['email']

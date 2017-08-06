@@ -71,7 +71,8 @@ p.browserupgrade {
 }
 
 div.area {
-  padding: 2em 4em;
+  padding: 4em 4em;
+  padding-top: 2em;
 }
 
 .highlight {
@@ -82,12 +83,21 @@ div.area {
 
 @import 'head';
 
+div.area-3, div.area-4, div.area-5 {
+    clip-path: polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+}
+
 div.area-2, div.area-4 {
   @include gradient-directional($start-color: #8ee3fc, $end-color: #ab9ffc);
 }
 
+div.area-2 {
+  clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+}
+
 div.area-6 {
   @include gradient-directional($start-color: #ba95fe, $end-color: #b87bfd);
+  clip-path: polygon(50% 5%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
 }
 
 div.area-8 {

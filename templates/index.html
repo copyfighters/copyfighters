@@ -24,9 +24,9 @@
 			<div class="col-md-6">
 				<p>{% blocktrans %}The European Union is moving forward with proposals to <b>reform copyright law</b> to make it apply more uniformly across the Single Market. The current <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52016PC0593">proposal for a Directive on Copyright in the Digital Single Market</a> will harm innovation and threatens our fundamental rights of access to information, freedom of communication, and privacy. <b>We urgently need the Proposal to be amended to protect our Internet freedoms.</b>{% endblocktrans %}</p>
 
-				<p class='countdown'><span>00</span> Days <span>00</span> Hours <span>00</span> Minutes <span>00</span> Seconds</p>
+				<p class='countdown'><span>00</span> {% trans 'Days' %} <span>00</span> {% trans 'Hours' %} <span>00</span> {% trans 'Minutes' %} <span>00</span> {% trans 'Seconds' %}</p>
 
-				<p>Leave your e-mail address here and we will get in touch again, when our campaign starts, so we can together make sure that European copyright reform becomes a success!</p>
+				<p>{% trans 'Leave your email address here and we will get in touch again when our campaign starts, so we can together make sure that European copyright reform becomes a success!' %}</p>
 				<!--p><button class='get-involved-btn'>{% trans 'Join the Copyfight now!' %} <span>→</span></button></p-->
 				<!--a href='#facts' id='learnmore-link'>Learn more ↓</a-->
 			</div>
@@ -42,9 +42,9 @@
 					<p class="form_status"></p>
 					{% csrf_token %}
 					{{ email_form }}
-					<button type="submit">Join now!</button>
+					<button type="submit">{% trans 'Join now!' %}</button>
 					<span id="email_reload">&#8635;</span>
-					<p id="email_share">Share on <span id="share_fb"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</span> or <span id="share_twitter"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</span></p>
+					<p id="email_share">{% blocktrans %}Share on <span id="share_fb"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</span> or <span id="share_twitter"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</span>{% endblocktrans %}</p>
 				</form>
 			</div>
 		</div>
@@ -76,33 +76,33 @@
 	<div class="container-fluid area area-2 issue-1" id="issue1">
 		<div class="row">
 			<div class="col">
-				<h2>Issue #1: Publishers' right</h2>
-				<h3>Unless we take urgent action our ability to share news content online will be hampered</h3>
-				<p>Under Article 11 of the <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN">European Commission’s proposal</a>, the press will have a new right to sue individuals -- or the platforms they use to link to publications on the Internet. The “ancillary right of press publishers” (also known as the “link tax”) will allow press publishers to request a licence fee from anyone who shares their links online if the link is accompanied by a description, snippet, or even just a title that could be the subject of copyright! This includes most news articles shared online.</p>
-				<p><a class="btn btn-default show-details" role="button">Why is this problematic? ↓</a></p>
+				<h2>{% trans "Issue #1: Publishers' right" %}</h2>
+				<h3>{% trans 'Unless we take urgent action our ability to share news content online will be hampered' %}</h3>
+				<p>{% blocktrans %}Under Article 11 of the <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN">European Commission’s proposal</a>, the press will have a new right to sue individuals -- or the platforms they use to link to publications on the Internet. The “ancillary right of press publishers” (also known as the “link tax”) will allow press publishers to request a licence fee from anyone who shares their links online if the link is accompanied by a description, snippet, or even just a title that could be the subject of copyright! This includes most news articles shared online. {% endblocktrans %}</p>
+				<p><a class="btn btn-default show-details" role="button">{% trans 'Why is this problematic?' %} ↓</a></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<h4>What was the problem?</h4>
-				<p>The reason behind this proposal was to remedy the so-called “value gap”. The value gap is the disparity between the large revenues of large online platforms such as Google and Facebook, and the low revenues of press publishers. It was intended as a way of redistributing Google’s revenues to small publishers. The reality is far less straightforward: the resulting proposal will not only fail to redistribute Google’s revenues to those who need it, but it will also hamper our ability as online users to engage with one another on the internet.</p>
-				<h4>Here’s why the Commission’s proposal won’t solve the problem</h4>
-				<p>No. The European Commission’s proposal will have a series of very negative impacts on the free and open Internet which we all use every day:</p>
+				<h4>{% trans 'What was the problem?' %}</h4>
+				<p>{% trans 'The reason behind this proposal was to remedy the so-called “value gap”. The value gap is the disparity between the large revenues of large online platforms such as Google and Facebook, and the low revenues of press publishers. It was intended as a way of redistributing Google’s revenues to small publishers. The reality is far less straightforward: the resulting proposal will not only fail to redistribute Google’s revenues to those who need it, but it will also hamper our ability as online users to engage with one another on the internet.' %}</p>
+				<h4>{% trans 'Here’s why the Commission’s proposal won’t solve the problem' %}</h4>
+				<p>{% trans 'No. The European Commission’s proposal will have a series of very negative impacts on the free and open Internet which we all use every day:' %}</p>
 				<ul>
-					<li>In Spain where a snippet levy is in place, Google has not paid a share of their advertisement-based revenues to news publishers. Instead, it has simply stopped publishing links to Spanish publishers. It is likely that other social networks will limit their users’ ability to share such links if this Directive comes into effect, thus threatening our freedom of information and limiting our right to be informed</li>
-					<li>News publishers will have the right to sue individual website owners and to ask for licence fees whenever their links are being shared, hindering the ability of individuals to share new ideas and important information.</li>
-					<li>Advertisement-based clickbait and low-quality news providers which do not charge to share their links could prosper to the detriment of more reputable news sources.</li>
-					<li>This will have a negative impact on competition and innovation: European start-ups will be unable to pay for link snippets, and thus will either be unable to compete with existing platform monopolies such as Google or Facebook or will need to launch outside of the European Union.</li>
+					<li>{% trans 'In Spain where a snippet levy is in place, Google has not paid a share of their advertisement-based revenues to news publishers. Instead, it has simply stopped publishing links to Spanish publishers. It is likely that other social networks will limit their users’ ability to share such links if this Directive comes into effect, thus threatening our freedom of information and limiting our right to be informed' %}</li>
+					<li>{% trans 'News publishers will have the right to sue individual website owners and to ask for licence fees whenever their links are being shared, hindering the ability of individuals to share new ideas and important information.' %}</li>
+					<li>{% trans 'Advertisement-based clickbait and low-quality news providers which do not charge to share their links could prosper to the detriment of more reputable news sources.' %}</li>
+					<li>{% trans 'This will have a negative impact on competition and innovation: European start-ups will be unable to pay for link snippets, and thus will either be unable to compete with existing platform monopolies such as Google or Facebook or will need to launch outside of the European Union.' %}</li>
 				</ul>
-				<h4>The proposal needs urgent amendment or deletion, and we need your help to ensure that happens. Join the Copyfight!</h4>
+				<h4>{% trans 'The proposal needs urgent amendment or deletion, and we need your help to ensure that happens. Join the Copyfight!' %}</h4>
 				<p class="share">
 					<label for="issue-1-message-select">
-						<i class="fa fa-share-alt" aria-hidden="true"></i> Spread the word
+						<i class="fa fa-share-alt" aria-hidden="true"></i> {% trans 'Spread the word' %}
 					</label>
 					<select class="custom-select" id="issue-1-message-select">
-						<option value="1">We Oppose A New Publishers' Right in the EU</option>
-						<option value="2">NO to the new LINK TAX!</option>
-						<option value="3">NO To Online Censorship Through Copyright!</option>
+						<option value="1">{% trans "We Oppose A New Publishers' Right in the EU" %}</option>
+						<option value="2">{% trans 'NO to the new LINK TAX!' %}</option>
+						<option value="3">{% trans 'NO To Online Censorship Through Copyright!' %}</option>
 					</select>
 					<a class="share-btn facebook" href="#" target="_blank">
 						<i class="fa fa-facebook" aria-hidden="true"></i>
@@ -118,7 +118,7 @@
 		</div>
 		<div class="row">
 			<div class="col text-right">
-				<a class="btn btn-default" href="{% url 'resources' %}" role="button">Additional Resources »</a>
+				<a class="btn btn-default" href="{% url 'resources' %}" role="button">{% trans 'Additional Resources' %} »</a>
 			</div>
 		</div>
 	</div>
@@ -126,30 +126,30 @@
 	<div class="container-fluid area area-3 issue-2" id="issue2">
 		<div class="row">
 			<div class="col">
-				<h2>Issue #2: Content Filtering</h2>
-				<h3>Unless we take urgent action our ability to post content on the internet will be limited by a censorship machine</h3>
-				<p>Under Article 13 of the <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN">European Commission’s proposal</a>, information society service providers such as Google, Amazon, Facebook, and Twitter will be forced to apply content filtering technology to pre-screen the content uploaded onto their platforms in order to identify copyright infringing works.</p>
-				<p><a class="btn btn-default show-details" role="button">Why is this problematic? ↓</a></p>
+				<h2>{% trans 'Issue #2: Content Filtering' %}</h2>
+				<h3>{% trans 'Unless we take urgent action our ability to post content on the internet will be limited by a censorship machine' %}</h3>
+				<p>{% blocktrans %}Under Article 13 of the <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN">European Commission’s proposal</a>, information society service providers such as Google, Amazon, Facebook, and Twitter will be forced to apply content filtering technology to pre-screen the content uploaded onto their platforms in order to identify copyright infringing works.{% endblocktrans %}</p>
+				<p><a class="btn btn-default show-details" role="button">{% trans 'Why is this problematic?' %} ↓</a></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<h4>What was the problem?</h4>
-				<p>The Internet empowers everyone to become a content creator and to have their voices heard around the world. The problem is that some of the content uploaded on the Internet infringes the copyright of other content creators. The Proposal is trying to address copyright infringement on the Internet, but addresses it in a way that hampers the way the Internet has been functioning so far by asking platforms to put in place costly and opaque solutions to pre-screen our content.</p>
-				<h4>The proposal is problematic…</h4>
-				<p>If you have ever uploaded content to social media, or watched a creative video someone else uploaded, this proposed reform could affect you. This proposal would require intermediaries such as Facebook and YouTube to constantly police their platforms with censorship machines, often with no human element involved in the process. These mechanisms will be expensive to implement. They will make it harder for European start-ups to grow, and for individuals to understand how their content is being manipulated.</p>
-				<h4>Will the proposal fix the problem?</h4>
-				<p>No. The proposed censorship machines are a disproportionate and ineffective ‘solution’ to the problem. We know this, because in the case of SABAM v Netlog, the Court of Justice of the European Union ruled social networks and other web hosting providers cannot be required to monitor and filter activities that occur on their sites to prevent copyright infringement. This would be a breach of freedom of expression and of privacy (CJEU C-360/10).</p>
-				<h4>Fight with us against the requirement for large and small websites to put in place automated censorship systems. Join the Copyfight!</h4>
+				<h4>{% trans 'What was the problem?' %}</h4>
+				<p>{% trans 'The Internet empowers everyone to become a content creator and to have their voices heard around the world. The problem is that some of the content uploaded on the Internet infringes the copyright of other content creators. The Proposal is trying to address copyright infringement on the Internet, but addresses it in a way that hampers the way the Internet has been functioning so far by asking platforms to put in place costly and opaque solutions to pre-screen our content.' %}</p>
+				<h4>{% trans 'The proposal is problematic…' %}</h4>
+				<p>{% trans 'If you have ever uploaded content to social media, or watched a creative video someone else uploaded, this proposed reform could affect you. This proposal would require intermediaries such as Facebook and YouTube to constantly police their platforms with censorship machines, often with no human element involved in the process. These mechanisms will be expensive to implement. They will make it harder for European start-ups to grow, and for individuals to understand how their content is being manipulated.' %}</p>
+				<h4>{% trans 'Will the proposal fix the problem?' %}</h4>
+				<p>{% trans 'No. The proposed censorship machines are a disproportionate and ineffective ‘solution’ to the problem. We know this, because in the case of SABAM v Netlog, the Court of Justice of the European Union ruled social networks and other web hosting providers cannot be required to monitor and filter activities that occur on their sites to prevent copyright infringement. This would be a breach of freedom of expression and of privacy (CJEU C-360/10).' %}</p>
+				<h4>{% trans 'Fight with us against the requirement for large and small websites to put in place automated censorship systems. Join the Copyfight!' %}</h4>
 				<p class="share">
 					<label for="issue-1-message-select">
-						<i class="fa fa-share-alt" aria-hidden="true"></i> Spread the word
+						<i class="fa fa-share-alt" aria-hidden="true"></i> {% trans 'Spread the word' %}
 					</label>
 					<select class="custom-select" id="issue-2-message-select">
-						<option value="1">We Oppose The Use of Automated Solutions To Pre-Screen Online Content</option>
-						<option value="2">NO TO CONTENT FILTERING!</option>
-						<option value="3">NO To Online Censorship Through Copyright!</option>
-						<option value="4">The "Value Gap" is BS... This reform is destroying our internet.</option>
+						<option value="1">{% trans 'We Oppose The Use of Automated Solutions To Pre-Screen Online Content' %}</option>
+						<option value="2">{% trans 'NO TO CONTENT FILTERING!' %}</option>
+						<option value="3">{% trans 'NO To Online Censorship Through Copyright!' %}</option>
+						<option value="4">{% trans 'The "Value Gap" is BS... This reform is destroying our internet.' %}</option>
 					</select>
 					<a class="share-btn facebook" href="#" target="_blank">
 						<i class="fa fa-facebook"></i>
@@ -165,7 +165,7 @@
 		</div>
 		<div class="row">
 			<div class="col text-right">
-				<a class="btn btn-default" href="{% url 'resources' %}" role="button">Additional Resources »</a>
+				<a class="btn btn-default" href="{% url 'resources' %}" role="button">{% trans 'Additional Resources' %} »</a>
 			</div>
 		</div>
 	</div>
@@ -173,25 +173,25 @@
 	<div class="container-fluid area area-4 issue-3" id="issue3">
 		<div class="row">
 			<div class="col">
-				<h2>Issue #3: User-Generated Content Exception</h2>
-				<h3>Unless we take urgent action our innocent remixes and user-generated content will keep infringing copyright</h3>
-				<p>In their February 2017 <a href="http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//NONSGML+COMPARL+PE-595.591+01+DOC+PDF+V0//EN&language=EN">Draft Opinion</a>, the Committee on Culture and Education of the European Parliament (CULT) proposed a user-generated content exception to copyright. This proposed amendment (which has not yet been incorporated into the Directive) provides that using content already made available online for purposes such as criticism, review, illustration, caricature, or parody is lawful provided the source is accurately identified and the use is consistent with fair practice. Such a proposal is not yet part of the law but our view is it should be to ensure a healthy remix culture and a future-proof internet.</p>
-				<p><a class="btn btn-default show-details" role="button">Why is this important? ↓</a></p>
+				<h2>{% trans 'Issue #3: User-Generated Content Exception' %}</h2>
+				<h3>{% trans 'Unless we take urgent action our innocent remixes and user-generated content will keep infringing copyright' %}</h3>
+				<p>{% blocktrans %}In their February 2017 <a href="http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//NONSGML+COMPARL+PE-595.591+01+DOC+PDF+V0//EN&language=EN">Draft Opinion</a>, the Committee on Culture and Education of the European Parliament (CULT) proposed a user-generated content exception to copyright. This proposed amendment (which has not yet been incorporated into the Directive) provides that using content already made available online for purposes such as criticism, review, illustration, caricature, or parody is lawful provided the source is accurately identified and the use is consistent with fair practice. Such a proposal is not yet part of the law but our view is it should be to ensure a healthy remix culture and a future-proof internet.{% endblocktrans %}</p>
+				<p><a class="btn btn-default show-details" role="button">{% trans 'Why is this important?' %} ↓</a></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<h4>Claiming back our culture…</h4>
-				<p>Most memes, reaction gifs, remixes and many other types of user-generated content are currently in breach of copyright rules. The Directive, as proposed, contains no exceptions to make them legal. Our culture is changing, we are no longer mere recipients of content but also creators of new meaning and we want to engage in those practices legally.</p>
-				<h4>Help us add a user-generated content exception to the EU Directive to enable our online culture to flourish! Join the Copyfight!</h4>
+				<h4>{% trans 'Claiming back our culture…' %}</h4>
+				<p>{% trans 'Most memes, reaction gifs, remixes and many other types of user-generated content are currently in breach of copyright rules. The Directive, as proposed, contains no exceptions to make them legal. Our culture is changing, we are no longer mere recipients of content but also creators of new meaning and we want to engage in those practices legally.' %}</p>
+				<h4>{% trans 'Help us add a user-generated content exception to the EU Directive to enable our online culture to flourish! Join the Copyfight!' %}</h4>
 				<p class="share">
 					<label for="issue-1-message-select">
-						<i class="fa fa-share-alt" aria-hidden="true"></i> Spread the word
+						<i class="fa fa-share-alt" aria-hidden="true"></i> {% trans 'Spread the word' %}
 					</label>
 					<select class="custom-select" id="issue-3-message-select">
-						<option value="1">We Want A Copyright Exception For User-Generated Content</option>
-						<option value="2">We <3 REMIXES #joinourcopyfight</option>
-						<option value="3">We agree with the CULT Committee's Proposal for a copyright exception for user-generated content.</option>
+						<option value="1">{% trans 'We Want A Copyright Exception For User-Generated Content' %}</option>
+						<option value="2">{% trans 'We <3 REMIXES #joinourcopyfight' %}</option>
+						<option value="3">{% trans "We agree with the CULT Committee's Proposal for a copyright exception for user-generated content." %}</option>
 					</select>
 					<a class="share-btn facebook" href="#" target="_blank">
 						<i class="fa fa-facebook"></i>
@@ -207,7 +207,7 @@
 		</div>
 		<div class="row">
 			<div class="col text-right">
-				<a class="btn btn-default" href="{% url 'resources' %}" role="button">Additional Resources »</a>
+				<a class="btn btn-default" href="{% url 'resources' %}" role="button">{% trans 'Additional Resources' %} »</a>
 			</div>
 		</div>
 	</div>
@@ -217,7 +217,7 @@
 	<div class="container-fluid area area-5">
 		<div class="row">
 			<div class="col">
-				<h2>What others are saying</h2>
+				<h2>{% trans 'What others are saying' %}</h2>
 			</div>
 		</div>
 		<div class="row">
@@ -225,9 +225,9 @@
 				<div class="quote">
 					<div class="photo" style="background-image:url({% static 'img/quotes/neeliekroes.jpg' %}); background-size: contain; background-color:#345"></div>
 					<blockquote>
-						<div><strong>Today our fragmented copyright system is ill-adapted to the real essence of art, which has no frontiers.</strong> Instead, that system has ended up giving a more prominent role to intermediaries than to artists. It irritates the public who often cannot access what artists want to offer and leaves a vacuum which is served by illegal content, depriving the artists of their well deserved remuneration.</div>
+						<div>{% blocktrans %}<strong>Today our fragmented copyright system is ill-adapted to the real essence of art, which has no frontiers.</strong> Instead, that system has ended up giving a more prominent role to intermediaries than to artists. It irritates the public who often cannot access what artists want to offer and leaves a vacuum which is served by illegal content, depriving the artists of their well deserved remuneration.{% endblocktrans %}</div>
 						<cite>
-							<a href="https://twitter.com/NeelieKroesEU/" target="_blank" class="name">Neelie Kroes</a>, Former Vice-President of the European Commission (Photo by Olivier Ezratty, CC BY-SA 3.0)
+							<a href="https://twitter.com/NeelieKroesEU/" target="_blank" class="name">Neelie Kroes</a>, {% trans 'Former Vice-President of the European Commission (Photo by Olivier Ezratty, CC BY-SA 3.0)' context 'Talking about Neelie Kroes, so if your language is gendered, use the female version of "vice president"' %}
 						</cite>
 					</blockquote>
 				</div>
@@ -247,13 +247,13 @@
 	<div class="container-fluid area area-6 share-general">
 		<div class="row">
 			<div class="col">
-				<h2>Spread the word</h2>
+				<h2>{% trans 'Spread the word' %}</h2>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-3">
 				<p class="statement">
-					Join Our #COPYFIGHT! #EUcopyrightreform #copyfighters #joinourcopyfight
+					{% trans 'Join Our #COPYFIGHT! #EUcopyrightreform #copyfighters #joinourcopyfight' %}
 				</p>
 				<p class="text-center">
 					<a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote=Join%20Our%20%23COPYFIGHT!%20%23EUcopyrightreform%20%23copyfighters%20%23joinourcopyfight">
@@ -266,7 +266,7 @@
 			</div>
 			<div class="col-md-3">
 				<p class="statement">
-					NO to the current EU Reform on Copyright, YES to better copyright laws and exceptions to copyright. #copyfighters
+					{% trans 'NO to the current EU Reform on Copyright, YES to better copyright laws and exceptions to copyright. #copyfighters' %}
 				</p>
 				<p class="text-center">
 					<a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote=NO%20to%20the%20current%20EU%20Reform%20on%20Copyright%2C%20YES%20to%20better%20copyright%20laws%20and%20exceptions.%20%23copyfighters">
@@ -279,7 +279,7 @@
 			</div>
 			<div class="col-md-3">
 				<p class="statement">
-					We are #copyfighters and want a free and open Internet.
+					{% trans 'We are #copyfighters and want a free and open Internet.' %}
 				</p>
 				<p class="text-center">
 					<a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote=We%20are%20%23copyfighters%20and%20want%20a%20free%20and%20open%20Internet.">
@@ -292,7 +292,7 @@
 			</div>
 			<div class="col-md-3">
 				<p class="statement">
-					NO To More Copyright in the Digital Single Market. YES To Better Copyright. YES To Harmonisation #Copyfighters
+					{% trans 'NO To More Copyright in the Digital Single Market. YES To Better Copyright. YES To Harmonisation #Copyfighters' %}
 				</p>
 				<p class="text-center">
 					<a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote=NO%20To%20More%20Copyright%20in%20the%20Digital%20Single%20Market.%20YES%20To%20Better%20Copyright.%20YES%20To%20Harmonisation.%20%23copyfighters">

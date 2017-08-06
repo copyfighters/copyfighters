@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-06 00:48+0000\n"
+"POT-Creation-Date: 2017-08-06 01:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,14 +18,84 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: copyfight/settings.py:77
-msgid "English"
+msgid "Albanian"
 msgstr ""
 
 #: copyfight/settings.py:78
+msgid "Croatian"
+msgstr ""
+
+#: copyfight/settings.py:79
+msgid "English"
+msgstr ""
+
+#: copyfight/settings.py:80
+msgid "Finnish"
+msgstr ""
+
+#: copyfight/settings.py:81
+msgid "French"
+msgstr ""
+
+#: copyfight/settings.py:82
 msgid "German"
 msgstr ""
 
-#: templates/base.html:76
+#: copyfight/settings.py:83
+msgid "Greek"
+msgstr ""
+
+#: copyfight/settings.py:84
+msgid "Italian"
+msgstr ""
+
+#: copyfight/settings.py:85
+msgid "Luxembourgish"
+msgstr ""
+
+#: copyfight/settings.py:86
+msgid "Portuguese"
+msgstr ""
+
+#: copyfight/settings.py:87
+msgid "Romanian"
+msgstr ""
+
+#: copyfight/settings.py:88
+msgid "Swedish"
+msgstr ""
+
+#: templates/base.html:23
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"https://"
+"browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+
+#: templates/base.html:33
+msgid "Fighting for our Digital Rights in Europe"
+msgstr ""
+
+#: templates/base.html:38
+msgid "Home"
+msgstr ""
+
+#: templates/base.html:38
+msgid "current"
+msgstr ""
+
+#: templates/base.html:41 templates/base.html:97 templates/resources.html:9
+msgid "Resources"
+msgstr ""
+
+#: templates/base.html:44 templates/base.html:98
+msgid "Imprint"
+msgstr ""
+
+#: templates/base.html:47 templates/base.html:99
+msgid "Privacy"
+msgstr ""
+
+#: templates/base.html:79
 msgid ""
 "Crafted with ❤ by young people from all over Europe with the support of <a "
 "href='https://beyonddivision.eu'>europe beyond division</a>, <a "
@@ -54,6 +124,235 @@ msgid ""
 "b>"
 msgstr ""
 
+#: templates/index.html:27
+msgid "Days"
+msgstr ""
+
+#: templates/index.html:27
+msgid "Hours"
+msgstr ""
+
+#: templates/index.html:27
+msgid "Minutes"
+msgstr ""
+
+#: templates/index.html:27
+msgid "Seconds"
+msgstr ""
+
+#: templates/index.html:29
+msgid ""
+"Leave your email address here and we will get in touch again when our "
+"campaign starts, so we can together make sure that European copyright reform "
+"becomes a success!"
+msgstr ""
+
 #: templates/index.html:30
 msgid "Join the Copyfight now!"
+msgstr ""
+
+#: templates/index.html:45
+msgid "Join now!"
+msgstr ""
+
+#: templates/index.html:47
+msgid ""
+"Share on <span id=\"share_fb\"><i class=\"fa fa-facebook\" aria-hidden=\"true"
+"\"></i> Facebook</span> or <span id=\"share_twitter\"><i class=\"fa fa-"
+"twitter\" aria-hidden=\"true\"></i> Twitter</span>"
+msgstr ""
+
+#: templates/index.html:80
+msgid "Issue #1: Publishers' right"
+msgstr ""
+
+#: templates/index.html:81
+msgid ""
+"Unless we take urgent action our ability to share news content online will "
+"be hampered"
+msgstr ""
+
+#: templates/index.html:82
+msgid ""
+"Under Article 11 of the <a href=\"http://eur-lex.europa.eu/legal-content/EN/"
+"TXT/PDF/?uri=CELEX:52016PC0593&from=EN\">European Commission’s proposal</a>, "
+"the press will have a new right to sue individuals -- or the platforms they "
+"use to link to publications on the Internet. The “ancillary right of press "
+"publishers” (also known as the “link tax”) will allow press publishers to "
+"request a licence fee from anyone who shares their links online if the link "
+"is accompanied by a description, snippet, or even just a title that could be "
+"the subject of copyright! This includes most news articles shared online. "
+msgstr ""
+
+#: templates/index.html:83
+msgid "Why is this problematic?"
+msgstr ""
+
+#: templates/index.html:88
+msgid "What was the problem?"
+msgstr ""
+
+#: templates/index.html:89
+msgid ""
+"The reason behind this proposal was to remedy the so-called “value gap”. The "
+"value gap is the disparity between the large revenues of large online "
+"platforms such as Google and Facebook, and the low revenues of press "
+"publishers. It was intended as a way of redistributing Google’s revenues to "
+"small publishers. The reality is far less straightforward: the resulting "
+"proposal will not only fail to redistribute Google’s revenues to those who "
+"need it, but it will also hamper our ability as online users to engage with "
+"one another on the internet."
+msgstr ""
+
+#: templates/index.html:90
+msgid "Here’s why the Commission’s proposal won’t solve the problem"
+msgstr ""
+
+#: templates/index.html:91
+msgid ""
+"No. The European Commission’s proposal will have a series of very negative "
+"impacts on the free and open Internet which we all use every day:"
+msgstr ""
+
+#: templates/index.html:93
+msgid ""
+"In Spain where a snippet levy is in place, Google has not paid a share of "
+"their advertisement-based revenues to news publishers. Instead, it has "
+"simply stopped publishing links to Spanish publishers. It is likely that "
+"other social networks will limit their users’ ability to share such links if "
+"this Directive comes into effect, thus threatening our freedom of "
+"information and limiting our right to be informed"
+msgstr ""
+
+#: templates/index.html:94
+msgid ""
+"News publishers will have the right to sue individual website owners and to "
+"ask for licence fees whenever their links are being shared, hindering the "
+"ability of individuals to share new ideas and important information."
+msgstr ""
+
+#: templates/index.html:95
+msgid ""
+"Advertisement-based clickbait and low-quality news providers which do not "
+"charge to share their links could prosper to the detriment of more reputable "
+"news sources."
+msgstr ""
+
+#: templates/index.html:96
+msgid ""
+"This will have a negative impact on competition and innovation: European "
+"start-ups will be unable to pay for link snippets, and thus will either be "
+"unable to compete with existing platform monopolies such as Google or "
+"Facebook or will need to launch outside of the European Union."
+msgstr ""
+
+#: templates/index.html:98
+msgid ""
+"The proposal needs urgent amendment or deletion, and we need your help to "
+"ensure that happens. Join the Copyfight!"
+msgstr ""
+
+#: templates/index.html:101
+msgid "Spread the word"
+msgstr ""
+
+#: templates/index.html:104
+msgid "We Oppose A New Publishers' Right in the EU"
+msgstr ""
+
+#: templates/index.html:105
+msgid "NO to the new LINK TAX!"
+msgstr ""
+
+#: templates/index.html:106
+msgid "NO To Online Censorship Through Copyright!"
+msgstr ""
+
+#: templates/index.html:122
+msgid "Additional Resources"
+msgstr ""
+
+#: templates/resources.html:10
+msgid ""
+"In this document pool, you will find relevant information, documents, and "
+"analyses on the Proposed Directive on Copyright in the Digital Single "
+"Market. We will be updating this document pool as the process advances."
+msgstr ""
+
+#: templates/resources.html:10
+msgid "Last update"
+msgstr ""
+
+#: templates/resources.html:15
+msgid "European Institutions Documents"
+msgstr ""
+
+#: templates/resources.html:17
+msgid ""
+"Proposal for a Directive on Copyright in the Digital Single Market (14 "
+"September 2016)"
+msgstr ""
+
+#: templates/resources.html:18
+msgid "European Commission documentation"
+msgstr ""
+
+#: templates/resources.html:19
+msgid "European Parliament documentation"
+msgstr ""
+
+#: templates/resources.html:20
+msgid ""
+"Draft Opinion of the Committee on Culture and Education of the European "
+"Parliament (CULT) (February 2017), see in particular the suggestion to "
+"introduce an exception to copyright infringement for user-generated content"
+msgstr ""
+
+#: templates/resources.html:24
+msgid "Proposal Analysis"
+msgstr ""
+
+#: templates/resources.html:26
+msgid "Copyright Reform Document Pool curated by EDRI"
+msgstr ""
+
+#: templates/resources.html:27
+msgid ""
+"Deconstructing Article 13 of the Copyright proposal of the European "
+"Commission (EDRi, December 2016)"
+msgstr ""
+
+#: templates/resources.html:28
+msgid "Open Letter from News Outlets (December 2015)"
+msgstr ""
+
+#: templates/resources.html:33
+msgid "Academic Papers"
+msgstr ""
+
+#: templates/resources.html:35
+msgid ""
+"On Online Platforms and the Commission’s New Proposal for a Directive on "
+"Copyright in the Digital Single Market (study by Dr Christina Angelopoulos, "
+"Centre for Intellectual Property and Information Law, University of "
+"Cambridge, January 2017)"
+msgstr ""
+
+#: templates/resources.html:36
+msgid ""
+"A Brief Exegesis of the Proposed Copyright Directive (Sophie Stalla-"
+"Bourdillon, Eleonora Rosati, Karmen Turk, Christina Angelopoulos, Aleksandra "
+"Kuczerawy, Miquel Peguera, Martin Husovec, January 2017)"
+msgstr ""
+
+#: templates/resources.html:40
+msgid "Other resources"
+msgstr ""
+
+#: templates/resources.html:44
+msgid "Copyright Campaign of Mozilla Foundation"
+msgstr ""
+
+#: templates/resources.html:46
+msgid "Issue page on website of Julia Reda"
 msgstr ""

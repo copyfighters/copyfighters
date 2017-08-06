@@ -71,21 +71,20 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 LANGUAGE_CODE = 'en'
-
-ugettext = lambda s: s
 LANGUAGES = (
-	('sq', ugettext('Albanian')),
-	('hr', ugettext('Croatian')),
-	('en', ugettext('English')),
-	('fi', ugettext('Finnish')),
-	('fr', ugettext('French')),
-	('de', ugettext('German')),
-	('el', ugettext('Greek')),
-	('it', ugettext('Italian')),
-	('lb', ugettext('Luxembourgish')),
-	('pt', ugettext('Portuguese')),
-	('ro', ugettext('Romanian')),
-	('sv', ugettext('Swedish')),
+	('sq', 'Albanian'),
+	('hr', 'Croatian'),
+	('en', 'English'),
+	('fi', 'Finnish'),
+	('fr', 'French'),
+	('de', 'German'),
+	('el', 'Greek'),
+	('is', 'Icelandic'),
+	('it', 'Italian'),
+	('lb', 'Luxembourgish'),
+	('pt', 'Portuguese'),
+	('ro', 'Romanian'),
+	('sv', 'Swedish'),
 )
 
 

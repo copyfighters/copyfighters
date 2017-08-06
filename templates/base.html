@@ -1,4 +1,4 @@
-{% load staticfiles %}<!doctype html>
+{% load staticfiles %}{% load i18n %}<!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
@@ -47,6 +47,23 @@
 								<a class="nav-link" href="{% url 'privacy' %}">Privacy</a>
 							</li>
 						</ul>
+						<ul class="navbar-nav navbar-right">
+							<li class="nav-item dropdown">
+								{% get_current_language as LANGUAGE_CODE %}
+								{% get_available_languages as LANGUAGES %}
+								{% get_language_info_list for LANGUAGES as languages %}
+
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe" aria-hidden="true"></i> {{ LANGUAGE_CODE|language_name_local }} <span class="caret"></span></a>
+
+								<ul class="dropdown-menu">
+									{% for language in languages %}
+										<li class="nav-item"><a class="nav-link" href="{% url 'switch-language' language=language.code %}">
+											{{ language.name_local }}
+										</a></li>
+									{% endfor %}
+								</ul>
+							</li>
+						</ul>
 					</div>
 					{% endblock %}
 				</nav>
@@ -59,7 +76,22 @@
 		  <div class="row area">
 		    <div class="col col-lg-8">
 		      <p>
-		        Crafted with ❤ by young people from all over Europe with the support of <a href='https://beyonddivision.eu'>europe beyond division</a>, <a href='https://young-pirates.eu'>YPE</a> and the European Youth Foundation of the Council of Europe. Hosting and technical infrastructure provided by <a href='https://fnordserver.eu'>fnordserver</a>. This page is open source, <a href='https://github.com/copyfighters/copyfighters' rel='nofollow'>fork it on github</a>!
+		        {% blocktrans %}Crafted with ❤ by young people from all over Europe with the support of <a href='https://beyonddivision.eu'>europe beyond division</a>, <a href='https://young-pirates.eu'>YPE</a> and the European Youth Foundation of the Council of Europe. Hosting and technical infrastructure provided by <a href='https://fnordserver.eu'>fnordserver</a>. This page is open source, <a href='https://github.com/copyfighters/copyfighters' rel='nofollow'>fork it on github</a>!{% endblocktrans %}
+
+				<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+					<input name="next" type="hidden" value="{{ redirect_to }}" />
+					<select name="language" onchange="this.form.submit()">
+						{% get_current_language as LANGUAGE_CODE %}
+						{% get_available_languages as LANGUAGES %}
+						{% get_language_info_list for LANGUAGES as languages %}
+
+						{% for language in languages %}
+							<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+								{{ language.name_local }}
+							</option>
+						{% endfor %}
+					</select>
+				</form>
 		      </p>
 		      <p>
 		        <a href="{% url 'resources' %}">Resources</a> |

@@ -6,6 +6,7 @@ from campaign import forms
 from twilio.twiml.voice_response import Dial, Number, VoiceResponse
 from twilio.rest import Client
 from django.views.decorators.csrf import csrf_exempt
+from django.utils.translation import LANGUAGE_SESSION_KEY
 
 
 def index(request):
@@ -51,3 +52,18 @@ def outbound(request):
         response.append(dial)
         return HttpResponse(response)
     return HttpResponseRedirect('/')
+
+def switch_language(request, language):
+    response = HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
+
+    if hasattr(request, 'session'):
+        request.session[LANGUAGE_SESSION_KEY] = language
+    else:
+        response.set_cookie(
+            settings.LANGUAGE_COOKIE_NAME, language,
+            max_age=settings.LANGUAGE_COOKIE_AGE,
+            path=settings.LANGUAGE_COOKIE_PATH,
+            domain=settings.LANGUAGE_COOKIE_DOMAIN,
+        )
+
+    return response

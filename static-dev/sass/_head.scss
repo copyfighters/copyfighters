@@ -43,7 +43,7 @@
   // Needed to make the absolute positioning below reference this div.
   position: relative;
 
-  #index-header-background {
+  #index-header-background, #index-header-portraits {
     pointer-events: none;
     position: absolute;
     top: 0;
@@ -51,11 +51,22 @@
 
     width: 100%;
     height: 100%;
-    z-index: -30;
+  }
 
+  #index-header-background {
     background-color: #6df2c7;
     @include gradient-directional($start-color: #8df472, $end-color: #6df2c7);
     clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+    z-index: -30;
+  }
+
+  #index-header-portraits {
+    background: {
+      position: top right;
+      color: white;
+      image: url(../img/bg-portraits.jpg);
+    }
+    z-index: -31;
   }
 
   .header-nav {

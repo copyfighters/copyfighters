@@ -12,8 +12,8 @@
 {% endblock %}
 
 {% block content %}
-	<div class="container-fluid">
-		<div class="row justify-content-center area area-index-header">
+	<div class="container-fluid area area-index-header">
+		<div class="row">
 			<div class="col">
 				<h1 id="main-title">
 					<span id="main-title-strings"><p>{% blocktrans %}We want a Europe where <span>sharing</span>, <span>innovation</span> and <span>copyright</span> go hand in hand.{% endblocktrans %}</p></span>
@@ -21,8 +21,8 @@
 				</h1>
 			</div>
 		</div>
-		<div class="row justify-content-center area area-index-header">
-			<div class="col-md-6">
+		<div class="row">
+			<div class="col-md-6 text-justify">
 				<p>{% blocktrans %}The European Union is moving forward with proposals to <b>reform copyright law</b> to make it apply more uniformly across the Single Market. The current <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52016PC0593">proposal for a Directive on Copyright in the Digital Single Market</a> will harm innovation and threatens our fundamental rights of access to information, freedom of communication, and privacy. <b>We urgently need the Proposal to be amended to protect our Internet freedoms.</b>{% endblocktrans %}</p>
 
 				<p class='countdown'><span>00</span> {% trans 'Days' %} <span>00</span> {% trans 'Hours' %} <span>00</span> {% trans 'Minutes' %} <span>00</span> {% trans 'Seconds' %}</p>
@@ -37,7 +37,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="row justify-content-center area area-index-header area-email">
+	</div>
+	<div class="container-fluid area area-email">
+		<div class="row">
 			<div class="col-xs-12">
 				<form class="email_form" action="/email_form/" method="post">
 					<p class="form_status"></p>

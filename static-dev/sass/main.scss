@@ -71,7 +71,7 @@ p.browserupgrade {
 }
 
 div.area {
-  padding: 4em 4em;
+  padding: 4em 5em;
 }
 
 .highlight {
@@ -245,9 +245,13 @@ div.footer {
 // move somewhere else
 
 div.area-email {
-  background-color: black;
-  color: white;
-  padding-bottom: 0 !important;
+  background-color: #000;
+  color: #fff;
+  padding: {
+    bottom: 0;
+    left: 6em;
+    top: 0;
+  }
 
   div.col-xs-12 {
     width: 100%;

@@ -77,7 +77,12 @@
 
 // First block on homepage
 div.area-index-header {
+  padding-bottom: 0;
   padding-top: 0;
+
+  .row {
+    padding-bottom: 4em;
+  }
 
   #main-title {
     margin-top: .4em;

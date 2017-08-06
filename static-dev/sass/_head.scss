@@ -80,6 +80,8 @@ div.area-index-header {
   padding-top: 0;
 
   #main-title {
+    margin-top: .4em;
+
     #main-title-strings {
       display: none;
     }
@@ -94,7 +96,6 @@ div.area-index-header {
     }
 
     #main-title-container {
-      margin: 0 -3px 30px -3px;
       overflow: visible;
       line-height: 1.5;
 

@@ -7,7 +7,7 @@ $(document).ready(function(){
 			$('.header-nav').css('visibility','visible').hide().fadeIn(500);
 		},
 		stringsElement: '#main-title-strings',
-		typeSpeed: 30
+		typeSpeed: 40
 	});
 
 	// Initialise countdown.

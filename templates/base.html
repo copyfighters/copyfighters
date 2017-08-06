@@ -38,6 +38,9 @@
 								<a class="nav-link" href="/">{% trans 'Home' %} <span class="sr-only">({% trans 'current' %})</span></a>
 							</li>
 							<li class="nav-item">
+								<a class="nav-link" href="{% url 'communications-toolkit' %}">{% trans 'Communications Toolkit' %}</a>
+							</li>
+							<li class="nav-item">
 								<a class="nav-link" href="{% url 'resources' %}">{% trans 'Resources' %}</a>
 							</li>
 						</ul>
@@ -88,6 +91,7 @@
 				</form>
 		      </p>
 		      <p>
+		        <a href="{% url 'communications-toolkit' %}">{% trans 'Communications Toolkit' %}</a> |
 		        <a href="{% url 'resources' %}">{% trans 'Resources' %}</a> |
 		        <a href="{% url 'imprint' %}">{% trans 'Imprint' %}</a> |
 		        <a href="{% url 'privacy' %}">{% trans 'Privacy' %}</a>

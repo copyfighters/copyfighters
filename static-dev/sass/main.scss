@@ -169,12 +169,17 @@ div.area-8 {
 }
 
 .share-general {
+  > .row:nth-of-type(2) div:nth-child(even) {
+    margin-top: .5em;
+  }
 
   .statement {
     background-color: #fff;
     margin-bottom: 1.4em;
-    padding: .3em .6em;
+    padding: .5em .7em;
     position: relative;
+    border-radius: 8px;
+    font-weight: 300;
 
     &::after {
       border-left: 10px solid transparent;

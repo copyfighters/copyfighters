@@ -10,12 +10,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-06 01:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Cosma Tieber <cosmatieber@gmail.com>, 2017\n"
-"Language-Team: German (https://www.transifex.com/europe-beyond-division-ev/teams/76952/de/)\n"
+"Last-Translator: PTLyon <eduardoflsantos@hotmail.com>, 2017\n"
+"Language-Team: Portuguese (https://www.transifex.com/europe-beyond-division-ev/teams/76952/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
+"Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: templates/base.html:23
@@ -24,33 +24,33 @@ msgid ""
 "href=\"https://browsehappy.com/\">upgrade your browser</a> to improve your "
 "experience."
 msgstr ""
-"Sie benutzen einen <strong>veralteten</strong> Webbrowser. Bitte <a "
-"href=\"https://browsehappy.com/\">aktualisieren sie Ihren Browser</a> um "
-"ihre Browsing-Experience zu verbessern."
+"Está a utilizar um browser <strong>desatualizado</strong>. Por favor, <a "
+"href=\"https://browsehappy.com/\">atualize o seu browser</a> para melhorar a"
+" experiência."
 
 #: templates/base.html:33
 msgid "Fighting for our Digital Rights in Europe"
-msgstr "Für unsere Digitalen Rechte in Europa streiten"
+msgstr "A lutar pelos nossos Direitos Digitais na Europa"
 
 #: templates/base.html:38
 msgid "Home"
-msgstr "Start"
+msgstr "Página Inicial"
 
 #: templates/base.html:38
 msgid "current"
-msgstr "aktuell"
+msgstr "página atual"
 
 #: templates/base.html:41 templates/base.html:97 templates/resources.html:9
 msgid "Resources"
-msgstr "Ressourcen"
+msgstr "Recursos"
 
 #: templates/base.html:44 templates/base.html:98
 msgid "Imprint"
-msgstr "Impressum"
+msgstr ""
 
 #: templates/base.html:47 templates/base.html:99
 msgid "Privacy"
-msgstr "Datenschutz"
+msgstr "Privacidade"
 
 #: templates/base.html:79
 msgid ""
@@ -62,21 +62,21 @@ msgid ""
 "href='https://github.com/copyfighters/copyfighters' rel='nofollow'>fork it "
 "on github</a>!"
 msgstr ""
-"Mit ❤ von jungen Menschen aus ganz Europa mit der Unterstützung von <a "
-"href='https://beyonddivision.eu'>europe beyond division</a>, <a href='https"
-"://young-pirates.eu'>YPE</a> und der European Youth Foundation des "
-"Europarats gebaut. Hosting und technische Infrastruktur bereitgestellt durch"
-" <a href='https://fnordserver.eu'>fnordserver</a>. Diese Seite ist Open "
-"Source, <a href='https://github.com/copyfighters/copyfighters' "
-"rel='nofollow'>forke sie auf Github</a>!"
+"Criado com  ❤ por jovens de toda a Europa com o apoio de <a "
+"href='https://beyonddivision.eu'>europe beyon division</a>, <a href='https"
+"://young-pirates.eu'>YPE</a> e a European Youth Foundation do Conselho da "
+"Europa. Alojamento e infraestrutura fornececida por <a "
+"href='https://fnordserver.eu'>fnordserver</a>. Esta página é de código "
+"aberto, <a href='https://github.com/copyfighters/copyfighters' "
+"rel='nofollow'>fork it on github</a>!"
 
 #: templates/index.html:18
 msgid ""
 "We want a Europe where <span>sharing</span>, <span>innovation</span> and "
 "<span>copyright</span> go hand in hand."
 msgstr ""
-"Wir wollen ein Europa, in dem <span>Sharing</span>, <span>Innovation</span> "
-"und <span>Urheberrecht</span> Hand in Hand greifen."
+"Queremos uma Europa onde a <span>partilha</span>, a <span>inovação</span> e "
+"o <span>Direito de Autor</span> estejam de mão dada."
 
 #: templates/index.html:25
 msgid ""
@@ -89,30 +89,29 @@ msgid ""
 "communication, and privacy. <b>We urgently need the Proposal to be amended "
 "to protect our Internet freedoms.</b>"
 msgstr ""
-"Die Europäische Union arbeitet an Vorschlägen zur <b>Reformierung der "
-"Urheberrechtsgesetzgebung</b>, um sie einheitlicher im Binnenmarkt "
-"anzuwenden. Der aktuelle <a href=\"http://eur-lex.europa.eu/legal-"
-"content/EN/TXT/?uri=CELEX:52016PC0593\">Entwurf für eine Direktive zum "
-"Urheberrecht im Digitalen Binnenmarkt</a> wird Innovation hemmen und "
-"gefährdet unsere fundamentalen Rechte auf Information, "
-"Kommunikationsfreiheit und Privatsphäre. <b>Der Entwurf muss dringend "
-"berichtigt werden, um unsere Freiheit im Internet zu schützen.</b>"
+"A União Europeia está a avançar um uma <b>reforma aos direitos de autor</b> "
+"com o objetivo de os uniformizar nos vários estados membros e atualizar para"
+" a a era digital. Contudo, com a <a href=\"http://eur-lex.europa.eu/legal-"
+"content/EN/TXT/?uri=CELEX:52016PC0593\">atual proposta</a>, põe em causa a "
+"inovação e direitos fundamentais de acesso à informação, liberdade de "
+"comunicação e privacidade.<b> Precisamos urgentemente de corrigir estes "
+"problemas para protegermos a liberdade da internet.</b>"
 
 #: templates/index.html:27
 msgid "Days"
-msgstr "Tage"
+msgstr "Dias"
 
 #: templates/index.html:27
 msgid "Hours"
-msgstr "Stunden"
+msgstr "Horas"
 
 #: templates/index.html:27
 msgid "Minutes"
-msgstr "Minuten"
+msgstr "Minutos"
 
 #: templates/index.html:27
 msgid "Seconds"
-msgstr "Sekunden"
+msgstr "Segundos"
 
 #: templates/index.html:29
 msgid ""
@@ -120,17 +119,17 @@ msgid ""
 "campaign starts, so we can together make sure that European copyright reform"
 " becomes a success!"
 msgstr ""
-"Hinterlasse hier deine E-Mail-Adresse und wir melden uns sobald die Kampagne"
-" startet, damit wir zusammen sicherstellen können, dass die europäische "
-"Copyright-Reform ein Erfolg wird!"
+"Deixe o seu endereço de e-mail aqui para o informarmos quando a campanha "
+"começar, para que possamos em conjunto garantir que a reforma dos direitos "
+"de autor é um sucesso!"
 
 #: templates/index.html:30
 msgid "Join the Copyfight now!"
-msgstr "Werde Teil des Copyfight!"
+msgstr "Junte-se à nossa luta!"
 
 #: templates/index.html:45
 msgid "Join now!"
-msgstr "Jetzt mitmachen!"
+msgstr "Ajude-nos!"
 
 #: templates/index.html:47
 msgid ""
@@ -138,21 +137,21 @@ msgid ""
 "hidden=\"true\"></i> Facebook</span> or <span id=\"share_twitter\"><i "
 "class=\"fa fa-twitter\" aria-hidden=\"true\"></i> Twitter</span>"
 msgstr ""
-"Auf <span id=\"share_fb\"><i class=\"fa fa-facebook\" aria-"
-"hidden=\"true\"></i>Facebok</span> oder <span id=\"share_twitter\"><i "
-"class=\"fa fa-twitter\" aria-hidden=\"true\"></i>Twitter</span> teilen"
+"Partilhe no <span id=\"share_fb\"><i class=\"fa fa-facebook\" aria-"
+"hidden=\"true\"></i> Facebook</span> ou no <span id=\"share_twitter\"><i "
+"class=\"fa fa-twitter\" aria-hidden=\"true\"></i> Twitter</span>"
 
 #: templates/index.html:80
 msgid "Issue #1: Publishers' right"
-msgstr "Problem #1: Leistungsschutzrecht"
+msgstr ""
 
 #: templates/index.html:81
 msgid ""
 "Unless we take urgent action our ability to share news content online will "
 "be hampered"
 msgstr ""
-"Wenn wir nicht sofort handeln, werden unsere Möglichkeiten, Nachrichten im "
-"Internet zu teilen eingeschränkt"
+"Garantir que podemos continuar a partilhar o conteúdo de notícias depende de"
+" uma ação urgente"
 
 #: templates/index.html:82
 msgid ""
@@ -169,11 +168,11 @@ msgstr ""
 
 #: templates/index.html:83 templates/index.html:133
 msgid "Why is this problematic?"
-msgstr "Warum ist das problematisch?"
+msgstr "Porque é que é problemático?"
 
 #: templates/index.html:88 templates/index.html:138
 msgid "What was the problem?"
-msgstr "Was war das Problem?"
+msgstr "Qual era o problema?"
 
 #: templates/index.html:89
 msgid ""
@@ -186,19 +185,25 @@ msgid ""
 "need it, but it will also hamper our ability as online users to engage with "
 "one another on the internet."
 msgstr ""
+"A razão que levou à proposta deste artigo foi a disparidade entre a "
+"relativamente pequena receita da imprensa digital e a de grandes empresas "
+"tecnológicas como a Google ou o Facebook que funcionam, em parte, graças ao "
+"conteudo disponibilizado por jornais digitais. Contudo, a realidade é mais "
+"difusa: a proposta de redistribuir o lucro dessas gigantes plataformas deste"
+" modo não irá apenas falhar como também limitará a nossa liberdade na "
+"internet através da partilha de links."
 
 #: templates/index.html:90
 msgid "Here’s why the Commission’s proposal won’t solve the problem"
-msgstr "Darum wird der Vorschlag der Kommission das Problem nicht lösen"
+msgstr "Eis a razão pela qual a proposta não resultará"
 
 #: templates/index.html:91
 msgid ""
 "No. The European Commission’s proposal will have a series of very negative "
 "impacts on the free and open Internet which we all use every day:"
 msgstr ""
-"Nein. Der Vorschlag der Europäischen Kommission wird eine Reihe sehr "
-"negativer Effekte auf das freie und offene Internet haben, welches wir alle "
-"jeden Tag nutzen:"
+"Não. A proposta da Comissão Europeia terá imactos negativos na estrutura "
+"aberta e livre da internet."
 
 #: templates/index.html:93
 msgid ""
@@ -209,6 +214,12 @@ msgid ""
 " this Directive comes into effect, thus threatening our freedom of "
 "information and limiting our right to be informed"
 msgstr ""
+"Em espanha, onde implementaram semelhante legislação, a Google recusou-se a "
+"pagar a parte da sua receita à imprensa online, simplemente parando a "
+"publicação desse tipo de links para a impensa espanhola. É possível que "
+"outras redes sociais também limitem a  capacidade dos seus utlizadores "
+"partilharem esse tipo de links caso esta Diretiva entre em vigor, limitando "
+"a  nossa liberdade de acesso à informação."
 
 #: templates/index.html:94
 msgid ""
@@ -216,10 +227,6 @@ msgid ""
 "ask for licence fees whenever their links are being shared, hindering the "
 "ability of individuals to share new ideas and important information."
 msgstr ""
-"Nachrichtenportale werden das Recht dazu haben, diverse Websitebesitzer "
-"anzuklagen und jedes Mal, wenn einer ihrer Links geteilt wird, eine "
-"Lizenzgebühr einzufordern, was die Möglichkeiten des Einzelnen neue Ideen "
-"und Informationen zu verbreiten extrem einschränkt."
 
 #: templates/index.html:95
 msgid ""
@@ -235,8 +242,6 @@ msgid ""
 "unable to compete with existing platform monopolies such as Google or "
 "Facebook or will need to launch outside of the European Union."
 msgstr ""
-"Dies wird negative Auswirkungen auf Wettbewerb und Innovation mit sich bringen:\n"
-"Europäische Start-up-Unternehmen werden keine Möglichkeit dazu haben, für link snippets zu zahlen, wodurch sie unmöglich mit bereits existierenden  Monopolen wie Google oder Facebook konkurrieren können, was dazu führt, dass sie ihr Projekt möglicherweise auserhalb der Europäischen Union aufziehen müssen."
 
 #: templates/index.html:98
 msgid ""
@@ -247,7 +252,7 @@ msgstr ""
 #: templates/index.html:101 templates/index.html:147 templates/index.html:190
 #: templates/index.html:251
 msgid "Spread the word"
-msgstr "Weitersagen"
+msgstr "Partilhe a nossa Causa"
 
 #: templates/index.html:104
 msgid "We Oppose A New Publishers' Right in the EU"
@@ -255,25 +260,28 @@ msgstr ""
 
 #: templates/index.html:105
 msgid "NO to the new LINK TAX!"
-msgstr ""
+msgstr "NÃO à nova taxa do link"
 
 #: templates/index.html:106 templates/index.html:152
 msgid "NO To Online Censorship Through Copyright!"
-msgstr ""
+msgstr "Não à censura da internet através dos Direitos de Autor!"
 
 #: templates/index.html:122 templates/index.html:169 templates/index.html:211
 msgid "Additional Resources"
-msgstr "Weitere Ressourcen"
+msgstr "Recursos Adicionais"
 
 #: templates/index.html:130
 msgid "Issue #2: Content Filtering"
-msgstr "Problem #2: Content-Filterung"
+msgstr "Proposta #2: Filtragem Automática de Conteúdos"
 
 #: templates/index.html:131
 msgid ""
 "Unless we take urgent action our ability to post content on the internet "
 "will be limited by a censorship machine"
 msgstr ""
+"A não ser que tomemos ação rapidamente, a nossa capacidade de publicar "
+"conteudo na internet será controlada por sistema automático de censura "
+"cultural"
 
 #: templates/index.html:132
 msgid ""
@@ -284,6 +292,12 @@ msgid ""
 "to pre-screen the content uploaded onto their platforms in order to identify"
 " copyright infringing works."
 msgstr ""
+"No Artigo 13 da <a href=\"http://eur-lex.europa.eu/legal-"
+"content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN\">Proposta da Comissão "
+"Europeia</a>,  serviços da sociedade da informação como a Google, Amazon, "
+"Facebook ou Twitter serão obrigadas a implementar sistemas automatizados de "
+"filtragem dos conteúdo adicionados pelos seus utilizadores, de modo a "
+"eliminar tudo o que infrinja direitos de autor."
 
 #: templates/index.html:139
 msgid ""
@@ -298,7 +312,7 @@ msgstr ""
 
 #: templates/index.html:140
 msgid "The proposal is problematic…"
-msgstr "Der Vorschlag ist problematisch…"
+msgstr "Porque é que é problemático?"
 
 #: templates/index.html:141
 msgid ""
@@ -310,18 +324,10 @@ msgid ""
 " implement. They will make it harder for European start-ups to grow, and for"
 " individuals to understand how their content is being manipulated."
 msgstr ""
-"Wenn du jemals etwas auf Social Media Plattformen hochgeladen hast oder ein "
-"kreatives, von jemand anderem hochgeladenes Video, angeschaut hast, könnte "
-"dich die geplante Reform betreffen. Diese Reform würde beeinhalten, dass "
-"Seiten wie Facebook oder YouTube ihre Plattformen dauerhaft durch "
-"Zensurprogramme ohne jegliche menschliche Kontrolle überwachen. Es wird "
-"extrem teuer sein, diesen Mechanismus einzuführen. Zudem wird es "
-"Europäischen Start-up-Unternehmen erschwert zu wachsen und Einzelpersonen "
-"werden kaum mehr nachvollziehen können, wie ihr Kontent gefiltert wurde."
 
 #: templates/index.html:142
 msgid "Will the proposal fix the problem?"
-msgstr "Wird der Vorschlag das Problem lösen?"
+msgstr "Qual era o problema?"
 
 #: templates/index.html:143
 msgid ""
@@ -345,7 +351,7 @@ msgstr ""
 
 #: templates/index.html:151
 msgid "NO TO CONTENT FILTERING!"
-msgstr ""
+msgstr "NÂO à FILTRAGEM de CONTEÚDOS!"
 
 #: templates/index.html:153
 msgid "The \"Value Gap\" is BS... This reform is destroying our internet."
@@ -353,7 +359,7 @@ msgstr ""
 
 #: templates/index.html:177
 msgid "Issue #3: User-Generated Content Exception"
-msgstr "Problem #3: Ausnahme für nutzergenerierten Content"
+msgstr "Problema #3: Conteúdo Gerado por Utilizadores"
 
 #: templates/index.html:178
 msgid ""
@@ -378,11 +384,11 @@ msgstr ""
 
 #: templates/index.html:180
 msgid "Why is this important?"
-msgstr "Warum ist das wichtig?"
+msgstr "Porque é que é importante?"
 
 #: templates/index.html:185
 msgid "Claiming back our culture…"
-msgstr ""
+msgstr "Recuperar a nossa cultura..."
 
 #: templates/index.html:186
 msgid ""
@@ -392,6 +398,13 @@ msgid ""
 "changing, we are no longer mere recipients of content but also creators of "
 "new meaning and we want to engage in those practices legally."
 msgstr ""
+"A maior parte dos memes, reaction gifs, remixes e outros tipos de conteúdo "
+"gerado por utilizadores infringem Direitos de Autor. A Direitva, na atual "
+"proposta, não contem excepções para tornar legal este tipo de conteúdos. A "
+"nossa cultura está a mudar e já não somos meros consumidores de conteúdo, "
+"mas também criadores que alteramos e damos novos significados à cultura "
+"existente. Queremos continuar a contribuir para a cultura, mas de forma "
+"legal."
 
 #: templates/index.html:187
 msgid ""
@@ -402,20 +415,24 @@ msgstr ""
 #: templates/index.html:193
 msgid "We Want A Copyright Exception For User-Generated Content"
 msgstr ""
+"Queremos uma exceção no Direito de Autor para Conteúdo Gerado por "
+"Utilizadores"
 
 #: templates/index.html:194
 msgid "We <3 REMIXES #joinourcopyfight"
-msgstr ""
+msgstr "Nós <3 REMIXES #joinourcopyfight"
 
 #: templates/index.html:195
 msgid ""
 "We agree with the CULT Committee's Proposal for a copyright exception for "
 "user-generated content."
 msgstr ""
+"Concordamaos com a proposta do comité CULT em relação a adicionar uma "
+"excepção para conteúdo gerado por utlizadores."
 
 #: templates/index.html:221
 msgid "What others are saying"
-msgstr "Was andere sagen"
+msgstr "Algumas opiniões"
 
 #: templates/index.html:229
 msgid ""
@@ -435,23 +452,27 @@ msgid ""
 "Former Vice-President of the European Commission (Photo by Olivier Ezratty, "
 "CC BY-SA 3.0)"
 msgstr ""
-"Vorherige Vizepräsidentin der Europäischen Kommission (Foto von Olivier "
-"Ezratty, CC BY-SA 3.0)"
+"Anterior Vice-Presidente da Comissão Europeia\n"
+"(Fotografia por Olivier Ezratty, CC BY-SA 3.0)"
 
 #: templates/index.html:257
 msgid ""
 "Join Our #COPYFIGHT! #EUcopyrightreform #copyfighters #joinourcopyfight"
 msgstr ""
+"Juntem-se à nosssa #COPYFIGHT ! #EUcopyrightreform #copyfighters "
+"#joinourcopyfight"
 
 #: templates/index.html:270
 msgid ""
 "NO to the current EU Reform on Copyright, YES to better copyright laws and "
 "exceptions to copyright. #copyfighters"
 msgstr ""
+"NÃO à atual reforma de Legislação Europeia de Direito de Autor. SIM a "
+"melhores leis e excepções ao Direito de Autor. #copyfighters"
 
 #: templates/index.html:283
 msgid "We are #copyfighters and want a free and open Internet."
-msgstr "Wir sind #copyfighters und wollen ein freies und offenes Internet."
+msgstr "Somos #copyfighters e queremos uma internet livre a aberta"
 
 #: templates/index.html:296
 msgid ""
@@ -465,17 +486,14 @@ msgid ""
 "analyses on the Proposed Directive on Copyright in the Digital Single "
 "Market. We will be updating this document pool as the process advances."
 msgstr ""
-"In dieser Dokumentensammlung findest du relevante Informationen und Analysen"
-" zu den vorgeschlagenen Richtlinien für Copyright. Wir werden diese Sammlung"
-" laufend erweitern."
 
 #: templates/resources.html:10
 msgid "Last update"
-msgstr "Zuletzt aktualisiert"
+msgstr "Últimas atualizações"
 
 #: templates/resources.html:15
 msgid "European Institutions Documents"
-msgstr "Dokumente der Europäischen Institutionen"
+msgstr ""
 
 #: templates/resources.html:17
 msgid ""
@@ -485,11 +503,11 @@ msgstr ""
 
 #: templates/resources.html:18
 msgid "European Commission documentation"
-msgstr ""
+msgstr "Documentação da Comissão Europeia"
 
 #: templates/resources.html:19
 msgid "European Parliament documentation"
-msgstr ""
+msgstr "Documentação do Parlamento Europeu"
 
 #: templates/resources.html:20
 msgid ""
@@ -500,25 +518,29 @@ msgstr ""
 
 #: templates/resources.html:24
 msgid "Proposal Analysis"
-msgstr "Analysen des Vorschlags"
+msgstr "Análise da Proposta"
 
 #: templates/resources.html:26
 msgid "Copyright Reform Document Pool curated by EDRI"
 msgstr ""
+"Coletânea de Documentos sobre a Reforma do Direito de Autor, curada pela "
+"EDRI"
 
 #: templates/resources.html:27
 msgid ""
 "Deconstructing Article 13 of the Copyright proposal of the European "
 "Commission (EDRi, December 2016)"
 msgstr ""
+"Análise do Artigo 13 da proposta para reforma do Direito de Autor pela "
+"Comissão Europeia (EDRI, Dezembro de 2016)"
 
 #: templates/resources.html:28
 msgid "Open Letter from News Outlets (December 2015)"
-msgstr ""
+msgstr "Carta Aberta de agências de notícias (Dezembro de 2015)"
 
 #: templates/resources.html:33
 msgid "Academic Papers"
-msgstr "Akademische Paper"
+msgstr "Publicações Académicas"
 
 #: templates/resources.html:35
 msgid ""
@@ -537,12 +559,14 @@ msgstr ""
 
 #: templates/resources.html:40
 msgid "Other resources"
-msgstr "Andere Ressourcen"
+msgstr "Outros Recursos"
 
 #: templates/resources.html:44
 msgid "Copyright Campaign of Mozilla Foundation"
-msgstr "Urheberrechts-Kampagne der Mozilla Foundation"
+msgstr "Campanha sobre Direito de Autor da Fundação Mozilla"
 
 #: templates/resources.html:46
 msgid "Issue page on website of Julia Reda"
-msgstr "Themenseite auf der Homepage von Julia Reda"
+msgstr ""
+"Artigo de Julia Reda sobre os problemas da atual proposta da Comissão "
+"Europeia"

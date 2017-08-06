@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-06 01:27+0000\n"
+"POT-Creation-Date: 2017-08-06 01:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Lukas Martini <lukas.martini@beyonddivision.eu>, 2017\n"
 "Language-Team: German (https://www.transifex.com/europe-beyond-division-ev/teams/76952/de/)\n"
@@ -17,54 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#: copyfight/settings.py:77
-msgid "Albanian"
-msgstr ""
-
-#: copyfight/settings.py:78
-msgid "Croatian"
-msgstr ""
-
-#: copyfight/settings.py:79
-msgid "English"
-msgstr ""
-
-#: copyfight/settings.py:80
-msgid "Finnish"
-msgstr ""
-
-#: copyfight/settings.py:81
-msgid "French"
-msgstr ""
-
-#: copyfight/settings.py:82
-msgid "German"
-msgstr ""
-
-#: copyfight/settings.py:83
-msgid "Greek"
-msgstr ""
-
-#: copyfight/settings.py:84
-msgid "Italian"
-msgstr ""
-
-#: copyfight/settings.py:85
-msgid "Luxembourgish"
-msgstr ""
-
-#: copyfight/settings.py:86
-msgid "Portuguese"
-msgstr ""
-
-#: copyfight/settings.py:87
-msgid "Romanian"
-msgstr ""
-
-#: copyfight/settings.py:88
-msgid "Swedish"
-msgstr ""
 
 #: templates/base.html:23
 msgid ""
@@ -124,7 +76,7 @@ msgid ""
 "<span>copyright</span> go hand in hand."
 msgstr ""
 "Wir wollen ein Europa, in dem <span>Sharing</span>, <span>Innovation</span> "
-"und <span>Urheberrecht</span> Hand in Hand gehen."
+"und <span>Urheberrecht</span> Hand in Hand greifen."
 
 #: templates/index.html:25
 msgid ""
@@ -137,6 +89,14 @@ msgid ""
 "communication, and privacy. <b>We urgently need the Proposal to be amended "
 "to protect our Internet freedoms.</b>"
 msgstr ""
+"Die Europäische Union arbeitet an Vorschlägen zur <b>Reformierung von "
+"Urheberrechtsgesetzen</b>, um sie einheitlicher im Binnenmarkt anzuwenden. "
+"Der aktuelle <a href=\"http://eur-lex.europa.eu/legal-"
+"content/EN/TXT/?uri=CELEX:52016PC0593\">Entwurf für eine Direktive zum "
+"Urheberrecht im Digitalen Binnenmarkt</a> wird Innovation hemmen und "
+"gefährdet unsere fundamentalen Rechte auf Information, "
+"Kommunikationsfreiheit und Privatsphäre. <b>Der Entwurf muss dringend "
+"berichtigt werden, um unsere Internet-Freiheiten zu schützen.</b>"
 
 #: templates/index.html:27
 msgid "Days"
@@ -204,11 +164,11 @@ msgid ""
 "articles shared online. "
 msgstr ""
 
-#: templates/index.html:83
+#: templates/index.html:83 templates/index.html:133
 msgid "Why is this problematic?"
 msgstr "Warum ist das problematisch?"
 
-#: templates/index.html:88
+#: templates/index.html:88 templates/index.html:138
 msgid "What was the problem?"
 msgstr "Was war das Problem?"
 
@@ -275,7 +235,8 @@ msgid ""
 "ensure that happens. Join the Copyfight!"
 msgstr ""
 
-#: templates/index.html:101
+#: templates/index.html:101 templates/index.html:147 templates/index.html:190
+#: templates/index.html:251
 msgid "Spread the word"
 msgstr ""
 
@@ -287,12 +248,198 @@ msgstr ""
 msgid "NO to the new LINK TAX!"
 msgstr ""
 
-#: templates/index.html:106
+#: templates/index.html:106 templates/index.html:152
 msgid "NO To Online Censorship Through Copyright!"
 msgstr ""
 
-#: templates/index.html:122
+#: templates/index.html:122 templates/index.html:169 templates/index.html:211
 msgid "Additional Resources"
+msgstr "Weitere Ressourcen"
+
+#: templates/index.html:130
+msgid "Issue #2: Content Filtering"
+msgstr "Problem #2: Content-Filterung"
+
+#: templates/index.html:131
+msgid ""
+"Unless we take urgent action our ability to post content on the internet "
+"will be limited by a censorship machine"
+msgstr ""
+
+#: templates/index.html:132
+msgid ""
+"Under Article 13 of the <a href=\"http://eur-lex.europa.eu/legal-"
+"content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN\">European Commission’s "
+"proposal</a>, information society service providers such as Google, Amazon, "
+"Facebook, and Twitter will be forced to apply content filtering technology "
+"to pre-screen the content uploaded onto their platforms in order to identify"
+" copyright infringing works."
+msgstr ""
+
+#: templates/index.html:139
+msgid ""
+"The Internet empowers everyone to become a content creator and to have their"
+" voices heard around the world. The problem is that some of the content "
+"uploaded on the Internet infringes the copyright of other content creators. "
+"The Proposal is trying to address copyright infringement on the Internet, "
+"but addresses it in a way that hampers the way the Internet has been "
+"functioning so far by asking platforms to put in place costly and opaque "
+"solutions to pre-screen our content."
+msgstr ""
+
+#: templates/index.html:140
+msgid "The proposal is problematic…"
+msgstr "Der Vorschlag ist problematisch…"
+
+#: templates/index.html:141
+msgid ""
+"If you have ever uploaded content to social media, or watched a creative "
+"video someone else uploaded, this proposed reform could affect you. This "
+"proposal would require intermediaries such as Facebook and YouTube to "
+"constantly police their platforms with censorship machines, often with no "
+"human element involved in the process. These mechanisms will be expensive to"
+" implement. They will make it harder for European start-ups to grow, and for"
+" individuals to understand how their content is being manipulated."
+msgstr ""
+
+#: templates/index.html:142
+msgid "Will the proposal fix the problem?"
+msgstr "Wird der Vorschlag das Problem lösen?"
+
+#: templates/index.html:143
+msgid ""
+"No. The proposed censorship machines are a disproportionate and ineffective "
+"‘solution’ to the problem. We know this, because in the case of SABAM v "
+"Netlog, the Court of Justice of the European Union ruled social networks and"
+" other web hosting providers cannot be required to monitor and filter "
+"activities that occur on their sites to prevent copyright infringement. This"
+" would be a breach of freedom of expression and of privacy (CJEU C-360/10)."
+msgstr ""
+
+#: templates/index.html:144
+msgid ""
+"Fight with us against the requirement for large and small websites to put in"
+" place automated censorship systems. Join the Copyfight!"
+msgstr ""
+
+#: templates/index.html:150
+msgid "We Oppose The Use of Automated Solutions To Pre-Screen Online Content"
+msgstr ""
+
+#: templates/index.html:151
+msgid "NO TO CONTENT FILTERING!"
+msgstr ""
+
+#: templates/index.html:153
+msgid "The \"Value Gap\" is BS... This reform is destroying our internet."
+msgstr ""
+
+#: templates/index.html:177
+msgid "Issue #3: User-Generated Content Exception"
+msgstr "Problem #3: Ausnahme für nutzergenerierten Content"
+
+#: templates/index.html:178
+msgid ""
+"Unless we take urgent action our innocent remixes and user-generated content"
+" will keep infringing copyright"
+msgstr ""
+
+#: templates/index.html:179
+msgid ""
+"In their February 2017 <a "
+"href=\"http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//NONSGML+COMPARL+PE-595.591+01+DOC+PDF+V0//EN&language=EN\">Draft"
+" Opinion</a>, the Committee on Culture and Education of the European "
+"Parliament (CULT) proposed a user-generated content exception to copyright. "
+"This proposed amendment (which has not yet been incorporated into the "
+"Directive) provides that using content already made available online for "
+"purposes such as criticism, review, illustration, caricature, or parody is "
+"lawful provided the source is accurately identified and the use is "
+"consistent with fair practice. Such a proposal is not yet part of the law "
+"but our view is it should be to ensure a healthy remix culture and a future-"
+"proof internet."
+msgstr ""
+
+#: templates/index.html:180
+msgid "Why is this important?"
+msgstr "Warum ist das wichtig?"
+
+#: templates/index.html:185
+msgid "Claiming back our culture…"
+msgstr ""
+
+#: templates/index.html:186
+msgid ""
+"Most memes, reaction gifs, remixes and many other types of user-generated "
+"content are currently in breach of copyright rules. The Directive, as "
+"proposed, contains no exceptions to make them legal. Our culture is "
+"changing, we are no longer mere recipients of content but also creators of "
+"new meaning and we want to engage in those practices legally."
+msgstr ""
+
+#: templates/index.html:187
+msgid ""
+"Help us add a user-generated content exception to the EU Directive to enable"
+" our online culture to flourish! Join the Copyfight!"
+msgstr ""
+
+#: templates/index.html:193
+msgid "We Want A Copyright Exception For User-Generated Content"
+msgstr ""
+
+#: templates/index.html:194
+msgid "We <3 REMIXES #joinourcopyfight"
+msgstr ""
+
+#: templates/index.html:195
+msgid ""
+"We agree with the CULT Committee's Proposal for a copyright exception for "
+"user-generated content."
+msgstr ""
+
+#: templates/index.html:221
+msgid "What others are saying"
+msgstr ""
+
+#: templates/index.html:229
+msgid ""
+"<strong>Today our fragmented copyright system is ill-adapted to the real "
+"essence of art, which has no frontiers.</strong> Instead, that system has "
+"ended up giving a more prominent role to intermediaries than to artists. It "
+"irritates the public who often cannot access what artists want to offer and "
+"leaves a vacuum which is served by illegal content, depriving the artists of"
+" their well deserved remuneration."
+msgstr ""
+
+#: templates/index.html:231
+msgctxt ""
+"Talking about Neelie Kroes, so if your language is gendered, use the female "
+"version of \"vice president\""
+msgid ""
+"Former Vice-President of the European Commission (Photo by Olivier Ezratty, "
+"CC BY-SA 3.0)"
+msgstr ""
+"Vorherige Vizepräsidentin der Europäischen Kommission (Foto von Olivier "
+"Ezratty, CC BY-SA 3.0)"
+
+#: templates/index.html:257
+msgid ""
+"Join Our #COPYFIGHT! #EUcopyrightreform #copyfighters #joinourcopyfight"
+msgstr ""
+
+#: templates/index.html:270
+msgid ""
+"NO to the current EU Reform on Copyright, YES to better copyright laws and "
+"exceptions to copyright. #copyfighters"
+msgstr ""
+
+#: templates/index.html:283
+msgid "We are #copyfighters and want a free and open Internet."
+msgstr ""
+
+#: templates/index.html:296
+msgid ""
+"NO To More Copyright in the Digital Single Market. YES To Better Copyright. "
+"YES To Harmonisation #Copyfighters"
 msgstr ""
 
 #: templates/resources.html:10
@@ -374,7 +521,7 @@ msgstr "Andere Ressourcen"
 
 #: templates/resources.html:44
 msgid "Copyright Campaign of Mozilla Foundation"
-msgstr ""
+msgstr "Urheberrechts-Kampagne der Mozilla Foundation"
 
 #: templates/resources.html:46
 msgid "Issue page on website of Julia Reda"

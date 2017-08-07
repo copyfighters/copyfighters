@@ -58,8 +58,15 @@
   #index-header-background {
     background-color: #6df2c7;
     @include gradient-directional($start-color: #8df472, $end-color: #6df2c7);
-    clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+
+    // Fallback for browsers that don't support calc in clip-path
+    clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, calc(100% - 450px) 100%, 0% 100%);
     z-index: -30;
+
+    @media screen and (orientation:portrait) {
+      clip-path: none;
+    }
   }
 
   #index-header-portraits {
@@ -82,6 +89,7 @@ div.area-index-header {
 
   #main-title {
     margin-top: .4em;
+    padding-right: 80px;
 
     #main-title-strings {
       display: none;

@@ -66,26 +66,24 @@
 
 		{% block content %}{% endblock %}
 
-		<div class="container-fluid area footer">
-		  <div class="row">
-		    <div class="col col-lg-8">
+		<div class="container-fluid footer">
+		  <div class="row area">
+		    <div class="col">
 		      <p>
 		        {% blocktrans %}Crafted with ❤ by young people from all over Europe with the support of <a href='https://beyonddivision.eu'>europe beyond division</a>, <a href='https://young-pirates.eu'>YPE</a> and the European Youth Foundation of the Council of Europe. Hosting and technical infrastructure provided by <a href='https://fnordserver.eu'>fnordserver</a>. This page is open source, <a href='https://github.com/copyfighters/copyfighters' rel='nofollow'>fork it on github</a>!{% endblocktrans %}
-
-				<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
-					<input name="next" type="hidden" value="{{ redirect_to }}" />
-					<select name="language" onchange="this.form.submit()">
-						{% get_current_language as LANGUAGE_CODE %}
-						{% get_available_languages as LANGUAGES %}
-						{% get_language_info_list for LANGUAGES as languages %}
-
-						{% for language in languages %}
-							<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
-								{{ language.name_local }}
-							</option>
-						{% endfor %}
-					</select>
-				</form>
+						<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+							<input name="next" type="hidden" value="{{ redirect_to }}" />
+							<select name="language" onchange="this.form.submit()">
+								{% get_current_language as LANGUAGE_CODE %}
+								{% get_available_languages as LANGUAGES %}
+								{% get_language_info_list for LANGUAGES as languages %}
+								{% for language in languages %}
+									<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+										{{ language.name_local }}
+									</option>
+								{% endfor %}
+							</select>
+						</form>
 		      </p>
 		      <p>
 		        <a href="{% url 'resources' %}">{% trans 'Resources' %}</a> |
@@ -93,7 +91,7 @@
 		        <a href="{% url 'privacy' %}">{% trans 'Privacy' %}</a>
 		      </p>
 		    </div>
-		    <div class="col col-lg-4 logos">
+		    <div class="col-12 col-md-auto logos text-center">
 		      <a href='https://eyf.coe.int' rel='nofollow'>
 						<img src="{% static 'img/logo-eyf-nb-01.png' %}" alt="Logo of European Youth Foundation" />
 					</a>
@@ -113,12 +111,12 @@
 				(function() {
 					var u="//stats.fnordserver.eu/";
 					_paq.push(['setTrackerUrl', u+'piwik.php']);
-					_paq.push(['setSiteId', '29']);
+					_paq.push(['setSiteId', '27']);
 					var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
 					g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
 				})();
 			</script>
-			<noscript><p><img src="//stats.fnordserver.eu/piwik.php?idsite=29&rec=1" style="border:0;" alt="" /></p></noscript>
+			<noscript><p><img src="//stats.fnordserver.eu/piwik.php?idsite=27&rec=1" style="border:0;" alt="" /></p></noscript>
 		{% endif %}
 	</body>
 </html>

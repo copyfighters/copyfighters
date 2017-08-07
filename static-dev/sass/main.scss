@@ -197,9 +197,12 @@ div.area-8 {
   .share-twitter {
     clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
     color: #fff;
+    display: inline-block;
     font-weight: bolder;
+    margin-bottom: .5em;
     padding: .3em .8em;
     text-decoration: none;
+    white-space: nowrap;
   }
 
   .share-facebook {

@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-06 01:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: PTLyon <eduardoflsantos@hotmail.com>, 2017\n"
+"Last-Translator: Lukas Martini <lukas.martini@beyonddivision.eu>, 2017\n"
 "Language-Team: Portuguese (https://www.transifex.com/europe-beyond-division-ev/teams/76952/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -63,7 +63,7 @@ msgid ""
 "on github</a>!"
 msgstr ""
 "Criado com  ❤ por jovens de toda a Europa com o apoio de <a "
-"href='https://beyonddivision.eu'>europe beyon division</a>, <a href='https"
+"href='https://beyonddivision.eu'>europe beyond division</a>, <a href='https"
 "://young-pirates.eu'>YPE</a> e a European Youth Foundation do Conselho da "
 "Europa. Alojamento e infraestrutura fornececida por <a "
 "href='https://fnordserver.eu'>fnordserver</a>. Esta página é de código "
@@ -264,7 +264,7 @@ msgstr "NÃO à nova taxa do link"
 
 #: templates/index.html:106 templates/index.html:152
 msgid "NO To Online Censorship Through Copyright!"
-msgstr "Não à censura da internet através dos Direitos de Autor!"
+msgstr "Não à censura da internet através do Direito de Autor!"
 
 #: templates/index.html:122 templates/index.html:169 templates/index.html:211
 msgid "Additional Resources"
@@ -327,7 +327,7 @@ msgstr ""
 
 #: templates/index.html:142
 msgid "Will the proposal fix the problem?"
-msgstr "Qual era o problema?"
+msgstr "A proposta resolve o problema?"
 
 #: templates/index.html:143
 msgid ""
@@ -351,7 +351,7 @@ msgstr ""
 
 #: templates/index.html:151
 msgid "NO TO CONTENT FILTERING!"
-msgstr "NÂO à FILTRAGEM de CONTEÚDOS!"
+msgstr "NÃO À FILTRAGEM DE CONTEÚDOS!"
 
 #: templates/index.html:153
 msgid "The \"Value Gap\" is BS... This reform is destroying our internet."

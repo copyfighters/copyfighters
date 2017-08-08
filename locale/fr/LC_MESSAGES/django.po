@@ -10,6 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-06 01:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Ywan Ve <ywanael@lavache.com>, 2017\n"
 "Language-Team: French (https://www.transifex.com/europe-beyond-division-ev/teams/76952/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,11 +27,11 @@ msgstr ""
 
 #: templates/base.html:33
 msgid "Fighting for our Digital Rights in Europe"
-msgstr ""
+msgstr "En lutte pour nos droits numériques en UE"
 
 #: templates/base.html:38
 msgid "Home"
-msgstr ""
+msgstr "Accueil"
 
 #: templates/base.html:38
 msgid "current"
@@ -38,7 +39,7 @@ msgstr ""
 
 #: templates/base.html:41 templates/base.html:97 templates/resources.html:9
 msgid "Resources"
-msgstr ""
+msgstr "Ressources"
 
 #: templates/base.html:44 templates/base.html:98
 msgid "Imprint"
@@ -64,6 +65,9 @@ msgid ""
 "We want a Europe where <span>sharing</span>, <span>innovation</span> and "
 "<span>copyright</span> go hand in hand."
 msgstr ""
+"Nous voulons une Europe où le <span>partage</span>, "
+"<span>l’innovation</span> et le <span>copyright</span> avancent main dans la"
+" main."
 
 #: templates/index.html:25
 msgid ""
@@ -76,22 +80,31 @@ msgid ""
 "communication, and privacy. <b>We urgently need the Proposal to be amended "
 "to protect our Internet freedoms.</b>"
 msgstr ""
+"L’Union Européenne avance avec des propositions de <b>réforme de la loi sur "
+"le copyright</b> afin de l’harmoniser sur le marché européen. L'actuelle <a "
+"href=\"http://eur-lex.europa.eu/legal-"
+"content/EN/TXT/?uri=CELEX:52016PC0593\">proposition pour la Directive sur le"
+" Copyright dans le Marché Numérique Unique</a> empêchera l’innovation et "
+"mettra en danger nos droits fondamentaux d’accès à l’information, de liberté"
+" d’expression et notre droit à la vie privée. <b>Il est urgent que cette "
+"réforme soit modifiée pour que nos libertés sur Internet soient "
+"protégées.</b>"
 
 #: templates/index.html:27
 msgid "Days"
-msgstr ""
+msgstr "Jours"
 
 #: templates/index.html:27
 msgid "Hours"
-msgstr ""
+msgstr "Heures"
 
 #: templates/index.html:27
 msgid "Minutes"
-msgstr ""
+msgstr "Minutes"
 
 #: templates/index.html:27
 msgid "Seconds"
-msgstr ""
+msgstr "Secondes"
 
 #: templates/index.html:29
 msgid ""
@@ -99,14 +112,17 @@ msgid ""
 "campaign starts, so we can together make sure that European copyright reform"
 " becomes a success!"
 msgstr ""
+"Laisse ton adresse mail ici et nous te recontacterons lorsque notre campagne"
+" débutera. Transformons la réforme européenne sur le copyright en un succès "
+"!"
 
 #: templates/index.html:30
 msgid "Join the Copyfight now!"
-msgstr ""
+msgstr "Rejoins la lutte maintenant !"
 
 #: templates/index.html:45
 msgid "Join now!"
-msgstr ""
+msgstr "Rejoins-nous !"
 
 #: templates/index.html:47
 msgid ""
@@ -114,16 +130,21 @@ msgid ""
 "hidden=\"true\"></i> Facebook</span> or <span id=\"share_twitter\"><i "
 "class=\"fa fa-twitter\" aria-hidden=\"true\"></i> Twitter</span>"
 msgstr ""
+"Partagez sur <span id=\"share_fb\"><i class=\"fa fa-facebook\" aria-"
+"hidden=\"true\"></i>Facebook</span> or <span id=\"share_twitter\"><i "
+"class=\"fa fa-twitter\" aria-hidden=\"true\"></i>Twitter</span>"
 
 #: templates/index.html:80
 msgid "Issue #1: Publishers' right"
-msgstr ""
+msgstr "// Problématique #1 : les droits des éditeur.ice.s"
 
 #: templates/index.html:81
 msgid ""
 "Unless we take urgent action our ability to share news content online will "
 "be hampered"
 msgstr ""
+"A moins que nous n'agissions très vite, nous ne pourrons plus partager les "
+"actualités en ligne librement."
 
 #: templates/index.html:82
 msgid ""
@@ -137,14 +158,24 @@ msgid ""
 "title that could be the subject of copyright! This includes most news "
 "articles shared online. "
 msgstr ""
+"De par l’Article 11 de la <a href=\"http://eur-lex.europa.eu/legal-"
+"content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN\">proposition de la "
+"Commission Européenne</a>, la presse aura le droit de poursuivre en justice "
+"des individus, ou les plateformes qu’ils utilisent, pour avoir mis des liens"
+" vers des publications sur Internet. Le \"droit complémentaire des "
+"éditeur.ice.s\" (aussi connu sous le nom de la \"taxe du lien\") permettra "
+"aux éditeur.ice.s de réclamer des frais de licence à quiconque partagerait "
+"leurs liens en ligne. Une description, un extrait ou même un titre pourrait "
+"être sujet à copyright ! Cela inclue la plupart des articles d'actualité "
+"partagés en ligne."
 
 #: templates/index.html:83 templates/index.html:133
 msgid "Why is this problematic?"
-msgstr ""
+msgstr "Pourquoi est-ce problématique ?"
 
 #: templates/index.html:88 templates/index.html:138
 msgid "What was the problem?"
-msgstr ""
+msgstr "Quel était le problème ?"
 
 #: templates/index.html:89
 msgid ""
@@ -157,16 +188,27 @@ msgid ""
 "need it, but it will also hamper our ability as online users to engage with "
 "one another on the internet."
 msgstr ""
+"Cette proposition a vu le jour pour remédier à un gouffre entre les "
+"gigantesques revenus de grandes plateformes telles que Google ou Facebook et"
+" les petits revenus des éditeur.ice.s de presse. L’intention était de "
+"redistribuer les revenus de Google à de petits éditeurs. La réalité est bien"
+" moins simple : non seulement cela ne réussira pas à redistribuer les "
+"revenus de Google à ceux qui en auraient besoin, mais, en plus, cela "
+"freinera nos échanges d’informations sur internet."
 
 #: templates/index.html:90
 msgid "Here’s why the Commission’s proposal won’t solve the problem"
 msgstr ""
+"Voilà pourquoi la proposition de la Commission ne réglera pas le problème"
 
 #: templates/index.html:91
 msgid ""
 "No. The European Commission’s proposal will have a series of very negative "
 "impacts on the free and open Internet which we all use every day:"
 msgstr ""
+"La proposition de la Commission Européenne aura une série d’impacts très "
+"négatifs sur l’Internet gratuit et ouvert que nous utilisons quotidiennement"
+" :"
 
 #: templates/index.html:93
 msgid ""
@@ -177,6 +219,13 @@ msgid ""
 " this Directive comes into effect, thus threatening our freedom of "
 "information and limiting our right to be informed"
 msgstr ""
+"En Espagne, où une taxe pour l’extrait de presse est en place, Google n’a "
+"pas payé sa part de revenus, issus de la publicité, aux nouveaux éditeurs "
+"espagnols. La plateforme a simplement arrêté de mettre des liens vers ces "
+"éditeurs. Il est très probable que d’autres réseaux sociaux agissent de même"
+" et limitent la possibilité de leurs usagers de partager de tels liens si "
+"cette Directive prend effet. Cela menacera et limitera notre liberté et "
+"notre droit à l’information."
 
 #: templates/index.html:94
 msgid ""
@@ -184,6 +233,10 @@ msgid ""
 "ask for licence fees whenever their links are being shared, hindering the "
 "ability of individuals to share new ideas and important information."
 msgstr ""
+"Les éditeurs d’actualités auront le droit de poursuivre en justice les "
+"propriétaires particuliers de site web et de leur réclamer des frais de "
+"licence à chaque fois que leurs liens seront partagés. Cela entravera le "
+"partage de nouvelles idées et d’informations importantes."
 
 #: templates/index.html:95
 msgid ""
@@ -191,6 +244,9 @@ msgid ""
 "charge to share their links could prosper to the detriment of more reputable"
 " news sources."
 msgstr ""
+"Le clickbait par la publicité et les fournisseurs d’actualités basse qualité"
+" prospéreront sans doute au détriment de sources d’actualités plus "
+"honorables."
 
 #: templates/index.html:96
 msgid ""
@@ -199,17 +255,26 @@ msgid ""
 "unable to compete with existing platform monopolies such as Google or "
 "Facebook or will need to launch outside of the European Union."
 msgstr ""
+"Cela aura un impact négatif sur la compétition et l’innovation : les start-"
+"up européennes n’auront pas les moyens de payer pour des extraits. Elle ne "
+"seront donc pas aptes à concurrencer avec des plateformes comme Google ou "
+"Facebook. Ainsi, elles devront s’installer à l’extérieur de l’Union "
+"Européenne, laissant le monopole numérique aux grandes plateformes telles "
+"que Google et Facebook."
 
 #: templates/index.html:98
 msgid ""
 "The proposal needs urgent amendment or deletion, and we need your help to "
 "ensure that happens. Join the Copyfight!"
 msgstr ""
+"Cette proposition nécessite d’être modifiée urgemment, ou d’être supprimée. "
+"Nous avons besoin de ton aide pour nous assurer que cela arrive. Rejoins la "
+"lutte !"
 
 #: templates/index.html:101 templates/index.html:147 templates/index.html:190
 #: templates/index.html:251
 msgid "Spread the word"
-msgstr ""
+msgstr "Fais tourner l'info"
 
 #: templates/index.html:104
 msgid "We Oppose A New Publishers' Right in the EU"

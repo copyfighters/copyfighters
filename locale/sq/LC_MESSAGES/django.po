@@ -10,6 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-06 01:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Uada Mema <uadamema1@gmail.com>, 2017\n"
 "Language-Team: Albanian (https://www.transifex.com/europe-beyond-division-ev/teams/76952/sq/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,30 +24,33 @@ msgid ""
 "href=\"https://browsehappy.com/\">upgrade your browser</a> to improve your "
 "experience."
 msgstr ""
+"Ju jeni duke përdorur një shfletues<strong> të vjetër</strong>. Ju lutemi <a"
+" href=\"https://browsehappy.com/\">rinovoni shfletuesin tuaj</a>për të "
+"përmirësuar eksperiencën tuaj."
 
 #: templates/base.html:33
 msgid "Fighting for our Digital Rights in Europe"
-msgstr ""
+msgstr "Të luftojmë për të Drejtat tona Digjitale në Europë"
 
 #: templates/base.html:38
 msgid "Home"
-msgstr ""
+msgstr "Kryefaqja"
 
 #: templates/base.html:38
 msgid "current"
-msgstr ""
+msgstr "Aktual"
 
 #: templates/base.html:41 templates/base.html:97 templates/resources.html:9
 msgid "Resources"
-msgstr ""
+msgstr "Burimet"
 
 #: templates/base.html:44 templates/base.html:98
 msgid "Imprint"
-msgstr ""
+msgstr "Vula"
 
 #: templates/base.html:47 templates/base.html:99
 msgid "Privacy"
-msgstr ""
+msgstr "Privatësia"
 
 #: templates/base.html:79
 msgid ""
@@ -58,12 +62,21 @@ msgid ""
 "href='https://github.com/copyfighters/copyfighters' rel='nofollow'>fork it "
 "on github</a>!"
 msgstr ""
+"Hartuar me ❤ nga të rinj nga e gjithë Europa me mbështetjen e <a "
+"href='https://beyonddivision.eu'> europa përtej barrierave</a>, <a "
+"href='https://young-pirates.eu'>YPE</a> dhe Fondacionit Europian Rinor të "
+"Këshillit të Europës. Hostimi dhe infrastruktura teknike ofrohet nga <a "
+"href='https://fnordserver.eu'>fnordserver</a>. Kjo faqe është me burim të "
+"hapur, <a href='https://github.com/copyfighters/copyfighters' "
+"rel='nofollow'>propozoni ndryshimet tuaja në github</a>!"
 
 #: templates/index.html:18
 msgid ""
 "We want a Europe where <span>sharing</span>, <span>innovation</span> and "
 "<span>copyright</span> go hand in hand."
 msgstr ""
+"Ne duam një Europë, ku <span> shpërndarja</span>, <span> inovacioni "
+"</span>dhe <span>e drejta e autorit </span>qëndrojnë dorë për dore."
 
 #: templates/index.html:25
 msgid ""
@@ -76,22 +89,31 @@ msgid ""
 "communication, and privacy. <b>We urgently need the Proposal to be amended "
 "to protect our Internet freedoms.</b>"
 msgstr ""
+"Bashkimi Evropian po ecën përpara me propozimet për të <b>reformuar ligjin "
+"për të drejtën e autorit</b> për ta bërë atë të zbatohet në mënyrë uniforme "
+"në të gjithë Tregun e Vetëm. Propozimi aktual <a href=\"http://eur-"
+"lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52016PC0593\"> për një "
+"Direktivë mbi të Drejtat e Autorit në Tregun e Vetëm Digjital </a>do të "
+"dëmtojë inovacionin dhe kërcënon të drejtat tona themelore për qasje në "
+"informacione, lirinë e komunikimit dhe privatësinë. <b>Ne kemi nevojë "
+"urgjente që Propozimi të ndryshohet për të mbrojtur liritë tona në "
+"internet.</b>"
 
 #: templates/index.html:27
 msgid "Days"
-msgstr ""
+msgstr "Ditët"
 
 #: templates/index.html:27
 msgid "Hours"
-msgstr ""
+msgstr "Orët"
 
 #: templates/index.html:27
 msgid "Minutes"
-msgstr ""
+msgstr "Minutat"
 
 #: templates/index.html:27
 msgid "Seconds"
-msgstr ""
+msgstr "Sekondat"
 
 #: templates/index.html:29
 msgid ""
@@ -99,14 +121,17 @@ msgid ""
 "campaign starts, so we can together make sure that European copyright reform"
 " becomes a success!"
 msgstr ""
+"Vendosni adrësën tuaj të email-it këtu dhe ne do të jemi në kontakt sërish "
+"kur fushata jonë të fillojë, kështu që së bashku të sigurohemi që reforma "
+"Europiane e të drejtës së autorit të jetë një sukses!"
 
 #: templates/index.html:30
 msgid "Join the Copyfight now!"
-msgstr ""
+msgstr "Bashkohu me Copyfight tani!"
 
 #: templates/index.html:45
 msgid "Join now!"
-msgstr ""
+msgstr "Bashkohu tani!"
 
 #: templates/index.html:47
 msgid ""
@@ -114,16 +139,21 @@ msgid ""
 "hidden=\"true\"></i> Facebook</span> or <span id=\"share_twitter\"><i "
 "class=\"fa fa-twitter\" aria-hidden=\"true\"></i> Twitter</span>"
 msgstr ""
+"Shpërndaje në<span id=\"share_fb\"><i class=\"fa fa-facebook\" aria-"
+"hidden=\"true\"></i>Facebook</span>ose<span id=\"share_twitter\"><i "
+"class=\"fa fa-twitter\" aria-hidden=\"true\"></i>Twitter</span>"
 
 #: templates/index.html:80
 msgid "Issue #1: Publishers' right"
-msgstr ""
+msgstr "Çështja #1: E drejta e botuesve"
 
 #: templates/index.html:81
 msgid ""
 "Unless we take urgent action our ability to share news content online will "
 "be hampered"
 msgstr ""
+"Përsa kohë nuk ndërmarrim veprime urgjente, aftësia jonë për të "
+"shpëndarëinformacione online do të pengohet"
 
 #: templates/index.html:82
 msgid ""
@@ -137,14 +167,23 @@ msgid ""
 "title that could be the subject of copyright! This includes most news "
 "articles shared online. "
 msgstr ""
+"Sipas Nenit 11 të <a href=\"http://eur-lex.europa.eu/legal-"
+"content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN\">propozimit të Komisionit"
+" Europian</a>, shtypi do të ketë një të drejtë të re për të paditur "
+"individët - ose platformat që linkojnë publikimet në Internet. \"E drejta "
+"ndihmëse e botuesve të shtypit\" (e njohur edhe si \"taksa e linqeve\") do "
+"t'u lejojë botuesve të shtypit të kërkojnë një tarifë licence nga çdokush që"
+" shpërndan linqet e tyre online në qoftë se lidhja shoqërohet nga një "
+"përshkrim, apo edhe vetëm një titull që mund të jetë subjekt i së drejtës së"
+" autorit! Kjo përfshin shumicën e artikujve të lajmeve të shpërndara online."
 
 #: templates/index.html:83 templates/index.html:133
 msgid "Why is this problematic?"
-msgstr ""
+msgstr "Pse është kjo problematike?"
 
 #: templates/index.html:88 templates/index.html:138
 msgid "What was the problem?"
-msgstr ""
+msgstr "Cili ishte problemi?"
 
 #: templates/index.html:89
 msgid ""
@@ -157,16 +196,27 @@ msgid ""
 "need it, but it will also hamper our ability as online users to engage with "
 "one another on the internet."
 msgstr ""
+"Arsyeja që qëndron pas këtij propozimi ishte zgjidhja e të ashtuquajturës "
+"\"hendeku i vlerës\". Hendeku i vlerës është pabarazia midis të ardhurave të"
+" mëdha të platformave të mëdha online si Google dhe Facebook, si dhe të "
+"ardhurat e ulëta të botuesve të shtypit. Ajo ishte menduar si një mënyrë për"
+" të rishpërndarë të ardhurat e Google për botuesit e vegjël. Realiteti është"
+" shumë më pak i drejtpërdrejtë: rezultati i propozimit  jo vetëm që nuk do "
+"të rishpërndajë të ardhurat e Google për ata që kanë nevojë për to, por "
+"gjithashtu do të pengojë aftësinë tonë si përdorues online për t'u angazhuar"
+" me njëri-tjetrin në internet."
 
 #: templates/index.html:90
 msgid "Here’s why the Commission’s proposal won’t solve the problem"
-msgstr ""
+msgstr "Ja përse propozimi i Komisionit nuk do ta zgjidh problemin"
 
 #: templates/index.html:91
 msgid ""
 "No. The European Commission’s proposal will have a series of very negative "
 "impacts on the free and open Internet which we all use every day:"
 msgstr ""
+"Jo. Propozimi i Komisionit Evropian do të ketë një sërë ndikimesh shumë "
+"negative në internetin e lirë dhe të hapur, të cilin ne e përdorim çdo ditë:"
 
 #: templates/index.html:93
 msgid ""
@@ -177,6 +227,12 @@ msgid ""
 " this Directive comes into effect, thus threatening our freedom of "
 "information and limiting our right to be informed"
 msgstr ""
+"Në Spanjë, ku ekziston një taksë, Google nuk u ka paguar një pjesë të të "
+"ardhurave të tyre për reklamat bazë botuesve të lajmeve. Në vend të kësaj, "
+"ajo thjesht ka ndaluar botimin e linqeve me botuesit spanjollë. Është e "
+"mundur që rrjete të tjera sociale do të kufizojnë aftësinë e përdoruesve të "
+"tyre për të ndarë linqe të tilla nëse kjo Direktivë hyn në fuqi, duke "
+"kërcënuar dhe kufizuar kështu lirinë tonë për t'u informuar "
 
 #: templates/index.html:94
 msgid ""
@@ -184,6 +240,10 @@ msgid ""
 "ask for licence fees whenever their links are being shared, hindering the "
 "ability of individuals to share new ideas and important information."
 msgstr ""
+"Botuesit e lajmeve do të kenë të drejtën të padisin pronarët e faqeve "
+"individuale dhe të kërkojnë pagesa për licencë sa herë që linqet e tyre të "
+"shpërndahen, duke penguar aftësinë e individëve për të ndarë ide të reja dhe"
+" informacione të rëndësishme."
 
 #: templates/index.html:95
 msgid ""
@@ -191,6 +251,9 @@ msgid ""
 "charge to share their links could prosper to the detriment of more reputable"
 " news sources."
 msgstr ""
+"Reklamuesit kryesor të klikimeve karrem dhe ofruesit e lajmeve me cilësi të "
+"ulët të cilat nuk paguajnë për të ndarë linqet e tyre mund të përparojnë "
+"duke dëmtuar burimet më me reputacion të lajmeve."
 
 #: templates/index.html:96
 msgid ""
@@ -199,43 +262,52 @@ msgid ""
 "unable to compete with existing platform monopolies such as Google or "
 "Facebook or will need to launch outside of the European Union."
 msgstr ""
+"Kjo do të ketë një ndikim negativ në konkurrencë dhe inovacion: Sipërmarrjet"
+" Europiane nuk do të jenë në gjendje të paguajnë copat e linqeve dhe kështu "
+"nuk do të jenë në gjendje të konkurrojnë me platformat monopol, ekzistuese "
+"të të tilla si Google apo Facebook ose do të duhet të lançohen jashtë "
+"Bashkimi Europian."
 
 #: templates/index.html:98
 msgid ""
 "The proposal needs urgent amendment or deletion, and we need your help to "
 "ensure that happens. Join the Copyfight!"
 msgstr ""
+"Propozimi ka nevojë për ndryshime urgjente ose fshirje, dhe ne kemi nevojë "
+"për ndihmën tuaj për të siguruar që kjo të ndodhë. Bashkohu me Copyfight!"
 
 #: templates/index.html:101 templates/index.html:147 templates/index.html:190
 #: templates/index.html:251
 msgid "Spread the word"
-msgstr ""
+msgstr "Shpërnda fjalën"
 
 #: templates/index.html:104
 msgid "We Oppose A New Publishers' Right in the EU"
-msgstr ""
+msgstr "Ne Kundërshtojmë Një të Drejtë të re të Botuesve në BE "
 
 #: templates/index.html:105
 msgid "NO to the new LINK TAX!"
-msgstr ""
+msgstr "Jo Taksës së re të Linqeve!"
 
 #: templates/index.html:106 templates/index.html:152
 msgid "NO To Online Censorship Through Copyright!"
-msgstr ""
+msgstr "Jo Censurimit Online përmes të Drejtës së Autorit!"
 
 #: templates/index.html:122 templates/index.html:169 templates/index.html:211
 msgid "Additional Resources"
-msgstr ""
+msgstr "Burime Shtesë"
 
 #: templates/index.html:130
 msgid "Issue #2: Content Filtering"
-msgstr ""
+msgstr "Çështja #2: Filtrimi i Përmbajtjes"
 
 #: templates/index.html:131
 msgid ""
 "Unless we take urgent action our ability to post content on the internet "
 "will be limited by a censorship machine"
 msgstr ""
+"Nëse nuk ndërmarrim veprime urgjente, aftësia jonë për të postuar përmbajtje"
+" në internet do të kufizohet nga një makinë censurimi"
 
 #: templates/index.html:132
 msgid ""
@@ -246,6 +318,13 @@ msgid ""
 "to pre-screen the content uploaded onto their platforms in order to identify"
 " copyright infringing works."
 msgstr ""
+"Sipas Nenit 13 të <a href=\"http://eur-lex.europa.eu/legal-"
+"content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN\">propozimit të Komisionit"
+" Europian</a>, ofruesit e shërbimeve të shoqërisë së informacionit si "
+"Google, Amazon, Facebook dhe Twitter do të detyrohen të aplikojnë "
+"teknologjinë e filtrimit të përmbajtjes për të parazgjedhur përmbajtjen e "
+"ngarkuar në platformat e tyre me qëllim identifikimin e veprave që shkelin "
+"të drëjtën e autorit."
 
 #: templates/index.html:139
 msgid ""
@@ -257,10 +336,18 @@ msgid ""
 "functioning so far by asking platforms to put in place costly and opaque "
 "solutions to pre-screen our content."
 msgstr ""
+"Interneti i shtyn të gjithëve që të bëhen krijues të përmbajtjeve dhe zërat "
+"e tyre të dëgjohen në mbarë botën. Problemi është se disa nga përmbajtjet e "
+"ngarkuara në internet cenojnë të drejtën e autorit të krijuesve të tjerë të "
+"përmbajtjes. Propozimi është duke u përpjekur të adresojë shkeljen e të "
+"drejtës së autorit në internet, por e trajton atë në një mënyrë që pengon "
+"mënyrën se si Interneti ka funksionuar deri tani duke i kërkuar platformave "
+"për të vendosur zgjidhje të kushtueshme dhe të paqarta për të paracaktuar "
+"përmbajtjen tonë."
 
 #: templates/index.html:140
 msgid "The proposal is problematic…"
-msgstr ""
+msgstr "Propozimi është problematik..."
 
 #: templates/index.html:141
 msgid ""
@@ -272,10 +359,18 @@ msgid ""
 " implement. They will make it harder for European start-ups to grow, and for"
 " individuals to understand how their content is being manipulated."
 msgstr ""
+"Nëse ke ngarkuar ndonjëherë përmbajtje në mediat sociale, ose ke parë një "
+"video kreative që dikush tjetër ka ngarkuar, kjo reformë e propozuar mund të"
+" ndikojë tek ju. Ky propozim do t'u kërkonte ndërmjetësve të tillë si "
+"Facebook dhe YouTube që vazhdimisht të mbikëqyrin platformat e tyre me "
+"makina censurimi, shpesh pa elementë njerëzorë të përfshirë në këtë proces. "
+"Këto mekanizma do të jenë të shtrenjta për t'u implementuar. Ata do ta bëjnë"
+" më të vështirë rritjen e sipërmarrjeve Europiane dhe individët do ta kenë "
+"më të vështirë të kuptojnë se si përmbajtja e tyre po manipulohet."
 
 #: templates/index.html:142
 msgid "Will the proposal fix the problem?"
-msgstr ""
+msgstr "A do ta rregullojë propozimi problemin?"
 
 #: templates/index.html:143
 msgid ""
@@ -286,34 +381,49 @@ msgid ""
 "activities that occur on their sites to prevent copyright infringement. This"
 " would be a breach of freedom of expression and of privacy (CJEU C-360/10)."
 msgstr ""
+"Jo. Makinat e propozuara të censurës janë një 'zgjidhje' joproporcionale dhe"
+" joefektive e problemit. Ne e dimë këtë, sepse në rastin e SABAM v Netlog, "
+"Gjykata e Drejtësisë e Bashkimit Europian vendosi që rrjetet sociale dhe "
+"ofruesit e tjerë të web hosting nuk mund tu kërkohet të monitorojnë dhe "
+"filtrojnë aktivitetet që ndodhin në faqet e tyre për të parandaluar shkeljen"
+" e të drejtës së autorit. Kjo do të ishte një shkelje e lirisë së shprehjes "
+"dhe e privatësisë (CJEU C-360/10)."
 
 #: templates/index.html:144
 msgid ""
 "Fight with us against the requirement for large and small websites to put in"
 " place automated censorship systems. Join the Copyfight!"
 msgstr ""
+"Luftoni me ne kundër kërkesës për të vënë sisteme automatike të censurës në "
+"website të mëdha dhe të vogla. Bashkohu me Copyfight!"
 
 #: templates/index.html:150
 msgid "We Oppose The Use of Automated Solutions To Pre-Screen Online Content"
 msgstr ""
+"Ne e Kundërshtojmë Përdorimin e Zgjidhjeve të Automatizuara për të "
+"Parazgjedhur Përmbajtjen Online"
 
 #: templates/index.html:151
 msgid "NO TO CONTENT FILTERING!"
-msgstr ""
+msgstr "Jo Filtrimit të Përmbajtjes!"
 
 #: templates/index.html:153
 msgid "The \"Value Gap\" is BS... This reform is destroying our internet."
 msgstr ""
+"\"Hendeku i vlerës\" është gjep...Kjo reform po shkatërron internetin tonë."
 
 #: templates/index.html:177
 msgid "Issue #3: User-Generated Content Exception"
-msgstr ""
+msgstr "Çështja # 3: Përjashtimi i Përmbajtjes së Krijuar nga Përdoruesi"
 
 #: templates/index.html:178
 msgid ""
 "Unless we take urgent action our innocent remixes and user-generated content"
 " will keep infringing copyright"
 msgstr ""
+"Përsa kohë nuk ndërmarrim veprime urgjente, remix-at tanë të pafajshëm dhe "
+"përmbajtja e krijuar nga përdoruesit do të vazhdojnë të cenojnë të drejtat e"
+" autorit"
 
 #: templates/index.html:179
 msgid ""
@@ -329,14 +439,26 @@ msgid ""
 "but our view is it should be to ensure a healthy remix culture and a future-"
 "proof internet."
 msgstr ""
+"Në shkurtin e vitit 2017 <a "
+"href=\"http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//NONSGML+COMPARL+PE-595.591+01+DOC+PDF+V0//EN&language=EN\">Opinion"
+" Draft</a>,Komisioni për Kulturën dhe Edukimin e Parlamentit Europian (CULT)"
+" propozoi një përjashtim për përmbajtjen e krijuar nga përdoruesi për të "
+"drejtën e autorit. Ky amendament i propozuar (i cili ende nuk është "
+"përfshirë në Direktivë) parashikon që përdorimi i përmbajtjes që tashmë "
+"është bërë e disponueshme në internet për qëllime të tilla si kritika, "
+"rishikimi, ilustrimi, karikatura ose parodia është e ligjshme, me kusht që "
+"burimi të identifikohet saktë dhe përdorimi të jetë në përputhje me "
+"praktikën e drejtë. Një propozim i tillë ende nuk është pjesë e ligjit, por "
+"pikëpamja jonë është se duhet të sigurojmë një kulturë të shëndoshë remix "
+"dhe një internet të sigurtë në të ardhmen."
 
 #: templates/index.html:180
 msgid "Why is this important?"
-msgstr ""
+msgstr "Përse është e rëndësishme?"
 
 #: templates/index.html:185
 msgid "Claiming back our culture…"
-msgstr ""
+msgstr "Duke synuar sërish kulturën tonë..."
 
 #: templates/index.html:186
 msgid ""

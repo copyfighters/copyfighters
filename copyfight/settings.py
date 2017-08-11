@@ -77,6 +77,7 @@ LANGUAGES = (
 	('sq', 'Albanian'),
 	('hr', 'Croatian'),
 	('en', 'English'),
+	('es', 'Spanish'),
 	('fi', 'Finnish'),
 	('fr', 'French'),
 	('de', 'German'),

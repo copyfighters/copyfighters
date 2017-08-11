@@ -46,7 +46,7 @@ msgstr "Recursos"
 
 #: templates/base.html:44 templates/base.html:98
 msgid "Imprint"
-msgstr ""
+msgstr "Imprint"
 
 #: templates/base.html:47 templates/base.html:99
 msgid "Privacy"
@@ -143,7 +143,7 @@ msgstr ""
 
 #: templates/index.html:80
 msgid "Issue #1: Publishers' right"
-msgstr ""
+msgstr "Problema #1: \"Taxa\" do Link"
 
 #: templates/index.html:81
 msgid ""
@@ -165,10 +165,17 @@ msgid ""
 "title that could be the subject of copyright! This includes most news "
 "articles shared online. "
 msgstr ""
+"Segundo o Arigo 11 da <a href=\"http://eur-lex.europa.eu/legal-"
+"content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN\">Proposta da Comissão "
+"Europeia</a>, a imprensa terá o direito de processar indivíduos os as "
+"plataformas que estes usam por partilharem links de notícias. Isto irá "
+"permiter que editoras de jornais digitais cobrem uma taxa a quem partilhar "
+"um link com uma pequena descrição do conteúdo, ou mesmo o título! Isto "
+"inclui a maior parte dos artigos partilhados online."
 
 #: templates/index.html:83 templates/index.html:133
 msgid "Why is this problematic?"
-msgstr "Porque é que é problemático?"
+msgstr "Onde é que está o problema?"
 
 #: templates/index.html:88 templates/index.html:138
 msgid "What was the problem?"
@@ -214,7 +221,7 @@ msgid ""
 " this Directive comes into effect, thus threatening our freedom of "
 "information and limiting our right to be informed"
 msgstr ""
-"Em espanha, onde implementaram semelhante legislação, a Google recusou-se a "
+"Em Espanha, onde implementaram semelhante legislação, a Google recusou-se a "
 "pagar a parte da sua receita à imprensa online, simplemente parando a "
 "publicação desse tipo de links para a impensa espanhola. É possível que "
 "outras redes sociais também limitem a  capacidade dos seus utlizadores "
@@ -227,6 +234,10 @@ msgid ""
 "ask for licence fees whenever their links are being shared, hindering the "
 "ability of individuals to share new ideas and important information."
 msgstr ""
+"Editoras de jornais terão o direito de por em tribunal indivíduos que tenham"
+" websites e pedir dinheiro por licensas quando esses links são partilhados "
+"nos mesmos, limitando a capacidade de partinhar novas ideias e infromação "
+"potencialmente importante."
 
 #: templates/index.html:95
 msgid ""
@@ -234,6 +245,9 @@ msgid ""
 "charge to share their links could prosper to the detriment of more reputable"
 " news sources."
 msgstr ""
+"Há a possiblidade de anúncios escandalosos, enganosos ou mesmo a imprensa de"
+" baixa qualidade não cobrarem taxas por esse tipo de links, prosperando face"
+" às outras instituições de melhor reputação."
 
 #: templates/index.html:96
 msgid ""
@@ -242,12 +256,20 @@ msgid ""
 "unable to compete with existing platform monopolies such as Google or "
 "Facebook or will need to launch outside of the European Union."
 msgstr ""
+"Isto terá um efeito negativo na competição e inovação: start-ups Europeias "
+"terão dificuldades em pagar essas taxas pelos links e, como consequência, "
+"perderão competitividade face a monopólios já existentes com a Google ou o "
+"Facebook. No caso extremo, terão de ter início fora da União Europeia para "
+"evitarem tais taxas."
 
 #: templates/index.html:98
 msgid ""
 "The proposal needs urgent amendment or deletion, and we need your help to "
 "ensure that happens. Join the Copyfight!"
 msgstr ""
+"A proposta precisa de ser abandonada ou sofrer uma alteração urgente. "
+"Precisamos da sua ajuda para garanti que uma das duas acontece. Junte-se à "
+"nossa Copyfight!"
 
 #: templates/index.html:101 templates/index.html:147 templates/index.html:190
 #: templates/index.html:251
@@ -256,11 +278,11 @@ msgstr "Partilhe a nossa Causa"
 
 #: templates/index.html:104
 msgid "We Oppose A New Publishers' Right in the EU"
-msgstr ""
+msgstr "Opomo-nos à nova \"taxa do link\" na UE"
 
 #: templates/index.html:105
 msgid "NO to the new LINK TAX!"
-msgstr "NÃO à nova taxa do link"
+msgstr "NÃO à nova \"taxa do link\""
 
 #: templates/index.html:106 templates/index.html:152
 msgid "NO To Online Censorship Through Copyright!"
@@ -272,7 +294,7 @@ msgstr "Recursos Adicionais"
 
 #: templates/index.html:130
 msgid "Issue #2: Content Filtering"
-msgstr "Proposta #2: Filtragem Automática de Conteúdos"
+msgstr "Problema #2: Filtragem Automática de Conteúdos"
 
 #: templates/index.html:131
 msgid ""
@@ -309,10 +331,18 @@ msgid ""
 "functioning so far by asking platforms to put in place costly and opaque "
 "solutions to pre-screen our content."
 msgstr ""
+"A internet permite que todos sejam criadores e que tenham a sua voz ouvida "
+"em qualquer parte do mundo. O problema é que algum desse conteúdo é baseado "
+"em obras já existentes e, assim, já com Direito de Autor de outrém. A "
+"proposta tenta dar resposta a esse tipo de infrações cometidas na internet. "
+"O problema vem do facto da proposta contrariar toda a tradição da internet, "
+"pedindo às plataformas que ponham em funcionamento dispendios sistemas pouco"
+" transparentes de filtragem automática de conteúdo, assim que este é "
+"adicionado."
 
 #: templates/index.html:140
 msgid "The proposal is problematic…"
-msgstr "Porque é que é problemático?"
+msgstr "Onde é que está o problema?"
 
 #: templates/index.html:141
 msgid ""
@@ -324,6 +354,13 @@ msgid ""
 " implement. They will make it harder for European start-ups to grow, and for"
 " individuals to understand how their content is being manipulated."
 msgstr ""
+"Se alguma vez adicionou conteúdo a uma rede social ou viu um video criativo "
+"feito por algém, esta reforma pode afetá-lo. Esta proposta requerirá a que "
+"intermediários como o Facebook ou o Youtube policiem constantemente o "
+"conteúdo, tal como um sistema de censura, maioritariamente sem humanos "
+"envolvidos nessa análise. Devido ao elevado custo destes mecanismos, start-"
+"ups verão difuldades e indivíduos não compreenderão como o conteúdo a que "
+"acedem será manipulado."
 
 #: templates/index.html:142
 msgid "Will the proposal fix the problem?"
@@ -338,20 +375,28 @@ msgid ""
 "activities that occur on their sites to prevent copyright infringement. This"
 " would be a breach of freedom of expression and of privacy (CJEU C-360/10)."
 msgstr ""
+"Não. A proposta de uma \"maquina\" de censura não respeita a "
+"proporcionalidade e é uma \"solução\" ineficaz. Sabemos isto porque no caso "
+"SABAM v Netlog, O Tribunal de Justiça da União Europeia concluiu que redes "
+"sociais e outras plataformas online não podem ser obrigadas a monitorizar e "
+"a filtrar conteúdo para prevenir infração de direitos de autor pois isto "
+"seria uma falha na liberdade de expressão e de privaidade (CJEU C-360/10)."
 
 #: templates/index.html:144
 msgid ""
 "Fight with us against the requirement for large and small websites to put in"
 " place automated censorship systems. Join the Copyfight!"
 msgstr ""
+"Lute connosco contra a obrigatoriedade de pequenas e grandes empresas terme "
+"de implementar sistemas automatizados de censura. Junte-se à Copyfight!"
 
 #: templates/index.html:150
 msgid "We Oppose The Use of Automated Solutions To Pre-Screen Online Content"
-msgstr ""
+msgstr "Opomo-nos ao uso de Sistemas Automatizados filtragem de conteúdos!"
 
 #: templates/index.html:151
 msgid "NO TO CONTENT FILTERING!"
-msgstr "NÃO À FILTRAGEM DE CONTEÚDOS!"
+msgstr "NÃO à Filtragem de Conteúdos!"
 
 #: templates/index.html:153
 msgid "The \"Value Gap\" is BS... This reform is destroying our internet."
@@ -366,6 +411,8 @@ msgid ""
 "Unless we take urgent action our innocent remixes and user-generated content"
 " will keep infringing copyright"
 msgstr ""
+"A não ser que tomemos ação imediata os nossos remixes e conteúdo que geramos"
+" inocentemente continuarão a constituir uma violação do Direito de Autor."
 
 #: templates/index.html:179
 msgid ""
@@ -381,6 +428,17 @@ msgid ""
 "but our view is it should be to ensure a healthy remix culture and a future-"
 "proof internet."
 msgstr ""
+"Num <a "
+"href=\"http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//NONSGML+COMPARL+PE-595.591+01+DOC+PDF+V0//EN&language=EN\">documento</a>"
+" emitido pela  Comissão da Cultura e da Educação do Parlamento Europeu é "
+"proposta uma exceção aos Direitos de Autor para conteúdo gerado por "
+"utilizadores de plataformas online. Esta proposta de alteração (que ainda "
+"não foi incorporada na Diretiva) permite que conteúdo já presente nas "
+"plataformas para fins como a crítica, recomendação, ilustração, caricatura "
+"ou paródia sejam legítimas quando garntido que o autor original é bem "
+"identificado. Tal proposta não consiste ainda parte da lei, mas, no nosso "
+"ver, é fundamental para garantir uma cultura saudável e uma internet à prova"
+" do futuro."
 
 #: templates/index.html:180
 msgid "Why is this important?"
@@ -411,6 +469,9 @@ msgid ""
 "Help us add a user-generated content exception to the EU Directive to enable"
 " our online culture to flourish! Join the Copyfight!"
 msgstr ""
+"Ajude-nos a adicionar a exceção de conteúdo gerado por utilizadores à "
+"Diretiva Europeia e garantir que a cultura na internet possa florescer! "
+"Junte-se à Copyfight!"
 
 #: templates/index.html:193
 msgid "We Want A Copyright Exception For User-Generated Content"
@@ -443,6 +504,12 @@ msgid ""
 "leaves a vacuum which is served by illegal content, depriving the artists of"
 " their well deserved remuneration."
 msgstr ""
+"<strong>Hoje, na UE, a nossa legislação fragmentada de Direito de Autor não "
+"está adaptada à verdadeira essência da arte e cultura, que não têm "
+"fronteiras.</strong> Com efeito, este sistema acabou por benificiar mais "
+"intermediários que artistas, frustrando ao mesmo tempo o público que deseja "
+"acesso às obras, deixando um vácuo que atualmente é preenchdo por conteúdo "
+"ilegal, privando os artiastas da sua bem merecida remuneração."
 
 #: templates/index.html:231
 msgctxt ""
@@ -459,7 +526,7 @@ msgstr ""
 msgid ""
 "Join Our #COPYFIGHT! #EUcopyrightreform #copyfighters #joinourcopyfight"
 msgstr ""
-"Juntem-se à nosssa #COPYFIGHT ! #EUcopyrightreform #copyfighters "
+"Juntem-se à nosssa #COPYFIGHT! #EUcopyrightreform #copyfighters "
 "#joinourcopyfight"
 
 #: templates/index.html:270
@@ -479,6 +546,8 @@ msgid ""
 "NO To More Copyright in the Digital Single Market. YES To Better Copyright. "
 "YES To Harmonisation #Copyfighters"
 msgstr ""
+"NÃO a mais legislação de Direito de Autor na UE. SIM a um MELHOR Direito de "
+"Autor. Sim à sua harmonização nos vários estados-membros #Copyfighters"
 
 #: templates/resources.html:10
 msgid ""
@@ -486,6 +555,9 @@ msgid ""
 "analyses on the Proposed Directive on Copyright in the Digital Single "
 "Market. We will be updating this document pool as the process advances."
 msgstr ""
+"Nesta coletânea de documentos, encontrará informação relevante, documentos e"
+" análises sobre a proposta Diretiva (Copyright in the Digital Single "
+"Market). Continuaremos a atualizá-la com o avançar do processo."
 
 #: templates/resources.html:10
 msgid "Last update"
@@ -493,13 +565,16 @@ msgstr "Últimas atualizações"
 
 #: templates/resources.html:15
 msgid "European Institutions Documents"
-msgstr ""
+msgstr "Documentos de Instituições Europeias"
 
 #: templates/resources.html:17
 msgid ""
 "Proposal for a Directive on Copyright in the Digital Single Market (14 "
 "September 2016)"
 msgstr ""
+"Proposta para a Diretiva \"Directive on Copyright in the Digital Single "
+"Market\" (diretiva sobre o Direito de Autor no mercado único digital) (14 "
+"Setembro de 2016)"
 
 #: templates/resources.html:18
 msgid "European Commission documentation"
@@ -515,6 +590,9 @@ msgid ""
 "Parliament (CULT) (February 2017), see in particular the suggestion to "
 "introduce an exception to copyright infringement for user-generated content"
 msgstr ""
+"Documento emitido pela Comissão da Cultura e Educação do Parlamento Europeu "
+"(CULT) (Fevereiro de 2017), veja em particular a sugestão de introduzir uma "
+"exceção ao Direito de Autor para conteúdo gerado por utilizadores"
 
 #: templates/resources.html:24
 msgid "Proposal Analysis"
@@ -549,6 +627,12 @@ msgid ""
 "Centre for Intellectual Property and Information Law, University of "
 "Cambridge, January 2017)"
 msgstr ""
+"\"On Online Platforms and the Commission’s New Proposal for a Directive on "
+"Copyright in the Digital Single Market\" (sobre plataformas online e a nova "
+"proposta da Comissão para uma Diretiva sobre Direito de Autor no mercado "
+"Único Digital) - Um estudo por Dr Christina Angelopoulos, de Centre for "
+"intellectual Property and Information Law, Universidade de Cambridge, "
+"Janeiro de 2017"
 
 #: templates/resources.html:36
 msgid ""
@@ -556,6 +640,10 @@ msgid ""
 "Bourdillon, Eleonora Rosati, Karmen Turk, Christina Angelopoulos, Aleksandra"
 " Kuczerawy, Miquel Peguera, Martin Husovec, January 2017)"
 msgstr ""
+"\"A Brief Exegesis of the Proposed Copyright Directive\" (Uma breve crítica "
+"à Diretiva de Direito de Autor proposta) por Sophie Stalla-Bourdillon, "
+"Eleonora Rosati, Karmen Turk, Christina Angelopoulos, Aleksandra Kuczerawy, "
+"Miquel Peguera, Martin Husovec em Janeiro de 2017"
 
 #: templates/resources.html:40
 msgid "Other resources"

@@ -1,15 +1,19 @@
 @for $i from 1 through 6 {
   h#{7 - $i} {
-  font-size: $i * 0.4em;
+    font-size: $i * .4em;
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font: {
-  family: $headline-font;
-  weight: 700;
+    family: $headline-font;
+    weight: 700;
   }
-
   line-height: 1.2;
   padding-bottom: .7em;
 }
@@ -21,42 +25,50 @@ h3 {
   }
 }
 
-button, input[type=button], input[type=submit] {
+button,
+input[type='button'],
+input[type='submit'] {
   @extend .btn;
   @extend .btn-default;
 }
 
-input:not([type=submit], [type=button]) {
+input:not([type='submit'], [type='button']) {
   @extend .form-control;
 
   padding: 2px 5px;
 }
 
-.btn, .btn-default, input, textarea, select {
-  background: rgba(0,0,0,0);
-  text-shadow: none;
+.btn,
+.btn-default,
+input,
+textarea,
+select {
+  background: #fff;
   min-height: 30px;
+  text-shadow: none;
 
-  &, &:hover, &:focus {
-  color: $color-text-main;
-
-  border: {
-  width: 1px;
-  style: solid;
-  color: #000000;
-  radius: 0;
-  }
+  &,
+  &:hover,
+  &:focus {
+    border: {
+      color: #000;
+      radius: 0;
+      style: solid;
+      width: 1px;
+    }
+    color: $color-text-main;
   }
 }
 
-.btn, .btn-default {
+.btn,
+.btn-default {
   cursor: pointer;
 
   &:hover {
-  background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, .1);
   }
 
   &:focus {
-  box-shadow: none;
+    box-shadow: none;
   }
 }

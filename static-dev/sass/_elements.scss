@@ -38,7 +38,7 @@ input:not([type=submit], [type=button]) {
   min-height: 30px;
 
   &, &:hover, &:focus {
-  color: $main-text-color;
+  color: $color-text-main;
 
   border: {
   width: 1px;

@@ -17,7 +17,7 @@ var cssnano       = require('cssnano');         // postcss plugin
 gulp.task('css', function () {
   // Specify the processors postcss uses.
   var processors = [
-    //autoprefixer({ browsers: '[> 5%]', cascade: false }),
+    // autoprefixer({ browsers: ['> 5%'], cascade: false }),
     cssnano()
   ];
   /*

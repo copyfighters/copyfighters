@@ -35,12 +35,11 @@
     "html5shiv": "^3.7.3",
     "jquery": "^3.2.1",
     "jquery-countdown": "^2.2.0",
-    "jquery.scrollto": "^2.1.2",
+    "jshint": "^2.9.5",
     "pump": "^1.0.2",
     "respond.js": "^1.4.2",
     "tether": "^1.4.0",
     "typed.js": "^2.0.5",
-    "jshint": "^2.9.5",
     "typeface-fira-sans": "0.0.31",
     "typeface-zilla-slab": "0.0.31"
   }

@@ -90,6 +90,10 @@ div.area-index-header {
 
   .row {
     padding-bottom: 4em;
+
+    &:first-child {
+      padding-bottom: .5em;
+    }
   }
 
   #main-title {

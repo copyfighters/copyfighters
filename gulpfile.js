@@ -17,7 +17,7 @@ var cssnano       = require('cssnano');         // postcss plugin
 gulp.task('css', function () {
   // Specify the processors postcss uses.
   var processors = [
-    //autoprefixer({ browsers: '[> 5%]', cascade: false }),
+    // autoprefixer({ browsers: ['> 5%'], cascade: false }),
     cssnano()
   ];
   /*
@@ -45,8 +45,8 @@ gulp.task('js-all', function (cb) {
      // jquery-countdown depends on jquery
     './node_modules/jquery-countdown/dist/jquery.countdown.js',
     './node_modules/typed.js/lib/typed.js',
-    './node_modules/tether/dist/js/tether.js',
-     // bootstrap depends on jquery & tether
+    './node_modules/popper.js/dist/umd/popper.js',
+     // bootstrap depends on jquery & popper
     './node_modules/bootstrap/dist/js/bootstrap.js',
     // jquery.scrollto depends on jquery
     './node_modules/jquery.scrollto/jquery.scrollTo.js',

@@ -66,11 +66,6 @@ $('#issue-3-message-select').change(function() {
 	updateLinks($(this), 'issue-3');
 });
 
-$('#learnmore-link').click(function() {
-	$(window).scrollTo('#facts', 250);
-	return false;
-});
-
 $('.area-2 .btn.show-details').click(function() {
 	$('.area-2 div:nth-child(2)').toggle();
 	$('.area-2 div:nth-child(3)').toggle();

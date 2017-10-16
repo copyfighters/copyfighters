@@ -35,7 +35,6 @@
     "html5shiv": "^3.7.3",
     "jquery": "^3.2.1",
     "jquery-countdown": "^2.2.0",
-    "jquery.scrollto": "^2.1.2",
     "jshint": "^2.9.5",
     "popper.js": "^1.12.2",
     "pump": "^1.0.2",

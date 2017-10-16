@@ -1,14 +1,16 @@
 $(document).ready(function(){
-	// Initialise typed text.
-	var typed = new Typed('#main-title-container', {
-		onComplete: function(self) {
-			// Fade in navigation and fade out cursor
-			$('.typed-cursor').fadeOut();
-			$('.header-nav').css('visibility','visible').hide().fadeIn(500);
-		},
-		stringsElement: '#main-title-strings',
-		typeSpeed: 40
-	});
+	if ($('#main-title-strings').length > 0) {
+		// Initialise typed text only if we are on the homepage.
+		var typed = new Typed('#main-title-container', {
+			onComplete: function(self) {
+				// Fade in navigation and fade out cursor
+				$('.typed-cursor').fadeOut();
+				$('.header-nav').css('visibility','visible').hide().fadeIn(500);
+			},
+			stringsElement: '#main-title-strings',
+			typeSpeed: 40
+		});
+	}
 
 	// Initialise countdown.
 	$('.countdown').countdown('2017/11/20', function(event) {

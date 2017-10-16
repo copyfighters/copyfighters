@@ -43,8 +43,6 @@ input:not([type='submit'], [type='button']) {
 input,
 textarea,
 select {
-  background: #fff;
-  min-height: 30px;
   text-shadow: none;
 
   &,
@@ -58,6 +56,13 @@ select {
     }
     color: $color-text-main;
   }
+}
+
+.btn,
+.btn-default,
+input,
+textarea {
+  min-height: 30px;
 }
 
 .btn,

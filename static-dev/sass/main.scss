@@ -114,7 +114,6 @@ div.area-8 {
 .share {
 
   > label {
-    font-size: 1.2em;
     font-weight: bold;
 
     i {
@@ -366,5 +365,15 @@ div.area-email {
         }
       }
     }
+  }
+}
+
+.toolkit {
+  h2 {
+    padding-top: 1.4em;
+  }
+
+  h3 {
+    padding-top: 0.7em;
   }
 }

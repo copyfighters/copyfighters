@@ -142,4 +142,28 @@ div.area-index-header {
       margin-left: 20px;
     }
   }
+
+  .follow-social-media {
+    margin-top: 1em;
+
+    .follow-facebook,
+    .follow-twitter {
+      clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+      color: #fff;
+      display: inline-block;
+      font-weight: bolder;
+      margin-bottom: .5em;
+      padding: .3em .8em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .follow-facebook {
+      background-color: $color-facebook;
+    }
+
+    .follow-twitter {
+      background-color: $color-twitter;
+    }
+  }
 }

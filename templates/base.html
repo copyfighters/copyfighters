@@ -9,10 +9,12 @@
 		<title>#copyfighters</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta property="og:title" content=" We want a Europe where sharing, innovation and copyright go hand in hand." />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://copyfighters.eu/" />
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<meta property="og:image" content="https://copyfighters.eu/favicon.png" />
+		<meta property="og:title" content=" We want a Europe where sharing, innovation and copyright go hand in hand.">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://copyfighters.eu/">
+		<link rel="apple-touch-icon" href="/favicon.png">
+		<link rel="icon" href="favicon.png" sizes="196x196" type="image/png">
 		<link rel="stylesheet" href="{% static 'css/main.css' %}">
 		<!--[if lt IE 9]>
 			<script src="{% static 'js/ie.js' %}"></script>
@@ -25,7 +27,7 @@
 
 		{% block navigation %}
 			<div class="container-fluid header-nav">
-				<nav class="navbar navbar-toggleable-md navbar-light">
+				<nav class="navbar navbar-expand-md navbar-light">
 					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#header-nav-sub" aria-controls="header-nav-sub" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -38,7 +40,10 @@
 								<a class="nav-link" href="/">{% trans 'Home' %} <span class="sr-only">({% trans 'current' %})</span></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="{% url 'resources' %}">{% trans 'Resources' %}</a>
+								<a class="nav-link" href="{% url 'toolkit' %}">{% trans 'Toolkit' %}</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{% url 'references' %}">{% trans 'References' %}</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav navbar-right">
@@ -86,7 +91,8 @@
 						</form>
 		      </p>
 		      <p>
-		        <a href="{% url 'resources' %}">{% trans 'Resources' %}</a> |
+		        <a href="{% url 'toolkit' %}">{% trans 'Toolkit' %}</a> |
+		        <a href="{% url 'references' %}">{% trans 'References' %}</a> |
 		        <a href="{% url 'imprint' %}">{% trans 'Imprint' %}</a> |
 		        <a href="{% url 'privacy' %}">{% trans 'Privacy' %}</a>
 		      </p>

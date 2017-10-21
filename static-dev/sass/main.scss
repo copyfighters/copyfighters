@@ -7,7 +7,6 @@
 $main-font: 'Fira Sans', 'Source Sans Pro', 'Open Sans', 'Arial', sans-serif;
 $headline-font: 'Zilla Slab', slab, serif;
 
-$main-text-color: #383838;
 $main-text-size: 17px;
 
 @import 'elements';
@@ -46,27 +45,24 @@ html {
 }
 
 body {
-  position: relative;
-  min-height: 100%;
-
-  font-family: $main-font;
-  font-size: $main-text-size;
-  line-height: 1.7;
-  color: $main-text-color;
-
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: auto;
   -webkit-font-kerning: normal;
-  -webkit-text-size-adjust: 100%;
-  font-variant-ligatures: discretionary-ligatures;
   -webkit-font-variant-ligatures: discretionary-ligatures;
-
+  -webkit-text-size-adjust: 100%;
   box-sizing: border-box !important;
+  color: $color-text-main;
+  font-family: $main-font;
+  font-size: $main-text-size;
+  font-variant-ligatures: discretionary-ligatures;
+  line-height: 1.7;
+  min-height: 100%;
+  position: relative;
+  text-rendering: optimizeLegibility;
 }
 
 p.browserupgrade {
+  border-bottom: 2px solid #000;
   margin: 10px auto;
-  border-bottom: 2px solid #000000;
   padding: 10px 30px;
 }
 
@@ -82,11 +78,14 @@ div.area {
 
 @import 'head';
 
-div.area-3, div.area-4, div.area-5 {
-    clip-path: polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+div.area-3,
+div.area-4,
+div.area-5 {
+  clip-path: polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
 }
 
-div.area-2, div.area-4 {
+div.area-2,
+div.area-4 {
   @include gradient-directional($start-color: #8ee3fc, $end-color: #ab9ffc);
 }
 
@@ -115,7 +114,6 @@ div.area-8 {
 .share {
 
   > label {
-    font-size: 1.2em;
     font-weight: bold;
 
     i {
@@ -150,15 +148,15 @@ div.area-8 {
     }
 
     &.facebook {
-      background: #3B5998;
+      background-color: $color-facebook;
     }
 
     &.twitter {
-      background: #55acee;
+      background-color: $color-twitter;
     }
 
     &.reddit {
-      background: #EE2509;
+      background-color: $color-reddit;
     }
 
     > i {
@@ -174,11 +172,11 @@ div.area-8 {
 
   .statement {
     background-color: #fff;
+    border-radius: 8px;
+    font-weight: 300;
     margin-bottom: 1.4em;
     padding: .5em .7em;
     position: relative;
-    border-radius: 8px;
-    font-weight: 300;
 
     &::after {
       border-left: 10px solid transparent;
@@ -217,15 +215,14 @@ div.area-8 {
 @import 'quotes';
 
 div.footer {
-  background-color: #556270;
-  color: #ffffff;
-  font-size: $main-text-size * 0.8;
-
   // Disable subpixel rendering for white-on-dark text
   -webkit-font-smoothing: antialiased;
+  background-color: #556270;
+  color: #fff;
+  font-size: $main-text-size * .8;
 
   a {
-  color: #dddddd;
+    color: #ddd;
   }
 
   div.logos {
@@ -237,9 +234,10 @@ div.footer {
     }
   }
 
-  input, select, button {
-    color: #ffffff;
-    border: 1px solid #dddddd;
+  button,
+  input,
+  select {
+    border: 1px solid #ddd;
   }
 }
 
@@ -260,14 +258,13 @@ div.area-email {
     width: 100%;
 
     form.email_form {
-      width: 100%;
+      align-items: center;
       display: flex;
       flex-direction: row;
-      align-items: center;
       justify-content: center;
-      text-align: center;
-
       padding: 4px 0;
+      text-align: center;
+      width: 100%;
 
       @media (max-width: 480px) {
         font-size: 1.2em !important;
@@ -282,11 +279,11 @@ div.area-email {
       }
 
       input {
-        flex: 1 1 100%;
-        background-color: black;
+        background-color: #000;
         border: 0;
         border-radius: 0;
-        color: white;
+        color: #fff;
+        flex: 1 1 100%;
 
         font: {
           family: $main-font;
@@ -303,28 +300,24 @@ div.area-email {
       }
 
       button {
-        line-height: 0.8;
-
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        flex-shrink: 0;
+        font: {
+          family: $main-font;
+          size: 1.3rem;
+          weight: 700;
+        }
+        line-height: .8;
+        min-width: 0;
         padding: {
           left: 10px;
           right: 12px;
         }
 
-        background: transparent;
-        color: #ffffff;
-
         @media (max-width: 480px) {
           display: none;
-        }
-
-        flex-shrink: 0;
-        min-width: 0;
-        border: 1px solid #ffffff;
-
-        font: {
-          family: $main-font;
-          size: 1.3rem;
-          weight: 700;
         }
       }
 
@@ -333,49 +326,53 @@ div.area-email {
       }
 
       #email_reload {
+        cursor: pointer;
         display: none;
         font-style: normal;
         margin: 0 15px;
-        cursor: pointer;
       }
 
       #email_share {
-      white-space: nowrap;
-      display: none;
-      font-size: 0.8em;
+        display: none;
+        font-size: 0.8em;
+        white-space: nowrap;
 
         #share_fb {
-          font-weight: bolder;
+          background: $color-facebook;
+          clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
           cursor: pointer;
-
+          font-weight: bolder;
+          margin: 0 -3px;
+          overflow: visible;
           padding: {
             left: 12px;
             right: 12px;
           }
-
-          margin: 0 -3px;
-          -webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-          clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-          overflow: visible;
-          background: $color-facebook;
         }
 
         #share_twitter {
-          font-weight: bolder;
+          background: $color-twitter;
+          clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
           cursor: pointer;
-
+          font-weight: bolder;
+          margin: 0 -3px;
+          overflow: visible;
           padding: {
             left: 10px;
             right: 12px;
           }
-
-          margin: 0 -3px;
-          -webkit-clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-          clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-          overflow: visible;
-          background: $color-twitter;
         }
       }
     }
+  }
+}
+
+.toolkit {
+  h2 {
+    padding-top: 1.4em;
+  }
+
+  h3 {
+    padding-top: 0.7em;
   }
 }

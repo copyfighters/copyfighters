@@ -11,7 +11,7 @@
     min-height: 0;
 
     .navbar-brand {
-      background-color: black;
+      background-color: $color-nav-logo-background;
       font: {
         family: $headline-font;
         size: 19px;
@@ -24,12 +24,12 @@
       &:active,
       &:focus,
       &:hover {
-        color: white;
+        color: $color-nav-logo-text;
       }
     }
 
     .navbar-text {
-      color: black;
+      color: $color-text-main;
       font-weight: bolder;
       margin-right: 50px;
     }
@@ -45,35 +45,35 @@
   // Needed to make the absolute positioning below reference this div.
   position: relative;
 
-  #index-header-background, #index-header-portraits {
+  #index-header-background,
+  #index-header-portraits {
+    height: 100%;
+    left: 0;
     pointer-events: none;
     position: absolute;
     top: 0;
-    left: 0;
-
     width: 100%;
-    height: 100%;
   }
 
   #index-header-background {
-    background-color: #6df2c7;
-    @include gradient-directional($start-color: #8df472, $end-color: #6df2c7);
+    background-color: $color-home-header-background-1;
+    @include gradient-directional($start-color: $color-home-header-background-2, $end-color: $color-home-header-background-1);
 
     // Fallback for browsers that don't support calc in clip-path
     clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0%, calc(100% - 450px) 100%, 0% 100%);
     z-index: -30;
 
-    @media screen and (orientation:portrait) {
+    @media screen and (orientation: portrait) {
       clip-path: none;
     }
   }
 
   #index-header-portraits {
     background: {
+      color: $color-home-header-image-fallback;
+      image: url('../img/bg-portraits.jpg');
       position: top right;
-      color: white;
-      image: url(../img/bg-portraits.jpg);
     }
     z-index: -31;
   }
@@ -90,6 +90,10 @@ div.area-index-header {
 
   .row {
     padding-bottom: 4em;
+
+    &:first-child {
+      padding-bottom: .5em;
+    }
   }
 
   #main-title {
@@ -110,36 +114,48 @@ div.area-index-header {
     }
 
     #main-title-container {
-      overflow: visible;
       line-height: 1.5;
+      overflow: visible;
 
       span {
-        text-decoration: underline;
-        text-decoration-color: rgba(56, 56, 56, 0.4);
+        font-weight: 900;
       }
     }
   }
 
-  .get-involved-btn {
-    font: {
-      size: 1.5em;
-      weight: 800;
-    }
-    margin: 1em 0;
-
-    > span {
-      margin-left: 15px;
-    }
-  }
-
   .countdown {
-    font-weight: 200;
     font-size: 1em;
+    font-weight: 200;
     text-transform: uppercase;
 
     span {
+      font-family: monospace;
       font-size: 2rem;
       margin-left: 20px;
+    }
+  }
+
+  .follow-social-media {
+    margin-top: 1em;
+
+    .follow-facebook,
+    .follow-twitter {
+      clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+      color: #fff;
+      display: inline-block;
+      font-weight: bolder;
+      margin-bottom: .5em;
+      padding: .3em .8em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .follow-facebook {
+      background-color: $color-facebook;
+    }
+
+    .follow-twitter {
+      background-color: $color-twitter;
     }
   }
 }

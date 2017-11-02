@@ -49,7 +49,7 @@
 	<div class="container-fluid area area-email">
 		<div class="row">
 			<div class="col-xs-12">
-				<form class="email_form" action="/email_form/" method="post">
+				<form class="email_form" action="/email_form/" method="post" style="display: none;">
 					<p class="form_status"></p>
 					{% csrf_token %}
 					{{ email_form }}
@@ -57,6 +57,10 @@
 					<span id="email_reload">&#8635;</span>
 					<p id="email_share">{% blocktrans %}Share on <span id="share_fb"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</span> or <span id="share_twitter"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</span>{% endblocktrans %}</p>
 				</form>
+				<div class="call-mep">
+					<span class="call-text">{% trans 'Call a Member of the European Parliament via Mozilla!' %}</span>
+					<a class="call-button" href="https://changecopyright.org" target="_blank">{% trans 'Call now' %}</a>
+				</div>
 			</div>
 		</div>
 	</div>

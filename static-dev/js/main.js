@@ -13,7 +13,7 @@ $(document).ready(function(){
 	}
 
 	// Initialise countdown.
-	$('.countdown').countdown('2017/11/20', function(event) {
+	$('.countdown').countdown('2018/02/01', function(event) {
 		$(this).html(event.strftime('<span>%D</span> Days <span>%H</span> Hours <span>%M</span> Minutes <span>%S</span> Seconds'));
 	});
 

@@ -284,13 +284,11 @@ div.area-email {
         border-radius: 0;
         color: #fff;
         flex: 1 1 100%;
-
         font: {
           family: $main-font;
           size: 1.6rem;
           weight: 200;
         }
-
         text-decoration: underline rgba(255, 255, 255, 0.3);
 
         @include placeholder {
@@ -361,6 +359,48 @@ div.area-email {
             left: 10px;
             right: 12px;
           }
+        }
+      }
+    }
+
+    .call-mep {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      padding: 4px 0;
+      width: 100%;
+
+      .call-text {
+        background-color: #000;
+        border: 0;
+        border-radius: 0;
+        color: #fff;
+        flex: 1 1 100%;
+        font: {
+          family: $main-font;
+          size: 1.6rem;
+          weight: 200;
+        }
+      }
+
+      .call-button {
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        flex-shrink: 0;
+        font: {
+          family: $main-font;
+          size: 1.3rem;
+          weight: 700;
+        }
+        line-height: .8;
+        min-width: 0;
+        padding: 8px 10px;
+
+        &:active,
+        &:focus,
+        &:hover {
+          text-decoration: none;
         }
       }
     }

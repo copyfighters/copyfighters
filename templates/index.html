@@ -24,7 +24,7 @@
 		<div class="row">
 			<div class="col-md-6 text-justify">
 				<p>{% blocktrans %}The European Union is moving forward with proposals to <b>reform copyright law</b> to make it apply more uniformly across the Single Market. The current <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52016PC0593">proposal for a Directive on Copyright in the Digital Single Market</a> will harm innovation and threatens our fundamental rights of access to information, freedom of communication, and privacy. <b>We urgently need the Proposal to be amended to protect our Internet freedoms.</b>{% endblocktrans %}</p>
-				<p>{% trans 'This is how much time is left until the European Parliament\'s pivotal vote on this proposal, which is on the 20th November 2017:' %}</p>
+				<p>{% trans 'This is how much time is left until the European Parliament\'s pivotal vote on this proposal, which is at the beginning of 2018:' %}</p>
 
 				<p class='countdown'><span>00</span> {% trans 'Days' %} <span>00</span> {% trans 'Hours' %} <span>00</span> {% trans 'Minutes' %} <span>00</span> {% trans 'Seconds' %}</p>
 
@@ -49,7 +49,7 @@
 	<div class="container-fluid area area-email">
 		<div class="row">
 			<div class="col-xs-12">
-				<form class="email_form" action="/email_form/" method="post">
+				<form class="email_form" action="/email_form/" method="post" style="display: none;">
 					<p class="form_status"></p>
 					{% csrf_token %}
 					{{ email_form }}
@@ -57,6 +57,10 @@
 					<span id="email_reload">&#8635;</span>
 					<p id="email_share">{% blocktrans %}Share on <span id="share_fb"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</span> or <span id="share_twitter"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</span>{% endblocktrans %}</p>
 				</form>
+				<div class="call-mep">
+					<span class="call-text">{% trans 'Call a Member of the European Parliament via Mozilla!' %}</span>
+					<a class="call-button" href="https://changecopyright.org" target="_blank">{% trans 'Call now' %}</a>
+				</div>
 			</div>
 		</div>
 	</div>

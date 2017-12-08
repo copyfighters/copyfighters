@@ -45,12 +45,10 @@ function updateLinks(selectElement, id)
 	var text = selectElement.find('option[value="' + (selectedIndex + 1) + '"]')
 		.text();
 	$('.' + id + ' .share > .facebook').prop('href',
-		'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote='
-		+ encodeURIComponent(text + ' #copyfighters')
+		'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote=' + encodeURIComponent(text + ' #copyfighters')
 	);
 	$('.' + id + ' .share > .twitter').prop('href',
-		'https://twitter.com/home?status='
-		+ encodeURIComponent(text + ' #copyfighters https://copyfighters.eu')
+		'https://twitter.com/home?status='+ encodeURIComponent(text + ' #copyfighters https://copyfighters.eu')
 	);
 }
 
@@ -66,24 +64,45 @@ $('#issue-3-message-select').change(function() {
 	updateLinks($(this), 'issue-3');
 });
 
-$('.area-2 .btn.show-details').click(function() {
-	$('.area-2 div:nth-child(2)').toggle();
-	$('.area-2 div:nth-child(3)').toggle();
+$('.issue1-intro .show-details').click(function() {
+	var $description = $('.issue1-description');
+	if ($description.is(':visible')) {
+		$description.hide();
+	}
+	else {
+		$description.show();
+	}
+	$('.issue2-description').hide();
+	$('.issue3-description').hide();
 });
 
-$('.area-3 .btn.show-details').click(function() {
-	$('.area-3 div:nth-child(2)').toggle();
-	$('.area-3 div:nth-child(3)').toggle();
+$('.issue2-intro .show-details').click(function() {
+	var $description = $('.issue2-description');
+	if ($description.is(':visible')) {
+		$description.hide();
+	}
+	else {
+		$description.show();
+	}
+	$('.issue1-description').hide();
+	$('.issue3-description').hide();
 });
 
-$('.area-4 .btn.show-details').click(function() {
-	$('.area-4 div:nth-child(2)').toggle();
-	$('.area-4 div:nth-child(3)').toggle();
+$('.issue3-intro .show-details').click(function() {
+	var $description = $('.issue3-description');
+	if ($description.is(':visible')) {
+		$description.hide();
+	}
+	else {
+		$description.show();
+	}
+	$('.issue1-description').hide();
+	$('.issue2-description').hide();
 });
 
 $('.email_form > input').focusin(function() {
 	$('.email_form > button').show();
-})
+});
 
 $('#email_reload').click(function() {
 	$('.email_form').children().hide();
@@ -100,7 +119,7 @@ $('#share_fb').click(function() {
 $('#share_twitter').click(function() {
 	var twitterpopup = window.open('https://twitter.com/share?url=https://copyfighters.eu', 'pop', 'width=600, height=400, scrollbars=no');
 	return false;
-})
+});
 
 $('.email_form').submit(function(event) {
 	event.preventDefault();

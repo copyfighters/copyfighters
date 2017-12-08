@@ -102,13 +102,10 @@ div.area-8 {
   @include gradient-directional($start-color: #c375fe, $end-color: #d66afe);
 }
 
-.area-2,
-.area-3,
-.area-4 {
-  > div:nth-child(2),
-  > div:nth-child(3) {
-    display: none;
-  }
+.issue1-description,
+.issue2-description,
+.issue3-description {
+  display: none;
 }
 
 .share {
@@ -211,8 +208,6 @@ div.area-8 {
     background-color: $color-twitter;
   }
 }
-
-@import 'quotes';
 
 div.footer {
   // Disable subpixel rendering for white-on-dark text
@@ -369,17 +364,33 @@ div.area-email {
       flex-direction: row;
       padding: 4px 0;
       width: 100%;
+      text-decoration: none;
 
-      .call-text {
-        background-color: #000;
-        border: 0;
-        border-radius: 0;
-        color: #fff;
-        flex: 1 1 100%;
-        font: {
-          family: $main-font;
-          size: 1.6rem;
-          weight: 200;
+      a {
+        &:active,
+        &:focus,
+        &:hover {
+          text-decoration: none;
+        }
+
+        .call-arrow {
+          font-weight: bold;
+          font-size: $main-text-size * 2;
+          line-height: $main-text-size;
+          color: $color-home-header-background-2;
+        }
+
+        .call-text {
+          background-color: #000;
+          border: 0;
+          border-radius: 0;
+          color: #fff;
+          flex: 1 1 100%;
+          font: {
+            family: $main-font;
+            size: 1.6rem;
+            weight: 200;
+          }
         }
       }
 

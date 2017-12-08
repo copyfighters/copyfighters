@@ -16,33 +16,21 @@
 		<div class="row">
 			<div class="col">
 				<h1 id="main-title">
-					<span id="main-title-strings"><p>{% blocktrans %}We want a Europe where <span>sharing</span>, <span>innovation</span> and <span>copyright</span> go hand in hand.{% endblocktrans %}</p></span>
+					<span id="main-title-strings"><p>{% blocktrans %}We need a <span>copyright reform</span> for the <span>digital age</span>.{% endblocktrans %}</p></span>
 					<span id="main-title-container"></span>
 				</h1>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6 text-justify">
-				<p>{% blocktrans %}The European Union is moving forward with proposals to <b>reform copyright law</b> to make it apply more uniformly across the Single Market. The current <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52016PC0593">proposal for a Directive on Copyright in the Digital Single Market</a> will harm innovation and threatens our fundamental rights of access to information, freedom of communication, and privacy. <b>We urgently need the Proposal to be amended to protect our Internet freedoms.</b>{% endblocktrans %}</p>
-				<p>{% trans 'This is how much time is left until the European Parliament\'s pivotal vote on this proposal, which is at the beginning of 2018:' %}</p>
-
-				<p class='countdown'><span>00</span> {% trans 'Days' %} <span>00</span> {% trans 'Hours' %} <span>00</span> {% trans 'Minutes' %} <span>00</span> {% trans 'Seconds' %}</p>
-
-				<p>{% trans 'Leave your email address here and we will get in touch again when our campaign starts, so we can together make sure that European copyright reform becomes a success!' %}</p>
+			<div class="col-md-5 text-justify">
+				<p>{% blocktrans %}Young people all over Europe and beyond break copyright laws everyday on- and offline. It's not their fault that <b>outdated laws</b> are applied to new forms of culture that are now at the core of the cultural life of a whole generation.<br><br>
+					<b>We need copyright to change, now!</b><br><br>
+					Scroll down to find out more about how young people would change copyright and what the next steps are to achieve the change we urgently need.{% endblocktrans %}</p>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-7">
 				<div class="embed-responsive embed-responsive-16by9">
 					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/m8YWC_wj9g4" allowfullscreen title="Youtube video"></iframe>
 				</div>
-				<p class="text-center follow-social-media">
-					Follow us on
-					<a class="follow-facebook" href="https://www.facebook.com/jointhecopyfight/">
-						<i class="fa fa-facebook" aria-hidden="true"></i> Facebook
-					</a>
-					<a class="follow-twitter" href="https://twitter.com/copyfighters">
-						<i class="fa fa-twitter" aria-hidden="true"></i> Twitter
-					</a>
-				</p>
 			</div>
 		</div>
 	</div>
@@ -58,8 +46,10 @@
 					<p id="email_share">{% blocktrans %}Share on <span id="share_fb"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</span> or <span id="share_twitter"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</span>{% endblocktrans %}</p>
 				</form>
 				<div class="call-mep">
-					<span class="call-text">{% trans 'Call a Member of the European Parliament via Mozilla!' %}</span>
-					<a class="call-button" href="https://changecopyright.org" target="_blank">{% trans 'Call now' %}</a>
+					<a href="#">
+						<span class="call-arrow">>></span>
+						<span class="call-text">Find out how you can take action</span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -88,17 +78,26 @@
 	</div-->
 	{% endcomment %}
 
-	<div class="container-fluid area area-2 issue-1" id="issue1">
+	<div class="container-fluid area area-2">
 		<div class="row">
-			<div class="col">
+			<div class="col-md-4 issue1-intro">
 				<h2>{% trans "Issue #1: Publishers' right" %}</h2>
-				<h3>{% trans 'Unless we take urgent action our ability to share news content online will be hampered' %}</h3>
 				<p>{% blocktrans %}Under Article 11 of the <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN">European Commission’s proposal</a>, the press will have a new right to sue individuals -- or the platforms they use to link to publications on the Internet. The “ancillary right of press publishers” (also known as the “link tax”) will allow press publishers to request a licence fee from anyone who shares their links online if the link is accompanied by a description, snippet, or even just a title that could be the subject of copyright! This includes most news articles shared online. {% endblocktrans %}</p>
 				<p><a class="btn btn-default show-details" role="button">{% trans 'Why is this problematic?' %} ↓</a></p>
 			</div>
+			<div class="col-md-4 issue2-intro">
+				<h2>{% trans 'Issue #2: Content Filtering' %}</h2>
+				<p>{% blocktrans %}Under Article 13 of the <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN">European Commission’s proposal</a>, information society service providers such as Google, Amazon, Facebook, and Twitter will be forced to apply content filtering technology to pre-screen the content uploaded onto their platforms in order to identify copyright infringing works.{% endblocktrans %}</p>
+				<p><a class="btn btn-default show-details" role="button">{% trans 'Why is this problematic?' %} ↓</a></p>
+			</div>
+			<div class="col-md-4 issue3-intro">
+				<h2>{% trans 'Issue #3: User-Generated Content Exception' %}</h2>
+				<p>{% blocktrans %}In their February 2017 <a href="http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//NONSGML+COMPARL+PE-595.591+01+DOC+PDF+V0//EN&language=EN">Draft Opinion</a>, the Committee on Culture and Education of the European Parliament (CULT) proposed a user-generated content exception to copyright. This proposed amendment (which has not yet been incorporated into the Directive) provides that using content already made available online for purposes such as criticism, review, illustration, caricature, or parody is lawful provided the source is accurately identified and the use is consistent with fair practice. Such a proposal is not yet part of the law but our view is it should be to ensure a healthy remix culture and a future-proof internet.{% endblocktrans %}</p>
+				<p><a class="btn btn-default show-details" role="button">{% trans 'Why is this important?' %} ↓</a></p>
+			</div>
 		</div>
 		<div class="row">
-			<div class="col">
+			<div class="col issue1-description">
 				<h4>{% trans 'What was the problem?' %}</h4>
 				<p>{% trans 'The reason behind this proposal was to remedy the so-called “value gap”. The value gap is the disparity between the large revenues of large online platforms such as Google and Facebook, and the low revenues of press publishers. It was intended as a way of redistributing Google’s revenues to small publishers. The reality is far less straightforward: the resulting proposal will not only fail to redistribute Google’s revenues to those who need it, but it will also hamper our ability as online users to engage with one another on the internet.' %}</p>
 				<h4>{% trans 'Here’s why the Commission’s proposal won’t solve the problem' %}</h4>
@@ -129,26 +128,10 @@
 						<i class="fa fa-reddit-alien" aria-hidden="true"></i>
 					</a>
 				</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col text-right">
 				<a class="btn btn-default" href="{% url 'references' %}" role="button">{% trans 'Additional Resources' %} »</a>
 			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid area area-3 issue-2" id="issue2">
-		<div class="row">
-			<div class="col">
-				<h2>{% trans 'Issue #2: Content Filtering' %}</h2>
+			<div class="col issue2-description">
 				<h3>{% trans 'Unless we take urgent action our ability to post content on the internet will be limited by a censorship machine' %}</h3>
-				<p>{% blocktrans %}Under Article 13 of the <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN">European Commission’s proposal</a>, information society service providers such as Google, Amazon, Facebook, and Twitter will be forced to apply content filtering technology to pre-screen the content uploaded onto their platforms in order to identify copyright infringing works.{% endblocktrans %}</p>
-				<p><a class="btn btn-default show-details" role="button">{% trans 'Why is this problematic?' %} ↓</a></p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
 				<h4>{% trans 'What was the problem?' %}</h4>
 				<p>{% trans 'The Internet empowers everyone to become a content creator and to have their voices heard around the world. The problem is that some of the content uploaded on the Internet infringes the copyright of other content creators. The Proposal is trying to address copyright infringement on the Internet, but addresses it in a way that hampers the way the Internet has been functioning so far by asking platforms to put in place costly and opaque solutions to pre-screen our content.' %}</p>
 				<h4>{% trans 'The proposal is problematic…' %}</h4>
@@ -176,26 +159,10 @@
 						<i class="fa fa-reddit-alien"></i>
 					</a>
 				</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col text-right">
 				<a class="btn btn-default" href="{% url 'references' %}" role="button">{% trans 'Additional Resources' %} »</a>
 			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid area area-4 issue-3" id="issue3">
-		<div class="row">
-			<div class="col">
-				<h2>{% trans 'Issue #3: User-Generated Content Exception' %}</h2>
+			<div class="col issue3-description">
 				<h3>{% trans 'Unless we take urgent action our innocent remixes and user-generated content will keep infringing copyright' %}</h3>
-				<p>{% blocktrans %}In their February 2017 <a href="http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//NONSGML+COMPARL+PE-595.591+01+DOC+PDF+V0//EN&language=EN">Draft Opinion</a>, the Committee on Culture and Education of the European Parliament (CULT) proposed a user-generated content exception to copyright. This proposed amendment (which has not yet been incorporated into the Directive) provides that using content already made available online for purposes such as criticism, review, illustration, caricature, or parody is lawful provided the source is accurately identified and the use is consistent with fair practice. Such a proposal is not yet part of the law but our view is it should be to ensure a healthy remix culture and a future-proof internet.{% endblocktrans %}</p>
-				<p><a class="btn btn-default show-details" role="button">{% trans 'Why is this important?' %} ↓</a></p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
 				<h4>{% trans 'Claiming back our culture…' %}</h4>
 				<p>{% trans 'Most memes, reaction gifs, remixes and many other types of user-generated content are currently in breach of copyright rules. The Directive, as proposed, contains no exceptions to make them legal. Our culture is changing, we are no longer mere recipients of content but also creators of new meaning and we want to engage in those practices legally.' %}</p>
 				<h4>{% trans 'Help us add a user-generated content exception to the EU Directive to enable our online culture to flourish! Join the Copyfight!' %}</h4>
@@ -218,43 +185,7 @@
 						<i class="fa fa-reddit-alien"></i>
 					</a>
 				</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col text-right">
 				<a class="btn btn-default" href="{% url 'references' %}" role="button">{% trans 'Additional Resources' %} »</a>
-			</div>
-		</div>
-	</div>
-
-	{# {% include '_navbar.html' %} #}
-
-	<div class="container-fluid area area-5">
-		<div class="row">
-			<div class="col">
-				<h2>{% trans 'What others are saying' %}</h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<div class="quote">
-					<div class="photo" style="background-image:url({% static 'img/quotes/neeliekroes.jpg' %}); background-size: contain; background-color:#345"></div>
-					<blockquote>
-						<div>{% blocktrans %}<strong>Today our fragmented copyright system is ill-adapted to the real essence of art, which has no frontiers.</strong> Instead, that system has ended up giving a more prominent role to intermediaries than to artists. It irritates the public who often cannot access what artists want to offer and leaves a vacuum which is served by illegal content, depriving the artists of their well deserved remuneration.{% endblocktrans %}</div>
-						<cite>
-							<a href="https://twitter.com/NeelieKroesEU/" target="_blank" class="name">Neelie Kroes</a>, {% trans 'Former Vice-President of the European Commission (Photo by Olivier Ezratty, CC BY-SA 3.0)' context 'Talking about Neelie Kroes, so if your language is gendered, use the female version of "vice president"' %}
-						</cite>
-					</blockquote>
-				</div>
-				<div class="quote quote-mirror">
-					<div class="photo" style="background-image:url({% static 'img/quotes/juliareda.jpg' %}); background-size: contain; background-color:#345"></div>
-					<blockquote>
-						<div>{% blocktrans %}<strong>Whether EU copyright will be messed up for many years, whether censorship machines will be installed, whether you still have the freedom to link, whether modern research practices are accessible to everyone:</strong> All this will come down to every single Member of the Parliament’s vote – or their absence.{% endblocktrans %}</div>
-						<cite>
-							<a href="https://juliareda.eu" target="_blank" class="name">Julia Reda</a>, {% trans 'MEP' %} (<a href="http://europeanpirateparty.eu" target="_blank">{% trans 'Pirate Party' %}</a>, <a href="http://www.greens-efa.eu" target="_blank">{% trans 'Greens/EFA group' %}</a>)
-						</cite>
-					</blockquote>
-				</div>
 			</div>
 		</div>
 	</div>

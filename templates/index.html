@@ -78,17 +78,26 @@
 	</div-->
 	{% endcomment %}
 
-	<div class="container-fluid area area-2 issue-1" id="issue1">
+	<div class="container-fluid area area-2">
 		<div class="row">
-			<div class="col">
+			<div class="col-md-4 issue1-intro">
 				<h2>{% trans "Issue #1: Publishers' right" %}</h2>
-				<h3>{% trans 'Unless we take urgent action our ability to share news content online will be hampered' %}</h3>
 				<p>{% blocktrans %}Under Article 11 of the <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN">European Commission’s proposal</a>, the press will have a new right to sue individuals -- or the platforms they use to link to publications on the Internet. The “ancillary right of press publishers” (also known as the “link tax”) will allow press publishers to request a licence fee from anyone who shares their links online if the link is accompanied by a description, snippet, or even just a title that could be the subject of copyright! This includes most news articles shared online. {% endblocktrans %}</p>
 				<p><a class="btn btn-default show-details" role="button">{% trans 'Why is this problematic?' %} ↓</a></p>
 			</div>
+			<div class="col-md-4 issue2-intro">
+				<h2>{% trans 'Issue #2: Content Filtering' %}</h2>
+				<p>{% blocktrans %}Under Article 13 of the <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN">European Commission’s proposal</a>, information society service providers such as Google, Amazon, Facebook, and Twitter will be forced to apply content filtering technology to pre-screen the content uploaded onto their platforms in order to identify copyright infringing works.{% endblocktrans %}</p>
+				<p><a class="btn btn-default show-details" role="button">{% trans 'Why is this problematic?' %} ↓</a></p>
+			</div>
+			<div class="col-md-4 issue3-intro">
+				<h2>{% trans 'Issue #3: User-Generated Content Exception' %}</h2>
+				<p>{% blocktrans %}In their February 2017 <a href="http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//NONSGML+COMPARL+PE-595.591+01+DOC+PDF+V0//EN&language=EN">Draft Opinion</a>, the Committee on Culture and Education of the European Parliament (CULT) proposed a user-generated content exception to copyright. This proposed amendment (which has not yet been incorporated into the Directive) provides that using content already made available online for purposes such as criticism, review, illustration, caricature, or parody is lawful provided the source is accurately identified and the use is consistent with fair practice. Such a proposal is not yet part of the law but our view is it should be to ensure a healthy remix culture and a future-proof internet.{% endblocktrans %}</p>
+				<p><a class="btn btn-default show-details" role="button">{% trans 'Why is this important?' %} ↓</a></p>
+			</div>
 		</div>
 		<div class="row">
-			<div class="col">
+			<div class="col issue1-description">
 				<h4>{% trans 'What was the problem?' %}</h4>
 				<p>{% trans 'The reason behind this proposal was to remedy the so-called “value gap”. The value gap is the disparity between the large revenues of large online platforms such as Google and Facebook, and the low revenues of press publishers. It was intended as a way of redistributing Google’s revenues to small publishers. The reality is far less straightforward: the resulting proposal will not only fail to redistribute Google’s revenues to those who need it, but it will also hamper our ability as online users to engage with one another on the internet.' %}</p>
 				<h4>{% trans 'Here’s why the Commission’s proposal won’t solve the problem' %}</h4>
@@ -119,26 +128,10 @@
 						<i class="fa fa-reddit-alien" aria-hidden="true"></i>
 					</a>
 				</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col text-right">
 				<a class="btn btn-default" href="{% url 'references' %}" role="button">{% trans 'Additional Resources' %} »</a>
 			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid area area-3 issue-2" id="issue2">
-		<div class="row">
-			<div class="col">
-				<h2>{% trans 'Issue #2: Content Filtering' %}</h2>
+			<div class="col issue2-description">
 				<h3>{% trans 'Unless we take urgent action our ability to post content on the internet will be limited by a censorship machine' %}</h3>
-				<p>{% blocktrans %}Under Article 13 of the <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52016PC0593&from=EN">European Commission’s proposal</a>, information society service providers such as Google, Amazon, Facebook, and Twitter will be forced to apply content filtering technology to pre-screen the content uploaded onto their platforms in order to identify copyright infringing works.{% endblocktrans %}</p>
-				<p><a class="btn btn-default show-details" role="button">{% trans 'Why is this problematic?' %} ↓</a></p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
 				<h4>{% trans 'What was the problem?' %}</h4>
 				<p>{% trans 'The Internet empowers everyone to become a content creator and to have their voices heard around the world. The problem is that some of the content uploaded on the Internet infringes the copyright of other content creators. The Proposal is trying to address copyright infringement on the Internet, but addresses it in a way that hampers the way the Internet has been functioning so far by asking platforms to put in place costly and opaque solutions to pre-screen our content.' %}</p>
 				<h4>{% trans 'The proposal is problematic…' %}</h4>
@@ -166,26 +159,10 @@
 						<i class="fa fa-reddit-alien"></i>
 					</a>
 				</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col text-right">
 				<a class="btn btn-default" href="{% url 'references' %}" role="button">{% trans 'Additional Resources' %} »</a>
 			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid area area-4 issue-3" id="issue3">
-		<div class="row">
-			<div class="col">
-				<h2>{% trans 'Issue #3: User-Generated Content Exception' %}</h2>
+			<div class="col issue3-description">
 				<h3>{% trans 'Unless we take urgent action our innocent remixes and user-generated content will keep infringing copyright' %}</h3>
-				<p>{% blocktrans %}In their February 2017 <a href="http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//NONSGML+COMPARL+PE-595.591+01+DOC+PDF+V0//EN&language=EN">Draft Opinion</a>, the Committee on Culture and Education of the European Parliament (CULT) proposed a user-generated content exception to copyright. This proposed amendment (which has not yet been incorporated into the Directive) provides that using content already made available online for purposes such as criticism, review, illustration, caricature, or parody is lawful provided the source is accurately identified and the use is consistent with fair practice. Such a proposal is not yet part of the law but our view is it should be to ensure a healthy remix culture and a future-proof internet.{% endblocktrans %}</p>
-				<p><a class="btn btn-default show-details" role="button">{% trans 'Why is this important?' %} ↓</a></p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
 				<h4>{% trans 'Claiming back our culture…' %}</h4>
 				<p>{% trans 'Most memes, reaction gifs, remixes and many other types of user-generated content are currently in breach of copyright rules. The Directive, as proposed, contains no exceptions to make them legal. Our culture is changing, we are no longer mere recipients of content but also creators of new meaning and we want to engage in those practices legally.' %}</p>
 				<h4>{% trans 'Help us add a user-generated content exception to the EU Directive to enable our online culture to flourish! Join the Copyfight!' %}</h4>
@@ -208,10 +185,6 @@
 						<i class="fa fa-reddit-alien"></i>
 					</a>
 				</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col text-right">
 				<a class="btn btn-default" href="{% url 'references' %}" role="button">{% trans 'Additional Resources' %} »</a>
 			</div>
 		</div>

@@ -102,13 +102,10 @@ div.area-8 {
   @include gradient-directional($start-color: #c375fe, $end-color: #d66afe);
 }
 
-.area-2,
-.area-3,
-.area-4 {
-  > div:nth-child(2),
-  > div:nth-child(3) {
-    display: none;
-  }
+.issue1-description,
+.issue2-description,
+.issue3-description {
+  display: none;
 }
 
 .share {

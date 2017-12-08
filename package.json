@@ -20,8 +20,8 @@
     "node": ">=6.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.6",
-    "bootstrap": "^4.0.0-beta",
+    "autoprefixer": "^7.2.2",
+    "bootstrap": "^4.0.0-beta.2",
     "cssnano": "^3.10.0",
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
@@ -36,11 +36,12 @@
     "jquery-countdown": "^2.2.0",
     "jshint": "^2.9.5",
     "mango-gulp-sass": "github:manGoweb/mango-gulp-sass",
-    "popper.js": "^1.12.2",
-    "pump": "^1.0.2",
+    "popper.js": "^1.12.9",
+    "pump": "^2.0.0",
     "respond.js": "^1.4.2",
-    "typed.js": "^2.0.5",
-    "typeface-fira-sans": "0.0.31",
-    "typeface-zilla-slab": "0.0.31"
-  }
+    "typed.js": "^2.0.6",
+    "typeface-fira-sans": "0.0.44",
+    "typeface-zilla-slab": "0.0.44"
+  },
+  "dependencies": {}
 }

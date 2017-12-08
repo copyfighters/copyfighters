@@ -1,3 +1,4 @@
+*.pyc
 .sass-cache
 node_modules
 static/css/main.css
@@ -8,9 +9,13 @@ static/js/ie.js
 static/js/ie.js.map
 development.db
 .venv
-*.pyc
-Lib
-Scripts
-pyvenv.cfg
 copyfight/settings_local.py
+development.db
+Lib/
+node_modules/
 pip-selfcheck.json
+pyvenv.cfg
+Scripts/
+static/css/
+static/fonts/
+static/js/

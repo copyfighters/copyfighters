@@ -369,17 +369,33 @@ div.area-email {
       flex-direction: row;
       padding: 4px 0;
       width: 100%;
+      text-decoration: none;
 
-      .call-text {
-        background-color: #000;
-        border: 0;
-        border-radius: 0;
-        color: #fff;
-        flex: 1 1 100%;
-        font: {
-          family: $main-font;
-          size: 1.6rem;
-          weight: 200;
+      a {
+        &:active,
+        &:focus,
+        &:hover {
+          text-decoration: none;
+        }
+
+        .call-arrow {
+          font-weight: bold;
+          font-size: $main-text-size * 2;
+          line-height: $main-text-size;
+          color: $color-home-header-background-2;
+        }
+
+        .call-text {
+          background-color: #000;
+          border: 0;
+          border-radius: 0;
+          color: #fff;
+          flex: 1 1 100%;
+          font: {
+            family: $main-font;
+            size: 1.6rem;
+            weight: 200;
+          }
         }
       }
 

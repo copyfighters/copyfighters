@@ -13,6 +13,10 @@ var autoprefixer  = require('autoprefixer');    // postcss plugin
 var cssnano       = require('cssnano');         // postcss plugin
 
 
+/////////
+// CSS //
+/////////
+
 // Build CSS file.
 gulp.task('css', function () {
   // Specify the processors postcss uses.
@@ -33,10 +37,18 @@ gulp.task('css', function () {
     .pipe(gulp.dest('./static/css/'));
 });
 
-// Watch task for SASS files.
-gulp.task('css:watch', function () {
-  gulp.watch('./static-dev/sass/**/*.scss', ['css']);
+// SASS lint
+gulp.task('sass-lint', function () {
+  return gulp.src('./static-dev/sass/**/*.scss')
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError());
 });
+
+
+////////////////
+// JavaScript //
+////////////////
 
 // Combine all JS files in one.
 gulp.task('js-all', function (cb) {
@@ -83,10 +95,17 @@ gulp.task('js-ie', function (cb) {
 // Combine JavaScript tasks for all browsers and Internet Explorer.
 gulp.task('js', ['js-all', 'js-ie']);
 
-// Watch task for JavaScript files.
-gulp.task('js:watch', function () {
-  gulp.watch('./static-dev/js/**/*.js', ['js-all']);
+// JavaScript lint
+gulp.task('js-lint', function() {
+  return gulp.src('./static-dev/js/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
 });
+
+
+///////////
+// Fonts //
+///////////
 
 // Copy fonts to static folders.
 gulp.task('copy-fonts', function() {
@@ -99,19 +118,15 @@ gulp.task('copy-fonts', function() {
     .pipe(gulp.dest('./static/fonts/'));
 });
 
+
+///////////////////
+// General tasks //
+///////////////////
+
 gulp.task('build', ['css', 'copy-fonts', 'js']);
 
-// SASS lint
-gulp.task('sass-lint', function () {
-  return gulp.src('./static-dev/sass/**/*.scss')
-    .pipe(sassLint())
-    .pipe(sassLint.format())
-    .pipe(sassLint.failOnError())
-});
-
-// JavaScript lint
-gulp.task('js-lint', function() {
-  return gulp.src('./static-dev/js/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
+// Watch JavaScript and SASS files.
+gulp.task('watch', function () {
+  gulp.watch('./static-dev/js/**/*.js', ['js-lint', 'js-all']);
+  gulp.watch('./static-dev/sass/**/*.scss', [/*'sass-lint',*/ 'css']); // Disable the SASS linter because it will flood the console.
 });

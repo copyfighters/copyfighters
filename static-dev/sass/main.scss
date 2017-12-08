@@ -108,71 +108,19 @@ div.area-8 {
   display: none;
 }
 
-.share {
-
-  > label {
-    font-weight: bold;
-
-    i {
-      padding-right: 0.2em;
-    }
-  }
-
-  > select {
-    margin-left: 0.2em;
-    margin-right: 0.2em;
-  }
-
-  .share-btn {
-    border: 0;
-    border-radius: 2em;
-    color: #fff;
-    display: inline-block;
-    outline: none;
-    padding: .2em;
-    text-align: center;
-    width: 2em;
-
-    &:active,
-    &:focus,
-    &:hover {
-      color: #eee;
-    }
-
-    &:hover {
-      position: relative;
-      top: 2px;
-    }
-
-    &.facebook {
-      background-color: $color-facebook;
-    }
-
-    &.twitter {
-      background-color: $color-twitter;
-    }
-
-    &.reddit {
-      background-color: $color-reddit;
-    }
-
-    > i {
-      vertical-align: middle;
-    }
-  }
-}
-
-.share-general {
+.share-general,
+.share-specific {
   > .row:nth-of-type(2) div:nth-child(even) {
     margin-top: .5em;
   }
 
-  .statement {
+  .statement,
+  .statements {
     background-color: #fff;
     border-radius: 8px;
     font-weight: 300;
     margin-bottom: 1.4em;
-    padding: .5em .7em;
+    padding: 9px 18px;
     position: relative;
 
     &::after {
@@ -185,6 +133,34 @@ div.area-8 {
       left: 50px;
       position: absolute;
       width: 0;
+    }
+  }
+
+  .statements {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    .statement2,
+    .statement3 {
+      display: none;
+    }
+
+    .statement-prev,
+    .statement-next {
+      cursor: pointer;
+      position: absolute;
+    }
+
+    .statement-prev {
+      left: 7px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .statement-next {
+      right: 7px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 

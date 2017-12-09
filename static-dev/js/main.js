@@ -52,6 +52,18 @@ function updateLinks(selectElement, id)
 	);
 }
 
+$('.position').click(function() {
+	if($(this).children('.position-text').is(':visible')) {
+		$(this).children('.position-text').hide();
+		$(this).removeClass('col-sm-12').addClass('col-sm-4');
+		$('.position').show();
+	} else {
+		$('.position').hide();
+		$(this).show().removeClass('col-sm-4').addClass('col-sm-12');
+		$(this).children().show();
+	}
+});
+
 $('#issue-1-message-select').change(function() {
 	updateLinks($(this), 'issue-1');
 });
@@ -68,36 +80,57 @@ $('.issue1-intro .show-details').click(function() {
 	var $description = $('.issue1-description');
 	if ($description.is(':visible')) {
 		$description.hide();
+		$('.issue2-intro').show(400);
+		$('.issue3-intro').show(400);
+		$('.issue1-intro .show-details').text('Why is this problematic? ↓');
 	}
 	else {
-		$description.show();
+		$('.issue2-intro').hide(400);
+		$('.issue3-intro').hide(400, function () {
+			$description.show(400);
+			$('.issue1-intro .show-details').text('← Back');
+		});
+		$('.issue2-description').hide();
+		$('.issue3-description').hide();
 	}
-	$('.issue2-description').hide();
-	$('.issue3-description').hide();
 });
 
 $('.issue2-intro .show-details').click(function() {
 	var $description = $('.issue2-description');
 	if ($description.is(':visible')) {
 		$description.hide();
+		$('.issue1-intro').show(400);
+		$('.issue3-intro').show(400);
+		$('.issue2-intro .show-details').text('Why is this problematic? ↓');
 	}
 	else {
-		$description.show();
+		$('.issue1-intro').hide(400);
+		$('.issue3-intro').hide(400, function () {
+			$description.show(400);
+			$('.issue2-intro .show-details').text('← Back');
+		});
+		$('.issue1-description').hide();
+		$('.issue3-description').hide();
 	}
-	$('.issue1-description').hide();
-	$('.issue3-description').hide();
 });
 
 $('.issue3-intro .show-details').click(function() {
 	var $description = $('.issue3-description');
 	if ($description.is(':visible')) {
 		$description.hide();
+		$('.issue1-intro').show(400);
+		$('.issue2-intro').show(400);
+		$('.issue3-intro .show-details').text('Why is this problematic? ↓');
 	}
 	else {
-		$description.show();
+		$('.issue1-intro').hide(400);
+		$('.issue2-intro').hide(400, function () {
+			$description.show(400);
+			$('.issue3-intro .show-details').text('← Back');
+		});
+		$('.issue1-description').hide();
+		$('.issue2-description').hide();
 	}
-	$('.issue1-description').hide();
-	$('.issue2-description').hide();
 });
 
 $('.email_form > input').focusin(function() {

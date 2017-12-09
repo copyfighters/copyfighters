@@ -167,25 +167,6 @@
 					<li>{% trans 'This will have a negative impact on competition and innovation: European start-ups will be unable to pay for link snippets, and thus will either be unable to compete with existing platform monopolies such as Google or Facebook or will need to launch outside of the European Union.' %}</li>
 				</ul>
 				<h4>{% trans 'The proposal needs urgent amendment or deletion, and we need your help to ensure that happens. Join the Copyfight!' %}</h4>
-				<p class="share">
-					<label for="issue-1-message-select">
-						<i class="fa fa-share-alt" aria-hidden="true"></i> {% trans 'Spread the word' %}
-					</label>
-					<select id="issue-1-message-select">
-						<option value="1">{% trans "We Oppose A New Publishers' Right in the EU" %}</option>
-						<option value="2">{% trans 'NO to the new LINK TAX!' %}</option>
-						<option value="3">{% trans 'NO To Online Censorship Through Copyright!' %}</option>
-					</select>
-					<a class="share-btn facebook" href="#" target="_blank">
-						<i class="fa fa-facebook" aria-hidden="true"></i>
-					</a>
-					<a class="share-btn twitter" href="#" target="_blank">
-						<i class="fa fa-twitter" aria-hidden="true"></i>
-					</a>
-					<a class="share-btn reddit" href="https://www.reddit.com/submit?url=https://copyfighters.eu#issue1&newwindow=1" data-action="share/reddit/share" target="_blank">
-						<i class="fa fa-reddit-alien" aria-hidden="true"></i>
-					</a>
-				</p>
 				<a class="btn btn-default" href="{% url 'references' %}" role="button">{% trans 'Additional Resources' %} »</a>
 			</div>
 			<div class="col-md-8 issue2-description">
@@ -197,26 +178,6 @@
 				<h4>{% trans 'Will the proposal fix the problem?' %}</h4>
 				<p>{% trans 'No. The proposed censorship machines are a disproportionate and ineffective ‘solution’ to the problem. We know this, because in the case of SABAM v Netlog, the Court of Justice of the European Union ruled social networks and other web hosting providers cannot be required to monitor and filter activities that occur on their sites to prevent copyright infringement. This would be a breach of freedom of expression and of privacy (CJEU C-360/10).' %}</p>
 				<h4>{% trans 'Fight with us against the requirement for large and small websites to put in place automated censorship systems. Join the Copyfight!' %}</h4>
-				<p class="share">
-					<label for="issue-1-message-select">
-						<i class="fa fa-share-alt" aria-hidden="true"></i> {% trans 'Spread the word' %}
-					</label>
-					<select id="issue-2-message-select">
-						<option value="1">{% trans 'We Oppose The Use of Automated Solutions To Pre-Screen Online Content' %}</option>
-						<option value="2">{% trans 'NO TO CONTENT FILTERING!' %}</option>
-						<option value="3">{% trans 'NO To Online Censorship Through Copyright!' %}</option>
-						<option value="4">{% trans 'The "Value Gap" is BS... This reform is destroying our internet.' %}</option>
-					</select>
-					<a class="share-btn facebook" href="#" target="_blank">
-						<i class="fa fa-facebook"></i>
-					</a>
-					<a class="share-btn twitter" href="#" target="_blank">
-						<i class="fa fa-twitter"></i>
-					</a>
-					<a class="share-btn reddit" href="https://www.reddit.com/submit?url=https://copyfighters.eu#issue2&newwindow=1" data-action="share/reddit/share" target="_blank">
-						<i class="fa fa-reddit-alien"></i>
-					</a>
-				</p>
 				<a class="btn btn-default" href="{% url 'references' %}" role="button">{% trans 'Additional Resources' %} »</a>
 			</div>
 			<div class="col-md-8 issue3-description">
@@ -224,26 +185,43 @@
 				<h4>{% trans 'Claiming back our culture…' %}</h4>
 				<p>{% trans 'Most memes, reaction gifs, remixes and many other types of user-generated content are currently in breach of copyright rules. The Directive, as proposed, contains no exceptions to make them legal. Our culture is changing, we are no longer mere recipients of content but also creators of new meaning and we want to engage in those practices legally.' %}</p>
 				<h4>{% trans 'Help us add a user-generated content exception to the EU Directive to enable our online culture to flourish! Join the Copyfight!' %}</h4>
-				<p class="share">
-					<label for="issue-1-message-select">
-						<i class="fa fa-share-alt" aria-hidden="true"></i> {% trans 'Spread the word' %}
-					</label>
-					<select id="issue-3-message-select">
-						<option value="1">{% trans 'We Want A Copyright Exception For User-Generated Content' %}</option>
-						<option value="2">{% trans 'We <3 REMIXES #joinourcopyfight' %}</option>
-						<option value="3">{% trans "We agree with the CULT Committee's Proposal for a copyright exception for user-generated content." %}</option>
-					</select>
-					<a class="share-btn facebook" href="#" target="_blank">
-						<i class="fa fa-facebook"></i>
+				<a class="btn btn-default" href="{% url 'references' %}" role="button">{% trans 'Additional Resources' %} »</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid area area-4">
+		<div class="row">
+			<div class="col">
+				<h2>{% trans 'Take action' %}<h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 share-specific">
+				<h3>#1 {% trans 'Share' %}</h3>
+				<p class="statements">
+					<span class="statement-prev"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i></span>
+					<span class="statement1">{% trans 'No to the new link tax!' %} #copyfighters #fixcopyright</span>
+					<span class="statement2">{% trans 'No to censorship filtering on the Internet!' %} #copyfighters #fixcopyright</span>
+					<span class="statement3">{% trans 'We <3 memes and remixes; make them legal.' %} #copyfighters #fixcopyright</span>
+					<span class="statement-next"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></span>
+				</p>
+				<p class="text-center">
+					<a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote=No%20to%20the%20new%20link%20tax!%20%23copyfighters%20%23fixcopyright" target="_blank">
+						<i class="fa fa-facebook" aria-hidden="true"></i> Facebook
 					</a>
-					<a class="share-btn twitter" href="#" target="_blank">
-						<i class="fa fa-twitter"></i>
-					</a>
-					<a class="share-btn reddit" href="https://www.reddit.com/submit?url=https://copyfighters.eu#issue3&newwindow=1" data-action="share/reddit/share" target="_blank">
-						<i class="fa fa-reddit-alien"></i>
+					<a class="share-twitter" href="https://twitter.com/home?status=No%20to%20the%20new%20link%20tax!%20%23copyfighters%20%23fixcopyright%20https%3A%2F%2Fcopyfighters.eu" target="_blank">
+						<i class="fa fa-twitter" aria-hidden="true"></i> Twitter
 					</a>
 				</p>
-				<a class="btn btn-default" href="{% url 'references' %}" role="button">{% trans 'Additional Resources' %} »</a>
+			</div>
+			<div class="col-md-4">
+				<h3>#2 {% trans 'Sign' %}</h3>
+				<p>{% blocktrans %}Sign the <a href="https://savecodeshare.eu/" target="_blank">Open Letter of the Save Code Share campaign</a> of the Free Software Foundation or the <a href="https://savethelink.org/" target="_blank">petition of the save the link campaign</a> of OpenMedia.{% endblocktrans %}</p>
+			</div>
+			<div class="col-md-4">
+				<h3>#3 {% trans 'Call' %}</h3>
+				<p>{% blocktrans %}Call a Member of the European Parliament using the <a href="https://changecopyright.org/" target="_blank">calling website</a> of Mozilla or the <a href="https://savethememe.net/" target="_blank">Save the meme! website</a> of Bits Of Freedom and Epicenter.works.{% endblocktrans %}</p>
 			</div>
 		</div>
 	</div>
@@ -255,54 +233,41 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-3 col-md-6">
+			<div class="col-md-4">
 				<p class="statement">
-					{% trans 'Join Our #COPYFIGHT! #EUcopyrightreform #copyfighters #joinourcopyfight' %}
+					{% trans 'NO to the current EU reform on copyright, YES to better copyright laws and exceptions.' %} #copyfighters #fixcopyright
 				</p>
 				<p class="text-center">
-					<a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote=Join%20Our%20%23COPYFIGHT!%20%23EUcopyrightreform%20%23copyfighters%20%23joinourcopyfight">
+					<a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote=NO%20to%20the%20current%20EU%20reform%20on%20copyright%2C%20YES%20to%20better%20copyright%20laws%20and%20exceptions.%20%23copyfighters%20%23fixcopyright" target="_blank">
 						<i class="fa fa-facebook" aria-hidden="true"></i> Facebook
 					</a>
-					<a class="share-twitter" href="https://twitter.com/home?status=Join%20Our%20%23COPYFIGHT!%20%23EUcopyrightreform%20%23copyfighters%20%23joinourcopyfight%20%23copyfighters%20https%3A%2F%2Fcopyfighters.eu">
+					<a class="share-twitter" href="https://twitter.com/home?status=NO%20to%20the%20current%20EU%20reform%20on%20copyright%2C%20YES%20to%20better%20copyright%20laws%20and%20exceptions.%20%23copyfighters%20%23fixcopyright" target="_blank">
 						<i class="fa fa-twitter" aria-hidden="true"></i> Twitter
 					</a>
 				</p>
 			</div>
-			<div class="col-lg-3 col-md-6">
+			<div class="col-md-4">
 				<p class="statement">
-					{% trans 'NO to the current EU Reform on Copyright, YES to better copyright laws and exceptions to copyright. #copyfighters' %}
+					{% trans 'We are #copyfighters and want a free and open Internet.' %} #fixcopyright
 				</p>
 				<p class="text-center">
-					<a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote=NO%20to%20the%20current%20EU%20Reform%20on%20Copyright%2C%20YES%20to%20better%20copyright%20laws%20and%20exceptions.%20%23copyfighters">
+					<a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote=We%20are%20%23copyfighters%20and%20want%20a%20free%20and%20open%20Internet.%20%23fixcopyright" target="_blank">
 						<i class="fa fa-facebook" aria-hidden="true"></i> Facebook
 					</a>
-					<a class="share-twitter" href="https://twitter.com/home?status=NO%20to%20the%20current%20EU%20Reform%20on%20Copyright%2C%20YES%20to%20better%20copyright%20laws%20and%20exceptions.%20%23copyfighters%20%23copyfighters%20https%3A%2F%2Fcopyfighters.eu">
+					<a class="share-twitter" href="https://twitter.com/home?status=We%20are%20%23copyfighters%20and%20want%20a%20free%20and%20open%20Internet.%20%23fixcopyright" target="_blank">
 						<i class="fa fa-twitter" aria-hidden="true"></i> Twitter
 					</a>
 				</p>
 			</div>
-			<div class="col-lg-3 col-md-6">
+			<div class="col-md-4">
 				<p class="statement">
-					{% trans 'We are #copyfighters and want a free and open Internet.' %}
+					{% trans 'NO to more copyright in the Digital Single Market. YES To better copyright. YES to harmonisation.' %} #copyfighters #fixcopyright
 				</p>
 				<p class="text-center">
-					<a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote=We%20are%20%23copyfighters%20and%20want%20a%20free%20and%20open%20Internet.">
+					<a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote=NO%20to%20more%20copyright%20in%20the%20Digital%20Single%20Market.%20YES%20To%20better%20copyright.%20YES%20to%20harmonisation.%20%23Copyfighters%20%23fixcopyright" target="_blank">
 						<i class="fa fa-facebook" aria-hidden="true"></i> Facebook
 					</a>
-					<a class="share-twitter" href="https://twitter.com/home?status=We%20are%20%23copyfighters%20and%20want%20a%20free%20and%20open%20Internet.%20%23copyfighters%20https%3A%2F%2Fcopyfighters.eu">
-						<i class="fa fa-twitter" aria-hidden="true"></i> Twitter
-					</a>
-				</p>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<p class="statement">
-					{% trans 'NO To More Copyright in the Digital Single Market. YES To Better Copyright. YES To Harmonisation #Copyfighters' %}
-				</p>
-				<p class="text-center">
-					<a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcopyfighters.eu&quote=NO%20To%20More%20Copyright%20in%20the%20Digital%20Single%20Market.%20YES%20To%20Better%20Copyright.%20YES%20To%20Harmonisation.%20%23copyfighters">
-						<i class="fa fa-facebook" aria-hidden="true"></i> Facebook
-					</a>
-					<a class="share-twitter" href="https://twitter.com/home?status=NO%20To%20More%20Copyright%20in%20the%20Digital%20Single%20Market.%20YES%20To%20Better%20Copyright.%20YES%20To%20Harmonisation.%20%23copyfighters%20https%3A%2F%2Fcopyfighters.eu">
+					<a class="share-twitter" href="https://twitter.com/home?status=NO%20to%20more%20copyright%20in%20the%20Digital%20Single%20Market.%20YES%20To%20better%20copyright.%20YES%20to%20harmonisation.%20%23Copyfighters%20%23fixcopyright" target="_blank">
 						<i class="fa fa-twitter" aria-hidden="true"></i> Twitter
 					</a>
 				</p>

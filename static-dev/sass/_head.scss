@@ -135,25 +135,3 @@ div.area-index-header {
     }
   }
 }
-
-.follow-social-media {
-  .follow-facebook,
-  .follow-twitter {
-    clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-    color: #fff;
-    display: inline-block;
-    font-weight: bolder;
-    margin: .2em 0;
-    padding: .1em .8em;
-    text-decoration: none;
-    white-space: nowrap;
-  }
-
-  .follow-facebook {
-    background-color: $color-facebook;
-  }
-
-  .follow-twitter {
-    background-color: $color-twitter;
-  }
-}

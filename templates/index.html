@@ -16,16 +16,16 @@
 		<div class="row">
 			<div class="col">
 				<h1 id="main-title">
-					<span id="main-title-strings"><p>{% blocktrans %}Young people need a <span>copyright reform</span> for the <span>digital age</span>.{% endblocktrans %}</p></span>
+					<span id="main-title-strings"><p>{% blocktrans %}Young people need a <span>real</span> copyright reform.{% endblocktrans %}</p></span>
 					<span id="main-title-container"></span>
 				</h1>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-5 text-justify">
-				<p>{% blocktrans %}Young people all over Europe and beyond break copyright laws everyday on- and offline. It's not their fault that <b>outdated laws</b> are applied to new forms of culture that are now at the core of the cultural life of a whole generation.<br><br>
-					<b>We need copyright to change, now!</b><br><br>
-					Scroll down to find out more about how young people would change copyright and what the next steps are to achieve the change we urgently need.{% endblocktrans %}</p>
+				<p>{% blocktrans %}Young people all over Europe and beyond break copyright laws everyday on- and offline. It's not their fault that <b>outdated laws</b> are applied to new forms of culture that are now at the core of the cultural life of a whole generation.{% endblocktrans %}</p>
+				<p>Copyright still follows <b>national borders</b>, user generated content such as <b>memes and fan-fiction</b> that have no relevant economic impact on right holders are still stuck in a <b>legal grey area</b>, and <b>the Internet itself is at risk</b> thanks to continued legislative proposals that do not respect our freedom of expression online.</p>
+				<p><b>We need copyright to change, now!</b></p>
 			</div>
 			<div class="col-md-7">
 				<div class="embed-responsive embed-responsive-16by9">
@@ -36,21 +36,13 @@
 	</div>
 	<div class="container-fluid area area-email">
 		<div class="row">
-			<div class="col-xs-12">
-				<form class="email_form" action="/email_form/" method="post" style="display: none;">
-					<p class="form_status"></p>
-					{% csrf_token %}
-					{{ email_form }}
-					<button type="submit">{% trans 'Join now!' %}</button>
-					<span id="email_reload">&#8635;</span>
-					<p id="email_share">{% blocktrans %}Share on <span id="share_fb"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</span> or <span id="share_twitter"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</span>{% endblocktrans %}</p>
-				</form>
-				<div class="call-mep">
-					<a href="#">
-						<span class="call-arrow">>></span>
-						<span class="call-text">Find out how you can take action</span>
-					</a>
+			<div class="col-md-6">
+				<div class="bar-message">
+					<a href="#take-action"><i class="fa fa-caret-right"></i> Find out how you can take action</a></span>
 				</div>
+			</div>
+			<div class="col-md-6 follow-social-media">
+				{% blocktrans %}Follow us on <a href="https://facebook.com/jointhecopyfight" target="_blank" class="follow-facebook"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a> or <a href="https://twitter.com/copyfighters" target="_blank" class="follow-twitter"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>{% endblocktrans %}
 			</div>
 		</div>
 	</div>
@@ -82,7 +74,7 @@
 		<h2>Our proposals</h2>
 		<p>Over the past year, we worked together with more than 100 young European from 25 different European countries to understand the real-life problems young people experience with copyright and to come up with proposals what to do about that.
 
-		<div class="row">
+		<div class="row positions">
 			<div class="col-sm-4 position">
 				<i class="fa fa-globe"></i>
 				<h4>End Territoriality</h4>
@@ -136,6 +128,8 @@
 				<p class="position-text">← Back</p>
 			</div>
 		</div>
+
+		<p class="position-ignored"><b>Unfortunately, our ideas are not heard.</b> There is currently a <a href="https://juliareda.eu/eu-copyright-reform/" target="_blank">once-in-a-generation reform of copyright legislation going on in the European Union</a>, but lawmakers are too concerned with the <b>demands of lobbyists and corporations</b>, that want to back up their outdated business models from the past century. Without changing much on the foundation of copyright, the reform is <b>threatening to outlaw everyday cultural practices of millions of Europeans</b>. Find out below about these issues.</p>
 	</div>
 
 	<div class="container-fluid area area-3">
@@ -190,7 +184,7 @@
 		</div>
 	</div>
 
-	<div class="container-fluid area area-4">
+	<div class="container-fluid area area-4" id="take-action">
 		<div class="row">
 			<div class="col">
 				<h2>{% trans 'Take action' %}<h2>
@@ -203,7 +197,7 @@
 					<span class="statement-prev"><i class="fa fa-angle-left fa-lg" aria-hidden="true"></i></span>
 					<span class="statement1">{% trans 'No to the new link tax!' %} #copyfighters #fixcopyright</span>
 					<span class="statement2">{% trans 'No to censorship filtering on the Internet!' %} #copyfighters #fixcopyright</span>
-					<span class="statement3">{% trans 'We <3 memes and remixes; make them legal.' %} #copyfighters #fixcopyright</span>
+					<span class="statement3">{% trans 'We &lt;3 memes and remixes; make them legal.' %} #copyfighters #fixcopyright</span>
 					<span class="statement-next"><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></span>
 				</p>
 				<p class="text-center">
@@ -222,6 +216,17 @@
 			<div class="col-md-4">
 				<h3>#3 {% trans 'Call' %}</h3>
 				<p>{% blocktrans %}Call a Member of the European Parliament using the <a href="https://changecopyright.org/" target="_blank">calling website</a> of Mozilla or the <a href="https://savethememe.net/" target="_blank">Save the meme! website</a> of Bits Of Freedom and Epicenter.works.{% endblocktrans %}</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid area area-5">
+		<div class="row">
+			<div class="col-md-12">
+				<p>During all of 2017 we have been working hard to <b>formulate the voice of the European youth on copyright issues</b>. We organized discussions, workshops, hackathons and summer camps with <b>more than 100 participants from over 25 European countries</b> to come up with our ideas and proposals. Follow us on <b><a href="https://facebook.com/jointhecopyfight" target="_blank">Facebook</a></b> and <b><a href="https://twitter.com/copyfighters" target="_blank">Twitter</a></b> to stay up-to-date on <b>all Copyfighters events and activities</b>, as well as the copyright reform in the European Union.</p>
+			</div>
+			<div class="col-md-12">
+				<img src="{% static 'img/crowd.jpg' %}" alt="Copyfighters at work" />
 			</div>
 		</div>
 	</div>

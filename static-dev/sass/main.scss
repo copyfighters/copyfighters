@@ -89,8 +89,45 @@ div.area-4 {
   @include gradient-directional($start-color: #8ee3fc, $end-color: #ab9ffc);
 }
 
+.position-text {
+  display: none;
+}
+
 div.area-2 {
   clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+
+
+  .row {
+    min-height: 5em;
+
+    .position {
+      padding: 1em;
+      text-align: center;
+      vertical-align: middle;
+      color: white;
+      background-color: black;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #333;
+      }
+
+      h4 {
+        font: {
+          family: $headline-font;
+          weight: bold;
+          size: $main-text-size * 1.5;
+        }
+      }
+
+      .fa {
+        font-size: $main-text-size * 5;
+      }
+    }
+    .position.col-sm-12 {
+      background-color: #333;
+    }
+  }
 }
 
 div.area-6 {

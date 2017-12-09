@@ -78,6 +78,54 @@ div.area {
 
 @import 'head';
 
+div.area-1 {
+  background-color: #000;
+  color: #fff;
+  font-size: $main-text-size * 1.3;
+  line-height: $main-text-size * 2;
+  padding: {
+    bottom: 0;
+    top: 0;
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      color: $color-home-header-background-2;
+      text-decoration: none;
+    }
+  }
+
+  .col-md-6 {
+    padding: 0;
+  }
+
+  .follow-social-media {
+
+    .follow-facebook,
+    .follow-twitter {
+      clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+      color: #fff;
+      display: inline-block;
+      font-size: $main-text-size;
+      font-weight: bolder;
+      margin: .2em 0;
+      padding: .1em .8em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .follow-facebook {
+      background-color: $color-facebook;
+    }
+
+    .follow-twitter {
+      background-color: $color-twitter;
+    }
+  }
+}
+
 div.area-3,
 div.area-4,
 div.area-5 {
@@ -95,7 +143,6 @@ div.area-4 {
 
 div.area-2 {
   clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
-
 
   .positions {
     margin-bottom: 2em;
@@ -177,6 +224,10 @@ div.area-8 {
   display: none;
 }
 
+.hide-details {
+  display: none;
+}
+
 .share-general,
 .share-specific {
   > .row:nth-of-type(2) div:nth-child(even) {
@@ -206,8 +257,8 @@ div.area-8 {
   }
 
   .statements {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
 
     .statement2,
     .statement3 {
@@ -221,13 +272,13 @@ div.area-8 {
     }
 
     .statement-prev {
-      left: 7px;
+      left: 10px;
       top: 50%;
       transform: translateY(-50%);
     }
 
     .statement-next {
-      right: 7px;
+      right: 10px;
       top: 50%;
       transform: translateY(-50%);
     }
@@ -278,24 +329,6 @@ div.footer {
   input,
   select {
     border: 1px solid #ddd;
-  }
-}
-
-
-// E-Mail form
-// move somewhere else
-
-div.area-email {
-  background-color: #000;
-  color: #fff;
-  padding: {
-    bottom: 0;
-    left: 6em;
-    top: 0;
-  }
-
-  .col-md-6 {
-    padding: 0;
   }
 }
 

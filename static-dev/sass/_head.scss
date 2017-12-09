@@ -134,28 +134,43 @@ div.area-index-header {
       margin-left: 20px;
     }
   }
+}
 
-  .follow-social-media {
-    margin-top: 1em;
+.bar-message {
+  color: white;
+  font-size: $main-text-size * 1.3;
+  line-height: $main-text-size * 2;
 
-    .follow-facebook,
-    .follow-twitter {
-      clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-      color: #fff;
-      display: inline-block;
-      font-weight: bolder;
-      margin-bottom: .5em;
-      padding: .3em .8em;
+  a {
+    color: white;
+
+    &:hover {
+      color: $color-home-header-background-2;
       text-decoration: none;
-      white-space: nowrap;
     }
+  }
+}
 
-    .follow-facebook {
-      background-color: $color-facebook;
-    }
+.follow-social-media {
+  text-align: right;
 
-    .follow-twitter {
-      background-color: $color-twitter;
-    }
+  .follow-facebook,
+  .follow-twitter {
+    clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+    color: #fff;
+    display: inline-block;
+    font-weight: bolder;
+    margin: .2em 0em;
+    padding: .1em .8em;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .follow-facebook {
+    background-color: $color-facebook;
+  }
+
+  .follow-twitter {
+    background-color: $color-twitter;
   }
 }

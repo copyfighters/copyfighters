@@ -97,8 +97,8 @@ div.area-2 {
   clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
 
 
-  .row {
-    min-height: 5em;
+  .positions {
+    margin-bottom: 2em;
 
     .position {
       padding: 1em;
@@ -127,6 +127,38 @@ div.area-2 {
     .position.col-sm-12 {
       background-color: #333;
     }
+  }
+
+  .position-ignored {
+    font: {
+      size: $main-text-size * 1.5;
+      family: $headline-font;
+    }
+    max-width: 960px;
+    margin: 2em auto;
+    text-align: center;
+  }
+}
+
+div.area-5 {
+  h2 {
+    margin: 1em auto;
+    text-align: center;
+  }
+
+  p {
+    font: {
+      size: $main-text-size * 1.5;
+      family: $headline-font;
+    }
+    margin: 2em auto;
+    text-align: center;
+    max-width: 960px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 1200px;
   }
 }
 
@@ -262,172 +294,8 @@ div.area-email {
     top: 0;
   }
 
-  div.col-xs-12 {
-    width: 100%;
-
-    form.email_form {
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 4px 0;
-      text-align: center;
-      width: 100%;
-
-      @media (max-width: 480px) {
-        font-size: 1.2em !important;
-      }
-
-      p {
-        margin: 0 !important;
-      }
-
-      label {
-        display: none;
-      }
-
-      input {
-        background-color: #000;
-        border: 0;
-        border-radius: 0;
-        color: #fff;
-        flex: 1 1 100%;
-        font: {
-          family: $main-font;
-          size: 1.6rem;
-          weight: 200;
-        }
-        text-decoration: underline rgba(255, 255, 255, 0.3);
-
-        @include placeholder {
-            color: white;
-            text-decoration: underline rgba(255, 255, 255, 0.3);
-        }
-      }
-
-      button {
-        background: transparent;
-        border: 1px solid #fff;
-        color: #fff;
-        flex-shrink: 0;
-        font: {
-          family: $main-font;
-          size: 1.3rem;
-          weight: 700;
-        }
-        line-height: .8;
-        min-width: 0;
-        padding: {
-          left: 10px;
-          right: 12px;
-        }
-
-        @media (max-width: 480px) {
-          display: none;
-        }
-      }
-
-      .form_status {
-        white-space: nowrap;
-      }
-
-      #email_reload {
-        cursor: pointer;
-        display: none;
-        font-style: normal;
-        margin: 0 15px;
-      }
-
-      #email_share {
-        display: none;
-        font-size: 0.8em;
-        white-space: nowrap;
-
-        #share_fb {
-          background: $color-facebook;
-          clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-          cursor: pointer;
-          font-weight: bolder;
-          margin: 0 -3px;
-          overflow: visible;
-          padding: {
-            left: 12px;
-            right: 12px;
-          }
-        }
-
-        #share_twitter {
-          background: $color-twitter;
-          clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
-          cursor: pointer;
-          font-weight: bolder;
-          margin: 0 -3px;
-          overflow: visible;
-          padding: {
-            left: 10px;
-            right: 12px;
-          }
-        }
-      }
-    }
-
-    .call-mep {
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      padding: 4px 0;
-      width: 100%;
-      text-decoration: none;
-
-      a {
-        &:active,
-        &:focus,
-        &:hover {
-          text-decoration: none;
-        }
-
-        .call-arrow {
-          font-weight: bold;
-          font-size: $main-text-size * 2;
-          line-height: $main-text-size;
-          color: $color-home-header-background-2;
-        }
-
-        .call-text {
-          background-color: #000;
-          border: 0;
-          border-radius: 0;
-          color: #fff;
-          flex: 1 1 100%;
-          font: {
-            family: $main-font;
-            size: 1.6rem;
-            weight: 200;
-          }
-        }
-      }
-
-      .call-button {
-        background: transparent;
-        border: 1px solid #fff;
-        color: #fff;
-        flex-shrink: 0;
-        font: {
-          family: $main-font;
-          size: 1.3rem;
-          weight: 700;
-        }
-        line-height: .8;
-        min-width: 0;
-        padding: 8px 10px;
-
-        &:active,
-        &:focus,
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
+  .col-md-6 {
+    padding: 0;
   }
 }
 

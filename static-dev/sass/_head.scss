@@ -6,6 +6,11 @@
     right: 4em;
   }
 
+  @media (max-width: 991px) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
   nav {
     font-size: .8em;
     min-height: 0;
@@ -64,7 +69,7 @@
     clip-path: polygon(0 0, 100% 0%, calc(100% - 450px) 100%, 0% 100%);
     z-index: -30;
 
-    @media screen and (orientation: portrait) {
+    @media (max-width: 991px) {
       clip-path: none;
     }
   }

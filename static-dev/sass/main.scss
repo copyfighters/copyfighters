@@ -68,7 +68,12 @@ p.browserupgrade {
 
 div.area {
   padding: 4em 5em;
+
+  @media (max-width: 991px) {
+    padding: 4em 2em;
+  }
 }
+
 
 .highlight {
   background: #8ee3fc;
@@ -102,6 +107,11 @@ div.area-1 {
   }
 
   .follow-social-media {
+    text-align: right;
+
+    @media (max-width: 991px) {
+      text-align: center;
+    }
 
     .follow-facebook,
     .follow-twitter {
@@ -139,6 +149,12 @@ div.area-4 {
 
 .position-text {
   display: none;
+  max-width: 960px;
+  margin: 0 auto 1em;
+}
+
+ul.position-text {
+  padding: 2em;
 }
 
 div.area-2 {

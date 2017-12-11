@@ -83,82 +83,64 @@ $('.statements .statement-next').click(function() {
 $('.position').click(function() {
 	if($(this).children('.position-text').is(':visible')) {
 		$(this).children('.position-text').hide();
-		$(this).removeClass('col-sm-12').addClass('col-sm-4');
+		$(this).removeClass('col-md-12').addClass('col-md-4');
 		$('.position').show();
 	} else {
 		$('.position').hide();
-		$(this).show().removeClass('col-sm-4').addClass('col-sm-12');
+		$(this).show().removeClass('col-md-4').addClass('col-md-12');
 		$(this).children().show();
 	}
 });
 
-$('#issue-1-message-select').change(function() {
-	updateLinks($(this), 'issue-1');
-});
-
-$('#issue-2-message-select').change(function() {
-	updateLinks($(this), 'issue-2');
-});
-
-$('#issue-3-message-select').change(function() {
-	updateLinks($(this), 'issue-3');
-});
-
 $('.issue1-intro .show-details').click(function() {
-	var $description = $('.issue1-description');
-	if ($description.is(':visible')) {
-		$description.hide();
-		$('.issue2-intro').show(400);
-		$('.issue3-intro').show(400);
-		$('.issue1-intro .show-details').text('Why is this problematic? ↓');
-	}
-	else {
-		$('.issue2-intro').hide(400);
-		$('.issue3-intro').hide(400, function () {
-			$description.show(400);
-			$('.issue1-intro .show-details').text('← Back');
-		});
-		$('.issue2-description').hide();
-		$('.issue3-description').hide();
-	}
+	$('.issue2-intro').hide(400);
+	$('.issue3-intro').hide(400, function () {
+		$('.issue1-description').show(400);
+		$('.issue1-intro .show-details').hide();
+		$('.issue1-intro .hide-details').show();
+	});
+});
+
+$('.issue1-intro .hide-details').click(function() {
+	$('.issue1-description').hide();
+	$('.issue2-intro').show(400);
+	$('.issue3-intro').show(400);
+	$('.issue1-intro .show-details').show();
+	$('.issue1-intro .hide-details').hide();
 });
 
 $('.issue2-intro .show-details').click(function() {
-	var $description = $('.issue2-description');
-	if ($description.is(':visible')) {
-		$description.hide();
-		$('.issue1-intro').show(400);
-		$('.issue3-intro').show(400);
-		$('.issue2-intro .show-details').text('Why is this problematic? ↓');
-	}
-	else {
-		$('.issue1-intro').hide(400);
-		$('.issue3-intro').hide(400, function () {
-			$description.show(400);
-			$('.issue2-intro .show-details').text('← Back');
-		});
-		$('.issue1-description').hide();
-		$('.issue3-description').hide();
-	}
+	$('.issue1-intro').hide(400);
+	$('.issue3-intro').hide(400, function () {
+		$('.issue2-description').show(400);
+		$('.issue2-intro .show-details').hide();
+		$('.issue2-intro .hide-details').show();
+	});
+});
+
+$('.issue2-intro .hide-details').click(function() {
+	$('.issue2-description').hide();
+	$('.issue1-intro').show(400);
+	$('.issue3-intro').show(400);
+	$('.issue2-intro .show-details').show();
+	$('.issue2-intro .hide-details').hide();
 });
 
 $('.issue3-intro .show-details').click(function() {
-	var $description = $('.issue3-description');
-	if ($description.is(':visible')) {
-		$description.hide();
-		$('.issue1-intro').show(400);
-		$('.issue2-intro').show(400);
-		$('.issue3-intro .show-details').text('Why is this problematic? ↓');
-	}
-	else {
-		$('.issue1-intro').hide(400);
-		$('.issue2-intro').hide(400, function () {
-			$description.show(400);
-			$('.issue3-intro .show-details').text('← Back');
-		});
-		$('.issue1-description').hide();
-		$('.issue2-description').hide();
-	}
+	$('.issue1-intro').hide(400);
+	$('.issue2-intro').hide(400, function () {
+		$('.issue3-description').show(400);
+		$('.issue3-intro .show-details').hide();
+		$('.issue3-intro .hide-details').show();
+	});
+});
+
+$('.issue3-intro .hide-details').click(function() {
+	$('.issue3-description').hide();
+	$('.issue1-intro').show(400);
+	$('.issue2-intro').show(400);
+	$('.issue3-intro .show-details').show();
+	$('.issue3-intro .hide-details').hide();
 });
 
 $('.email_form > input').focusin(function() {

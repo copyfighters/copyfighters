@@ -11,11 +11,6 @@ $(document).ready(function(){
 			typeSpeed: 40
 		});
 	}
-
-	// Initialise countdown.
-	$('.countdown').countdown('2018/02/01', function(event) {
-		$(this).html(event.strftime('<span>%D</span> Days <span>%H</span> Hours <span>%M</span> Minutes <span>%S</span> Seconds'));
-	});
 });
 
 // Adapt the Facebook and Twitter share links to the newly chosen message.
@@ -141,51 +136,4 @@ $('.issue3-intro .hide-details').click(function() {
 	$('.issue2-intro').show(400);
 	$('.issue3-intro .show-details').show();
 	$('.issue3-intro .hide-details').hide();
-});
-
-$('.email_form > input').focusin(function() {
-	$('.email_form > button').show();
-});
-
-$('#email_reload').click(function() {
-	$('.email_form').children().hide();
-	$('.email_form').css('flex-wrap', 'nowrap');
-	$('#id_email').val('').show();
-	$('.email_form > button').show();
-});
-
-$('#share_fb').click(function() {
-	var fbpopup = window.open('https://www.facebook.com/sharer/sharer.php?u=https://copyfighters.eu', 'pop', 'width=600, height=400, scrollbars=no');
-	return false;
-});
-
-$('#share_twitter').click(function() {
-	var twitterpopup = window.open('https://twitter.com/share?url=https://copyfighters.eu', 'pop', 'width=600, height=400, scrollbars=no');
-	return false;
-});
-
-$('.email_form').submit(function(event) {
-	event.preventDefault();
-	$form = $(this);
-	$.ajax({
-		type: 'POST',
-		url: $(this).attr('action'),
-		data: $(this).serialize(),
-		dataType: 'json'
-	}).done(function(data, textStatus) {
-		//console.log('win: ' + textStatus);
-		$('.email_form').children().hide();
-		$('.email_form').css('flex-wrap', 'wrap');
-		$('.form_status', $form).text(data.status).show();
-		$('#email_reload').show();
-		$('#email_share').show();
-	})
-	.fail(function(data, textStatus, errorThrown) {
-		//console.log('error: ' + textStatus + ' ' + errorThrown);
-		$('.email_form').children().hide();
-		$('.email_form').css('flex-wrap', 'wrap');
-		$('.form_status', $form).text(data.status).show();
-		$('#email_reload').show();
-		$('#email_share').show();
-	});
 });

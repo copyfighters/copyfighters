@@ -74,12 +74,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en'
 LANGUAGES = (
-	('sq', 'Albanian'),
+#	('sq', 'Albanian'),
 #	('hr', 'Croatian'),
 	('en', 'English'),
-	('es', 'Spanish'),
+#	('es', 'Spanish'),
 #	('fi', 'Finnish'),
-	('fr', 'French'),
+#	('fr', 'French'),
 	('de', 'German'),
 #	('el', 'Greek'),
 #	('is', 'Icelandic'),

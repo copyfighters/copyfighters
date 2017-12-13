@@ -85,7 +85,7 @@ LANGUAGES = (
 #	('is', 'Icelandic'),
 #	('it', 'Italian'),
 #	('lb', 'Luxembourgish'),
-	('pt', 'Portuguese'),
+#	('pt', 'Portuguese'),
 #	('ro', 'Romanian'),
 #	('sv', 'Swedish'),
 )

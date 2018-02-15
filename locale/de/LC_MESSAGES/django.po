@@ -28,9 +28,9 @@ msgid ""
 "href=\"https://browsehappy.com/\">upgrade your browser</a> to improve your "
 "experience."
 msgstr ""
-"Sie benutzen einen <strong>veralteten</strong> Webbrowser. Bitte <a "
-"href=\"https://browsehappy.com/\">aktualisieren sie Ihren Browser</a> um "
-"ihre Browsing-Experience zu verbessern."
+"Sie benutzen einen <strong>veralteten</strong> Web-Browser. Bitte <a "
+"href=\"https://browsehappy.com/\">aktualisieren sie Ihren Browser</a>, um "
+"ihre Interneterfahrung zu verbessern."
 
 #: templates/base.html:35
 msgid "Fighting for our Digital Rights in Europe"
@@ -115,7 +115,7 @@ msgstr "<b>Das Urheber*innenrecht muss sich ändern, jetzt!</b>"
 
 #: templates/index.html:44
 msgid "How you can take action "
-msgstr "Wie Du aktiv werden kannst"
+msgstr "Wie du aktiv werden kannst"
 
 #: templates/index.html:47
 msgid ""
@@ -241,6 +241,12 @@ msgid ""
 " and limitations, like freedom of panorama and parody, should be harmonized "
 "in all EU countries."
 msgstr ""
+"»Fair use« sollte eine offene Definition haben, welche die Inklusion von "
+"zukünftigen Technologien und Business-Modellen erlaubt. Wir schlagen die "
+"Einführung einer Fair Use-Ausnahme vor, um zukünftige Nutzungen und eine "
+"Fall-für-Fall-Beurteilung von Copyright-Fällen zu ermöglichen. Weiterhin "
+"sollten wesentliche Copyright-Ausnahmen und Limitationen, wie für "
+"Panoramafreiheit oder Parodie in allen EU-Ländern harmonisiert werden."
 
 #: templates/index.html:102
 msgid "No automated filters"
@@ -254,6 +260,11 @@ msgid ""
 " content from these platforms, it is important to safeguard user’s rights "
 "when doing so:"
 msgstr ""
+"Neue Plattformen und Technologien helfen, Barrieren für den Zugang zu Kunst "
+"und Kultur für Menschen zu verringern. Gleichzeitig schaffen diese "
+"Plattformen und die Inhalte die sie verbreiten neue Herausforderungen. Auch "
+"wenn es manchmal notwendig ist, Inhalte von diesen Plattformen zu entfernen,"
+" ist es wichtig, dabei Nutzer*innenrechte zu schützen:"
 
 #: templates/index.html:105
 msgid ""
@@ -286,6 +297,11 @@ msgid ""
 "and so forth) and by scale. No administrative, financial or technological "
 "barriers should be created for new market entrants."
 msgstr ""
+"Das Gesetz sollte eine Unterscheidung der Plattformen nach Inhaltsarten "
+"(Daten-Hosting-Anbieter, Veröffentlichungsplattformen, Suchmaschinen, "
+"Bezahlungssysteme usw.) und Größe durchführen. Es sollen für neue "
+"Markteinsteiger keine administrativen, finanziellen oder technologischen "
+"Barrieren geschaffen werden."
 
 #: templates/index.html:114
 msgid "Support remix culture"
@@ -298,6 +314,10 @@ msgid ""
 "participation in a democracy where we are not merely recipients but rather "
 "creators of new meaning."
 msgstr ""
+"Der unklare rechtliche Status von Remix-Werken von visueller Kunst bis zu "
+"Fan Fiction ist ein signifikantes Problem, welches uns an einer aktiven "
+"Teilhabe an einer Demokratie hindert, in welcher wir nicht nur "
+"Empfänger*innen, sondern Schöpfende von neuer Bedeutung sind."
 
 #: templates/index.html:116
 msgid ""
@@ -685,7 +705,7 @@ msgstr "Werde aktiv"
 
 #: templates/index.html:215
 msgid "Share Our Message"
-msgstr ""
+msgstr "Teile unsere Nachricht"
 
 #: templates/index.html:216
 msgid ""
@@ -695,7 +715,7 @@ msgstr ""
 
 #: templates/index.html:219
 msgid "No to the new link tax!"
-msgstr ""
+msgstr "Nein zum Leistungsschutzrecht!"
 
 #: templates/index.html:220
 msgid "No to censorship filtering on the Internet!"
@@ -707,7 +727,7 @@ msgstr ""
 
 #: templates/index.html:234
 msgid "Sign The Petition"
-msgstr ""
+msgstr "Unterschreibe die Petition"
 
 #: templates/index.html:235
 msgid ""
@@ -733,7 +753,7 @@ msgstr ""
 "href=\"https://changecopyright.org/\" target=\"_blank\">Anrufwebseite</a> "
 "von Mozilla oder über die <a href=\"https://savethememe.net/\" "
 "target=\"_blank\">Save the meme!-Webseite</a> von Bits of Freedom und "
-"Epicenter.works an."
+"epicenter.works an."
 
 #: templates/index.html:247
 msgid ""
@@ -747,6 +767,17 @@ msgid ""
 "to stay up-to-date on <b>all Copyfighters events and activities</b>, as well"
 " as the copyright reform in the European Union."
 msgstr ""
+"Im ganzen Jahr 2017 waren wir schwer beschäftigt, <b>die Stimme der "
+"europäischen Jugend zu Copyright-Themen</b> zu formulieren. Wir haben "
+"Diskussionen, Workshops, Hackathons und Sommercamps mit <b>mehr als 100 "
+"Teilnehmenden aus über 25 verschiedenen europäischen Ländern</b> "
+"organisiert, um zu unseren Ideen und Vorschlägen zu kommen. Folge uns auf "
+"<b><a href=\"https://facebook.com/jointhecopyfight\" "
+"target=\"_blank\">Facebook</a></b> und <b><a "
+"href=\"https://twitter.com/copyfighters\" target=\"_blank\">Twitter</a></b> "
+"um auf dem neusten Stand zu <b>allen Copyfighters-Veranstaltungen und "
+"Aktivitäten</b>, und zur Copyright-Reform in der Europäischen Union zu "
+"bleiben."
 
 #: templates/index.html:258
 msgid "Spread the word"
@@ -930,18 +961,23 @@ msgstr ""
 #: templates/toolkit.html:22
 msgid "… our ability to share news content online will be hampered"
 msgstr ""
+"… unsere Fähigkeit, Nachrichteninhalte online zu teilen wird eingeschränkt"
 
 #: templates/toolkit.html:23
 msgid ""
 "… our ability to post content on the Internet will be limited by a "
 "censorship machine"
 msgstr ""
+"… unsere Fähigkeit Inhalte im Internet zu posten wird durch eine "
+"Zensurmaschine beschränkt"
 
 #: templates/toolkit.html:24
 msgid ""
 "… our innocent remixes and user-generated content will keep infringing "
 "copyright"
 msgstr ""
+"… unsere harmlosen Remixes und nutzer*innengenerierten Inhalte werden "
+"weiterhin gegen das Copyright verstoßen"
 
 #: templates/toolkit.html:26
 msgid "We\\'re not asking to legalise plagiarism, theft, or piracy."
@@ -961,12 +997,16 @@ msgid ""
 "The European Parliament’s pivotal vote on this Proposal is at the beginning "
 "of 2018."
 msgstr ""
+"Die richtungsweisende Abstimmung des Europäischen Parlaments zu diesem "
+"Vorschlag ist Anfang 2018."
 
 #: templates/toolkit.html:27
 msgid ""
 "The time is thus now to take action to safeguard human rights and to protect"
 " our ability to access culture."
 msgstr ""
+"Darum ist jetzt die Zeit, um aktiv zu werden um Menschenrechte und unsere "
+"Fähigkeit zum Zugriff auf Kultur zu schützen."
 
 #: templates/toolkit.html:32
 msgid "Who can make it happen"
@@ -1099,7 +1139,7 @@ msgstr ""
 
 #: templates/toolkit.html:60
 msgid "Images for sharing"
-msgstr ""
+msgstr "Bilder zum Teilen"
 
 #: templates/toolkit.html:61
 msgid "Photos from the Copyfighters camp"
@@ -1107,11 +1147,11 @@ msgstr "Photos vom Copyfighters-Camp"
 
 #: templates/toolkit.html:66
 msgid "Memes"
-msgstr ""
+msgstr "Memes"
 
 #: templates/toolkit.html:67
 msgid "Download all our memes as a zip file"
-msgstr ""
+msgstr "Lade alle unsere Memes als zip-Datei herunter"
 
 #: templates/toolkit.html:68
 msgid "More Tips"
@@ -1173,10 +1213,13 @@ msgstr ""
 #: templates/toolkit.html:85
 msgid "Register your event and we will help you spread the word."
 msgstr ""
+"Melde deine Veranstaltung an, und wir helfen dir, davon weiterzuerzählen."
 
 #: templates/toolkit.html:86
 msgid "See our map of events to see what is happening near you."
 msgstr ""
+"Schau auf unsere Veranstaltungs-Karte um zu sehen, was in deiner Nähe "
+"passiert."
 
 #: templates/toolkit.html:88
 msgid ""
@@ -1191,11 +1234,11 @@ msgstr ""
 
 #: templates/toolkit.html:89
 msgid "Planning your event"
-msgstr ""
+msgstr "Plane Dein Event"
 
 #: templates/toolkit.html:91
 msgid "Step 1: Goals"
-msgstr ""
+msgstr "Schritt 1: Ziele"
 
 #: templates/toolkit.html:92
 msgid ""
@@ -1203,10 +1246,13 @@ msgid ""
 "your country or at the EU level. Determine who you will be targeting with "
 "your message, and how many people you will affect."
 msgstr ""
+"Definiere dein Ziel, und wie es helfen wird, Copyright-Reform in deinem Land"
+" oder auf EU-Ebene zu erreichen. Kläre, auf wen Deine Nachricht abzielt, und"
+" wie viele Menschen sie betreffen wird."
 
 #: templates/toolkit.html:93
 msgid "Step 2: Event"
-msgstr ""
+msgstr "Schritt 2: Veranstaltung"
 
 #: templates/toolkit.html:94
 msgid ""
@@ -1214,20 +1260,25 @@ msgid ""
 "consider whether it will be engaging, entertaining, and meet your goals from"
 " Step 1."
 msgstr ""
+"Schreibe einen ungefähren Zeitplan für Deine Veranstaltung vom Anfang bis "
+"zum Ende, und erwäge, ob es einnehmend & unterhaltsam ist, und ob es deine "
+"Ziele aus Schritt 1 erreicht."
 
 #: templates/toolkit.html:95
 msgid "Step 3: Budget"
-msgstr ""
+msgstr "Schritt 3: Budget"
 
 #: templates/toolkit.html:96
 msgid ""
 "Is there a free venue available? Do you need refreshments, printed handouts,"
 " or anything else that could cost money?"
 msgstr ""
+"Gibt es eine kostenlose Veranstaltungslocation? Brauchst du Getränke, "
+"gedruckte Handouts, oder irgendetwas anderes, das Geld kosten könnte?"
 
 #: templates/toolkit.html:97
 msgid "Step 4: Invitations"
-msgstr ""
+msgstr "Schritt 4: Einladungen"
 
 #: templates/toolkit.html:98
 msgid ""
@@ -1235,10 +1286,14 @@ msgid ""
 " How can you approach them? In our experience, it is best if you can reach "
 "out to people individually at least one week in advance."
 msgstr ""
+"Denke über deine Ziel-Teilnehmer*innen und Partner*innen nach. Was sind ihre"
+" Interessen? Wie kannst du auf sie zugehen? Unserer Erfahrung nach ist es am"
+" besten, wenn du Menschen individuell mindestens eine Woche vorher "
+"kontaktieren kannst."
 
 #: templates/toolkit.html:99
 msgid "Step 5: Communicating"
-msgstr ""
+msgstr "Schritt 5: Kommunizieren"
 
 #: templates/toolkit.html:100
 msgid ""
@@ -1246,20 +1301,25 @@ msgid ""
 "as how it forms part of a regional #Copyfighters campaign? Download campaign"
 " logos and materials."
 msgstr ""
+"Team-Treffen – verstehen alle das Ziel Deines Events und wie es Teil der "
+"regionale #Copyfighters-Kampagne ist? Lade Kampagnen-Logos und Materialien "
+"herunter."
 
 #: templates/toolkit.html:101
 msgid "Step 6: The Big Day"
-msgstr ""
+msgstr "Schritt 6: Der große Tag"
 
 #: templates/toolkit.html:102
 msgid ""
 "Good luck! Be open to feedback and to revising your event strategy as you go"
 " if something isn’t working well."
 msgstr ""
+"Viel Glück! Sei offen für Feedback und dafür, deine Veranstaltungs-Strategie"
+" zu überdenken, falls etwas nicht rund läuft."
 
 #: templates/toolkit.html:103
 msgid "Step 7: Sharing"
-msgstr ""
+msgstr "Schritt 7: Sharing"
 
 #: templates/toolkit.html:104
 msgid ""
@@ -1273,7 +1333,7 @@ msgstr ""
 
 #: templates/toolkit.html:105
 msgid "Step 8: Friending"
-msgstr ""
+msgstr "Schritt 8: Friending"
 
 #: templates/toolkit.html:106
 msgid ""
@@ -1281,10 +1341,13 @@ msgid ""
 "involved with regional and international activities via our website mailing "
 "list, if they are interested."
 msgstr ""
+"Ermutige Teilnehmende, nach dem Event im Kontakt mit dem #Copyfight zu "
+"bleiben, und auch über die Mailing-Liste auf unserer Homepage in regionale "
+"und internationale Aktivitäten involviert zu werden."
 
 #: templates/toolkit.html:107
 msgid "Step 9: Evaluating"
-msgstr ""
+msgstr "Schritt 9: Evaluieren"
 
 #: templates/toolkit.html:108
 msgid ""
@@ -1292,10 +1355,13 @@ msgid ""
 "accomplished that surprised you? What would you do differently next time? "
 "Let us know!"
 msgstr ""
+"Sei ehrlich, was hast Du wirklich erreicht? Gibt es Dinge, die Du gelernt "
+"oder erreicht hast, die dich überrascht haben? Was würdest Du nächstes mal "
+"anders machen? Lass es uns wissen!"
 
 #: templates/toolkit.html:114
 msgid "Media advice"
-msgstr ""
+msgstr "Medien-Tipps"
 
 #: templates/toolkit.html:115
 msgid ""
@@ -1337,6 +1403,10 @@ msgid ""
 "and particularly why their audience will be interested. It is okay to script"
 " your call in advance if you are new to calling a journalist."
 msgstr ""
+"Du wirst vermutlich nicht lange reden können, also denke darüber nach was du"
+" sagen wirst, und insbesondere warum das Publikum interessiert sein wird. Es"
+" ist okay, deinen Anruf vorher zu scripten, falls du neu darin bist, "
+"Journalist*innen anzurufen."
 
 #: templates/toolkit.html:122
 msgid ""

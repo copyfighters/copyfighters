@@ -753,7 +753,7 @@ msgstr ""
 "href=\"https://changecopyright.org/\" target=\"_blank\">Anrufwebseite</a> "
 "von Mozilla oder über die <a href=\"https://savethememe.net/\" "
 "target=\"_blank\">Save the meme!-Webseite</a> von Bits of Freedom und "
-"Epicenter.works an."
+"epicenter.works an."
 
 #: templates/index.html:247
 msgid ""

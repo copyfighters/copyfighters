@@ -4,23 +4,30 @@
 
 ## Development
 
-### Django setup
-1. Set up a virtualenv once using i.e. `virtualenv -p $(which python3) .venv --prompt "(venv) "` or `python3 -m venv ./` under Windows.
-2. Enter your virtualenv using `source .venv/bin/activate` or `./Scripts/activate.bat` under Windows or use something like virtualenvwrapper.
-3. `pip install -r requirements.txt`
-4. `./manage.py runserver`
+### Setup
+1. Make sure you have Python, its package manager pip and the package virtualenv installed. You can install the latter with `pip install virtualenv`.
+2. Set up a virtual environment inside this folder using `virtualenv -p $(which python3) .venv --prompt "(venv) "` or `virtualenv ./` under Windows.
+3. Enter your virtual environment using `source .venv/bin/activate` or `./Scripts/activate.bat` under Windows, or use something like virtualenvwrapper.
+4. Use `pip install -r requirements.txt` to install all back-end dependencies.
+5. Use `npm install` to install front-end dependencies.
 
-After an update, you might need to redo step 3 and run `./manage.py migrate`.
+### Updates
+* After an update to the back-end, you need to redo setup steps 3 and 4 and run `./manage.py migrate`.
+* After an update to the front-end, you need to redo setup step 5 and run `gulp build`.
+
+### Getting ready
+1. Make sure you have entered your virtual environment (see step 3 of setup).
+2. Run the local server `./manage.py runserver`.
 
 ### Front-end tools
+* [npm](https://www.npmjs.com/)
+* [gulp](http://gulpjs.com/)
 
-#### [npm](https://www.npmjs.com/)
-* Use `npm install` to install front-end dependencies.
-
-#### [gulp](http://gulpjs.com/)
+#### gulp
 ##### General tasks
 * `gulp build` runs the `copy-fonts`, `css`, `js` tasks.
 * `gulp watch` runs the `css` and `js-all` tasks on every file change.
+
 ##### Specific task
 * `gulp copy-fonts` copies fonts to the static directory.
 * `gulp css` converts SASS to CSS including concatenation and minifaction.

@@ -36,3 +36,10 @@
 * `gulp js-ie` concatenates and minifies all polyfill JS files for Internet Explorer.
 * `gulp js-lint` checks all JS files for errors.
 * `gulp sass-lint` checks all SASS files for errors.
+
+## Docker
+
+The project can be run using docker:
+
+* `docker build -t copyfighters/copyfighters .`
+* `docker run -t -d -e DB_HOST=foobar -e DB_PASSWORD=foobar -e RAVEN_DSN=https://... -e EMAIL_HOST=foobar -p 8000:8000 --restart unless-stopped copyfighters/copyfighters`

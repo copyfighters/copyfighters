@@ -3,6 +3,6 @@ twilio==6.25.2
 django_countries==5.3.3
 
 # Production stuff
-psycopg2==2.7.7
+psycopg2-binary==2.7.7
 raven==6.10.0
 gunicorn==19.9.0

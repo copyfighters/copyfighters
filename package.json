@@ -32,7 +32,7 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",
     "html5shiv": "^3.7.3",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "jquery-countdown": "^2.2.0",
     "jshint": "^2.9.5",
     "mango-gulp-sass": "github:manGoweb/mango-gulp-sass",

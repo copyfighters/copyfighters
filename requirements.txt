@@ -1,4 +1,4 @@
-Django==1.11.20
+Django==1.11.29
 twilio==6.25.2
 django_countries==5.3.3
 
